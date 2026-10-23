@@ -4,7 +4,7 @@
 
 **Customer Purchase Journey Improvement**  
 **Author:** Kailas Krishnan  
-**Status:** In progress — current-state analysis
+**Status:** In progress — gap analysis and prioritization
 
 An independent Business Analyst case study using an existing e-commerce learning application to practise an end-to-end business analysis workflow. This repository will grow as discovery, process analysis, requirements, validation, and evaluation work is completed and reviewed.
 
@@ -28,6 +28,8 @@ Real payments and shipping/fulfilment are excluded. Demo orders must clearly sta
 |---|---|---|
 | Discovery meeting notes | Draft for simulated sponsor confirmation | [Read meeting notes](docs/discovery/meeting-notes-2026-10-23.md) |
 | Current-state process map | Reviewed draft v0.1 | [View diagram](docs/process-analysis/ShopStack-Current-State-Improved.png) · [Editable file](docs/process-analysis/ShopStack-Current-State-Improved.drawio) |
+| Gap register | Draft v0.1 | [Read gap register](docs/process-analysis/gap-register.md) |
+| Prioritization and decision record | Working priorities; first increment recorded | [Read decision record](docs/process-analysis/prioritization-and-decisions.md) |
 | Stakeholder analysis and future-state process | Planned | Not yet created |
 | Requirements, business rules, and acceptance criteria | Planned | Not yet created |
 | Wireframes and requirements traceability | Planned | Not yet created |
@@ -59,4 +61,4 @@ Start with the discovery notes. Follow later artifacts through the table above a
 
 ## Current next step
 
-Analyze the gaps identified in the walkthrough and current-state diagram: document each gap, its effect on the customer's task, evidence, and proposed improvement.
+Define the future-state cart review and management process for the first increment. Resolve open business rules and logout scope, and revisit delivery order when visitor and support evidence becomes available.
