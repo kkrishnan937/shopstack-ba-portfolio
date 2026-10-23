@@ -1,5 +1,7 @@
 # ShopStack Business Analyst Portfolio
 
+*This project follows a simulated business analysis process.*
+
 **Customer Purchase Journey Improvement**  
 **Author:** Kailas Krishnan  
 **Status:** In progress — discovery
@@ -41,8 +43,6 @@ Real payments and shipping/fulfilment are excluded. Demo orders must clearly sta
 5. Support solution design and delivery, tracing changes to business needs.
 6. Execute acceptance scenarios and record actual results and defects.
 7. Evaluate outcomes and document lessons and limitations.
-
-The portfolio author performs the learning tasks, with AI assistance for coaching, drafting, and review. Stakeholder discussions are simulated and explicitly identified. This is not a paid client engagement, and no real stakeholder sign-off or commercial results are claimed.
 
 ## How to review this project
 
