@@ -4,7 +4,7 @@
 
 **Customer Purchase Journey Improvement**  
 **Author:** Kailas Krishnan  
-**Status:** In progress — discovery
+**Status:** In progress — current-state analysis
 
 An independent Business Analyst case study using an existing e-commerce learning application to practise an end-to-end business analysis workflow. This repository will grow as discovery, process analysis, requirements, validation, and evaluation work is completed and reviewed.
 
@@ -27,7 +27,7 @@ Real payments and shipping/fulfilment are excluded. Demo orders must clearly sta
 | Artifact | Status | Link |
 |---|---|---|
 | Discovery meeting notes | Draft for simulated sponsor confirmation | [Read meeting notes](docs/discovery/meeting-notes-2026-10-23.md) |
-| Current-state process map | Next activity | Not yet created |
+| Current-state process map | Reviewed draft v0.1 | [View diagram](docs/process-analysis/ShopStack-Current-State-Improved.png) · [Editable file](docs/process-analysis/ShopStack-Current-State-Improved.drawio) |
 | Stakeholder analysis and future-state process | Planned | Not yet created |
 | Requirements, business rules, and acceptance criteria | Planned | Not yet created |
 | Wireframes and requirements traceability | Planned | Not yet created |
@@ -59,4 +59,4 @@ Start with the discovery notes. Follow later artifacts through the table above a
 
 ## Current next step
 
-Document the current customer journey as a numbered sequence, review its decisions and stopping points, and turn it into a current-state process map.
+Analyze the gaps identified in the walkthrough and current-state diagram: document each gap, its effect on the customer's task, evidence, and proposed improvement.
