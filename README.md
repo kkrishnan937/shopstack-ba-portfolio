@@ -27,7 +27,7 @@ Real payments and shipping/fulfilment are excluded. Demo orders must clearly sta
 | Artifact | Status | Link |
 |---|---|---|
 | Discovery meeting notes | Draft for simulated sponsor confirmation | [Read meeting notes](docs/discovery/meeting-notes-2026-10-23.md) |
-| Current-state process map | Reviewed draft v0.1 | [View diagram](docs/process-analysis/ShopStack-Current-State-Improved.png) · [Editable file](docs/process-analysis/ShopStack-Current-State-Improved.drawio) |
+| Current-state process map | Reviewed draft v0.1 | [View diagram](docs/process-analysis/ShopStack-Current-State-Improved.png) · [Open in diagrams.net](https://app.diagrams.net/#Uhttps%3A%2F%2Fraw.githubusercontent.com%2Fkkrishnan937%2Fshopstack-ba-portfolio%2Fmain%2Fdocs%2Fprocess-analysis%2FShopStack-Current-State-Improved.drawio) · [Download source](https://raw.githubusercontent.com/kkrishnan937/shopstack-ba-portfolio/main/docs/process-analysis/ShopStack-Current-State-Improved.drawio) |
 | Gap register | Draft v0.1 | [Read gap register](docs/process-analysis/gap-register.md) |
 | Prioritization and decision record | Working priorities; first increment recorded | [Read decision record](docs/process-analysis/prioritization-and-decisions.md) |
 | Stakeholder analysis and future-state process | Planned | Not yet created |
