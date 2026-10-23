@@ -10,7 +10,7 @@ An independent Business Analyst case study using an existing e-commerce learning
 
 ## Business context
 
-[ShopStack](https://github.com/kkrishnan937/shopstack) began as a DevOps learning project. Its customer interface displays products and supports login and add-to-cart requests, but has no visible cart review or order submission journey.
+[ShopStack](https://github.com/kkrishnan937/shopstack) is an e-commerce application. Its customer interface displays products and supports login and add-to-cart requests, but has no visible cart review or order submission journey.
 
 This case study investigates how customers could review their selections and submit a demo order. Customer abandonment, conversion impact, and financial benefits have not been measured.
 
