@@ -17,7 +17,8 @@ Supporting artifacts:
 
 - [Discovery meeting notes](../discovery/meeting-notes-2026-10-23.md)
 - [Current-state process diagram](ShopStack-Current-State-Improved.png)
-- [Editable process diagram](ShopStack-Current-State-Improved.drawio)
+- [Open editable process diagram in diagrams.net](https://app.diagrams.net/#Uhttps%3A%2F%2Fraw.githubusercontent.com%2Fkkrishnan937%2Fshopstack-ba-portfolio%2Fmain%2Fdocs%2Fprocess-analysis%2FShopStack-Current-State-Improved.drawio)
+- [Diagram source (.drawio)](https://raw.githubusercontent.com/kkrishnan937/shopstack-ba-portfolio/main/docs/process-analysis/ShopStack-Current-State-Improved.drawio)
 
 ## Gaps
 
