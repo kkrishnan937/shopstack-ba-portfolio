@@ -1,0 +1,62 @@
+# ShopStack Business Analyst Portfolio
+
+**Customer Purchase Journey Improvement**  
+**Author:** Kailas Krishnan  
+**Status:** In progress — discovery
+
+An independent Business Analyst case study using an existing e-commerce learning application to practise an end-to-end business analysis workflow. This repository will grow as discovery, process analysis, requirements, validation, and evaluation work is completed and reviewed.
+
+## Business context
+
+[ShopStack](https://github.com/kkrishnan937/shopstack) began as a DevOps learning project. Its customer interface displays products and supports login and add-to-cart requests, but has no visible cart review or order submission journey.
+
+This case study investigates how customers could review their selections and submit a demo order. Customer abandonment, conversion impact, and financial benefits have not been measured.
+
+## Proposed outcome and scope
+
+Enable customers to register or log in, add products, review cart items and totals, update quantities, remove items, and submit a demo order with confirmation. Display prices explicitly in CAD.
+
+The simulated sponsor retained authentication before adding items. Guest cart and guest checkout are future proposals, not agreed release scope.
+
+Real payments and shipping/fulfilment are excluded. Demo orders must clearly state that no payment was taken and no shipping is arranged. Tax treatment, total calculation rules, measurement definitions, and inventory scope remain open questions.
+
+## Portfolio artifacts
+
+| Artifact | Status | Link |
+|---|---|---|
+| Discovery meeting notes | Draft for simulated sponsor confirmation | [Read meeting notes](docs/discovery/meeting-notes-2026-10-23.md) |
+| Current-state process map | Next activity | Not yet created |
+| Stakeholder analysis and future-state process | Planned | Not yet created |
+| Requirements, business rules, and acceptance criteria | Planned | Not yet created |
+| Wireframes and requirements traceability | Planned | Not yet created |
+| UAT scenarios, execution evidence, and defect log | Planned | Not yet created |
+| Solution evaluation and final case study | Planned | Not yet created |
+
+## Approach
+
+1. Clarify the business request and confirm discovery findings.
+2. Map the existing journey and distinguish observed gaps from hypotheses.
+3. Evaluate options and define the proposed future process.
+4. Document and prioritize requirements with measurable acceptance criteria.
+5. Support solution design and delivery, tracing changes to business needs.
+6. Execute acceptance scenarios and record actual results and defects.
+7. Evaluate outcomes and document lessons and limitations.
+
+The portfolio author performs the learning tasks, with AI assistance for coaching, drafting, and review. Stakeholder discussions are simulated and explicitly identified. This is not a paid client engagement, and no real stakeholder sign-off or commercial results are claimed.
+
+## How to review this project
+
+Start with the discovery notes. Follow later artifacts through the table above as they are added. The application source remains in the original ShopStack repository; this repository contains BA deliverables rather than a duplicate application.
+
+## Updating this repository
+
+- Add artifacts as the work is completed; keep planned work marked as planned.
+- Use descriptive commits explaining the document or decision changed.
+- Keep artifacts in folders under `docs/`, and update the artifact table when adding a deliverable.
+- Record significant scope changes and their rationale rather than silently rewriting prior decisions.
+- Distinguish observations, assumptions, proposals, simulated decisions, and executed test results.
+- Use synthetic examples and exclude credentials, private customer information, and unsupported outcome claims.
+
+## Current next step
+
+Document the current customer journey as a numbered sequence, review its decisions and stopping points, and turn it into a current-state process map.
