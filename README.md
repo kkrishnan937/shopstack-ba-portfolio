@@ -4,7 +4,7 @@
 
 **Customer Purchase Journey Improvement**  
 **Author:** Kailas Krishnan  
-**Status:** In progress — gap analysis and prioritization
+**Status:** In progress — future-state process definition
 
 An independent Business Analyst case study using an existing e-commerce learning application to practise an end-to-end business analysis workflow. This repository will grow as discovery, process analysis, requirements, validation, and evaluation work is completed and reviewed.
 
@@ -30,7 +30,8 @@ Real payments and shipping/fulfilment are excluded. Demo orders must clearly sta
 | Current-state process map | Reviewed draft v0.1 | [View diagram](docs/process-analysis/ShopStack-Current-State-Improved.png) · [Open in diagrams.net](https://app.diagrams.net/#Uhttps%3A%2F%2Fraw.githubusercontent.com%2Fkkrishnan937%2Fshopstack-ba-portfolio%2Fmain%2Fdocs%2Fprocess-analysis%2FShopStack-Current-State-Improved.drawio) · [Download source](https://raw.githubusercontent.com/kkrishnan937/shopstack-ba-portfolio/main/docs/process-analysis/ShopStack-Current-State-Improved.drawio) |
 | Gap register | Draft v0.1 | [Read gap register](docs/process-analysis/gap-register.md) |
 | Prioritization and decision record | Working priorities; first increment recorded | [Read decision record](docs/process-analysis/prioritization-and-decisions.md) |
-| Stakeholder analysis and future-state process | Planned | Not yet created |
+| Future-state cart process | Proposed draft v0.1; diagram pending | [Read future-state process](docs/process-analysis/future-state-cart-process.md) |
+| Stakeholder analysis | Planned | Not yet created |
 | Requirements, business rules, and acceptance criteria | Planned | Not yet created |
 | Wireframes and requirements traceability | Planned | Not yet created |
 | UAT scenarios, execution evidence, and defect log | Planned | Not yet created |
@@ -61,4 +62,4 @@ Start with the discovery notes. Follow later artifacts through the table above a
 
 ## Current next step
 
-Define the future-state cart review and management process for the first increment. Resolve open business rules and logout scope, and revisit delivery order when visitor and support evidence becomes available.
+Review the written future-state cart process and create its diagram. Resolve open rules, recovery scenarios, and logout scope before baselining requirements. Revisit delivery order when visitor and support evidence becomes available.
