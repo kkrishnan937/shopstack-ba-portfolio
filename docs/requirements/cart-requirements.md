@@ -1,6 +1,6 @@
 # First-increment cart requirements
 
-**Version:** 0.1  
+**Version:** 0.2
 **Date:** 25 October 2026  
 **Status:** Draft consolidated from simulated requirements workshops; review pending  
 **Author:** Kailas Krishnan, portfolio author practising the BA role
@@ -19,11 +19,11 @@ IDs in this document form the portfolio's working story namespace. The earlier s
 |---|---|---|---|
 | CART-FR-01 | A signed-in customer can review their saved cart, prices, quantities and subtotal, and return to browsing without changing it. | GAP-02; US-01 below | Draft criteria prepared |
 | CART-FR-02 | A signed-in customer can request valid quantity changes, with confirmed outcomes and accurate totals. | GAP-03; US-02 below | Draft criteria prepared; recovery gaps open |
-| CART-FR-03 | A customer can remove an entire cart line and receive an accurate resulting cart state. | GAP-03 | Separate removal story and full criteria pending |
-| CART-FR-04 | A customer can log out while retaining the saved cart under its retention rule. | DEC-06 | Story and criteria pending |
-| CART-FR-05 | Identical product/variant additions merge, subject to the combined quantity limit. | DEC-03, DEC-04 | Detailed criteria pending |
-| CART-FR-06 | Saved cart retention follows the 30-day inactivity rule. | DEC-02 | Detailed criteria pending |
-| CART-FR-07 | Current catalog prices are reflected with explicit notice when a cart item's price changes. | Workshop proposal | Policy details and criteria require review |
+| CART-FR-03 | A customer can remove an entire cart line and receive an accurate resulting cart state. | GAP-03 | Main and confirmed-failure criteria drafted; unknown-outcome recovery open |
+| CART-FR-04 | A customer can log out while retaining the saved cart under its retention rule. | DEC-06 | Success criterion drafted; failure criteria pending |
+| CART-FR-05 | Identical product/variant additions merge, subject to the combined quantity limit. | DEC-03, DEC-04 | Main and exception criteria drafted; review gaps open |
+| CART-FR-06 | Saved cart retention follows the 30-day inactivity rule. | DEC-02 | Main and exception criteria drafted; review gaps open |
+| CART-FR-07 | Current catalog prices are reflected with explicit notice when a cart item's price changes. | Workshop proposal | Conditional criteria drafted; policy approval pending |
 
 ## Working business rules
 
@@ -76,6 +76,56 @@ Unless specified otherwise, examples contain only 2 mugs at CAD 12.50 each, and 
 | CART-AC-19 | Given an unresolved quantity update, when a status check confirms processing | Explain the verified processing state, keep further quantity updates and removal unavailable for that item, and offer Check update status. Exact processing message requires review. |
 | CART-AC-20 | Given an unresolved quantity update, when its status check fails | Explain that the outcome remains unconfirmed, keep further quantity updates and removal unavailable for that item, and offer Check update status again. Do not claim "Still processing" solely because the check failed. Previously displayed values must be labelled last confirmed. |
 
+## US-03: Remove a cart item
+
+As a signed-in customer, I want to remove an unwanted product so I can correct my cart.
+
+Removal deletes the entire product line, not one unit. These cases assume no unresolved earlier mutation for that item; CART-AC-13 governs that restriction.
+
+| ID | Given / When | Then |
+|---|---|---|
+| CART-AC-21 | Given 2 mugs at CAD 12.50 each and 1 mouse at CAD 24.99, when the mug line is removed successfully | Display only 1 mouse, line total CAD 24.99, subtotal CAD 24.99, and "Item removed successfully." |
+| CART-AC-22 | Given the cart contains only 2 mugs, when their entire line is removed successfully | Display "Cart is empty", subtotal CAD 0.00 and Continue shopping. |
+| CART-AC-23 | Given only 2 mugs at CAD 12.50 each, when removal is confirmed failed | Keep both mugs, line total and subtotal CAD 25.00, and display "Item removal failed. Please try again." Let the customer choose whether to retry; do not retry automatically. |
+
+## US-04: Log out
+
+As a signed-in customer, I want to log out so I can end my session.
+
+| ID | Given / When | Then |
+|---|---|---|
+| CART-AC-24 | Given a signed-in customer with a saved cart, when the customer selects Logout and logout succeeds | End the signed-in session, retain saved items under the existing 30-day retention rule, and require sign-in before protected cart changes. Logout does not reset the retention clock. |
+
+## US-05: Merge identical product additions
+
+As a signed-in customer, I want repeated additions of the same product and variant combined so I can review their total quantity clearly.
+
+| ID | Given / When | Then |
+|---|---|---|
+| CART-AC-25 | Given 2 mugs of the same product/variant at CAD 12.50 each, when 1 identical mug is added and saving succeeds | Display one mug line, quantity 3, unit price CAD 12.50 and line total CAD 37.50. Product/variant identity, not matching price alone, determines merging. |
+| CART-AC-26 | Given 10 identical mugs, when another identical mug is added | Reject the addition, preserve saved quantity 10 and totals, and explain "Maximum quantity of 10 reached for this product/variant." The rule does not limit all products combined to 10 units. |
+| CART-AC-27 | Given 2 blue mugs, when 1 red mug is added successfully as a different variant | Display two separate product/variant lines: blue mugs quantity 2 and red mug quantity 1. |
+
+## US-06: Retain and expire the saved cart
+
+As a customer, I want my cart retained for the agreed period so I can return to my selections later.
+
+| ID | Given / When | Then |
+|---|---|---|
+| CART-AC-28 | Given the cart's 30-day retention period since its last successful change has elapsed, when the customer next opens the cart and retrieval succeeds | Return no expired saved items, display "Your saved cart expired after 30 days without changes", subtotal CAD 0.00 and Continue shopping. Physical cleanup timing is a design matter; expired contents must not be presented as an active cart. |
+| CART-AC-29 | Given the last successful cart change was 20 days ago, when the customer signs in and successfully retrieves the cart | Display the saved items subject to current pricing rules. Sign-in and viewing do not reset retention; absent further successful changes, expiry remains 30 days after the last successful change. |
+
+## US-07: Handle product price changes
+
+As a customer, I want to see current prices and be informed of changes so I can review the cost of my selections.
+
+The current-price policy is a workshop proposal awaiting final business review. Criteria below are conditional on that policy being accepted and do not establish implemented behaviour.
+
+| ID | Given / When | Then |
+|---|---|---|
+| CART-AC-30 | Given only 2 mugs previously displayed at CAD 12.50 each, when refreshing retrieves the current unit price CAD 14.00 | Display unit price CAD 14.00, line total CAD 28.00 and subtotal CAD 28.00, with text "Price changed from CAD 12.50 to CAD 14.00." Colour may supplement the notice but cannot be its only indication. |
+| CART-AC-31 | Given the last confirmed mug price CAD 12.50, when refreshing the cart fails | Do not claim a new price is confirmed. Explain "We couldn't refresh your cart. Please try again." and offer Refresh cart. If previous prices or totals remain visible, label them last confirmed rather than current. |
+
 ## Open requirements and review gaps
 
 | ID | Gap / required decision | Proposed review roles |
@@ -85,11 +135,11 @@ Unless specified otherwise, examples contain only 2 mugs at CAD 12.50 each, and 
 | CART-Q-03 | Define behaviour when status confirms failure but cart retrieval fails; also review overlapping actions on other items and cart changes from other sessions. | Product owner, developer, tester |
 | CART-Q-04 | Complete session-expiry criteria, including safe handling of an update accepted before expiry. Do not assume expiry cancels an in-flight request. | Developer, product owner, tester |
 | CART-Q-05 | Review accessibility, focus, status announcements, messages, and how blocked actions are explained. | UX/content, tester, customer representative |
-| CART-Q-06 | Complete removal, logout, merging, retention boundary and price-change stories. Price notice should use text rather than colour alone; details need review. | BA, product owner, developer, tester |
+| CART-Q-06 | Review the newly drafted US-03 through US-07 criteria. Finalize current-price policy; complete removal unknown-outcome recovery, logout failure, retention reset after successful changes, and exact expiry boundary/time calculation criteria. Define retention-message behaviour and interactions with in-flight requests. | BA, product owner, developer, tester |
 | CART-Q-07 | Reconcile process diagrams and written process with the later rules, and trace criteria to tests before execution. | BA with delivery review |
 
 ## Readiness and next step
 
 This is a review draft, not a release baseline. The full update story is not ready for release while prolonged recovery is unresolved. Independent validation and confirmed-outcome work may progress if the delivery team agrees the split; testing requires implemented behaviour. No criteria in this document have recorded execution results.
 
-Next: review these criteria for consistency, complete the removal story, and continue the remaining cart criteria before returning to the stakeholder plan review, as requested by the portfolio author.
+Next: resolve or explicitly defer the remaining cart review gaps, then return to the stakeholder plan review as requested by the portfolio author. Version 0.2 adds CART-AC-21 through CART-AC-31 from the reviewed discussion; all criteria remain unexecuted.
