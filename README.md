@@ -30,7 +30,8 @@ Real payments and shipping/fulfilment are excluded. Demo orders must clearly sta
 | Current-state process map | Reviewed draft v0.1 | [View diagram](docs/process-analysis/ShopStack-Current-State-Improved.png) · [Open in diagrams.net](https://app.diagrams.net/#Uhttps%3A%2F%2Fraw.githubusercontent.com%2Fkkrishnan937%2Fshopstack-ba-portfolio%2Fmain%2Fdocs%2Fprocess-analysis%2FShopStack-Current-State-Improved.drawio) · [Download source](https://raw.githubusercontent.com/kkrishnan937/shopstack-ba-portfolio/main/docs/process-analysis/ShopStack-Current-State-Improved.drawio) |
 | Gap register | Draft v0.1 | [Read gap register](docs/process-analysis/gap-register.md) |
 | Prioritization and decision record | Working priorities; first increment recorded | [Read decision record](docs/process-analysis/prioritization-and-decisions.md) |
-| Future-state cart process | Proposed draft v0.2; diagram publication pending | [Read future-state process](docs/process-analysis/future-state-cart-process.md) |
+| Future-state cart process | Proposed draft v0.2 | [Read future-state process](docs/process-analysis/future-state-cart-process.md) |
+| Future-state cart diagrams | Draft v0.3; three pages | [View diagrams](docs/process-analysis/future-state-diagrams.md) · [Open in diagrams.net](https://app.diagrams.net/#Uhttps%3A%2F%2Fraw.githubusercontent.com%2Fkkrishnan937%2Fshopstack-ba-portfolio%2Fmain%2Fdocs%2Fprocess-analysis%2FShopStack-Future-State-Cart-Reviewed.drawio) |
 | Future-state walkthrough | Review record v0.1 | [Read walkthrough](docs/process-analysis/future-state-walkthrough.md) |
 | Stakeholder analysis | Planned | Not yet created |
 | Requirements, business rules, and acceptance criteria | Planned | Not yet created |
@@ -63,4 +64,4 @@ Start with the discovery notes. Follow later artifacts through the table above a
 
 ## Current next step
 
-Resolve open business rules and recovery behaviour, confirm the latest saved diagram matches the walkthrough finding, and publish the diagram revision. Then develop requirements and acceptance criteria. Logout scope remains pending.
+Resolve open business rules and recovery behaviour, then develop requirements and acceptance criteria from the reviewed process. Logout scope remains pending.

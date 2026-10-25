@@ -103,3 +103,7 @@ See the [process walkthrough record](future-state-walkthrough.md) for scenarios 
 The draft diagram represents loading, empty and non-empty states, quantity updates, removals, retry paths, and the unresolved recovery placeholder. Continue shopping must be accessible from cart review without changing items. Keep unresolved recovery behaviour visibly marked for review rather than inventing a decision.
 
 Review the draft with business, development, and testing roles before baselining requirements. The diagram should retain the load-failure path, validation path, confirmed save/removal failures, and last-item removal path.
+
+## Diagram files
+
+See the [three-page diagram and previews](future-state-diagrams.md) for cart review, quantity updates, and removal. The published draft includes the non-empty Continue shopping path. Uncertain-outcome recovery remains pending under FS-Q-02.
