@@ -1,8 +1,8 @@
 # ShopStack — Future-State Cart Process
 
 **Prepared by:** Kailas Krishnan  
-**Date:** 24 October 2026  
-**Version:** 0.1  
+**Date:** 25 October 2026  
+**Version:** 0.2  
 **Status:** Proposed process — draft for review
 
 ## Purpose and boundaries
@@ -27,7 +27,9 @@ The customer is already signed in. Registration and demo order submission remain
    - Yes: Continue to step 4.
 4. Decision: **Is the cart empty?**
    - Yes: Display “Cart is empty,” subtotal **CAD 0.00**, and a **Continue shopping** action that returns the customer to product browsing.
-   - No: Display product names, quantities, unit prices, line totals, and the cart subtotal in CAD. Provide quantity-update and item-removal actions.
+   - No: Display product names, quantities, unit prices, line totals, and the cart subtotal in CAD. Provide Update quantity, Remove item, and Continue shopping actions.
+
+5. From a non-empty cart, the customer may select Continue shopping without updating quantities or removing items. Return to product browsing with the saved cart contents unchanged.
 
 The contents are unknown when loading fails. An empty-cart message is appropriate only after successful retrieval confirms no items.
 
@@ -90,8 +92,14 @@ These are item-price subtotals, not a decision about a tax-inclusive final total
 | FS-Q-05 | Define behaviour when authentication expires while viewing or changing the cart. | Open; further scenario discovery required |
 | FS-Q-06 | Confirm whether quantity limits, stock rules, duplicate product lines, or changing catalog prices affect this increment. | Open; further business-rule discovery required |
 
-## Diagram preparation and next step
+## Walkthrough finding — continue shopping from a non-empty cart
 
-Draw the opening flow first: request cart → attempt load → loading decision → empty-cart decision → either continue shopping or review/manage items. From cart review, branch into quantity update and removal, returning after a confirmed result. Keep unresolved recovery behaviour visibly marked for review rather than inventing a decision.
+During the process walkthrough, the non-empty cart had no explicit route to product browsing without an update or removal. The proposed flow now offers Continue shopping from both empty and non-empty carts. This does not submit an order or alter saved cart contents.
+
+See the [process walkthrough record](future-state-walkthrough.md) for scenarios discussed and remaining limitations.
+
+## Diagram review and next step
+
+The draft diagram represents loading, empty and non-empty states, quantity updates, removals, retry paths, and the unresolved recovery placeholder. Continue shopping must be accessible from cart review without changing items. Keep unresolved recovery behaviour visibly marked for review rather than inventing a decision.
 
 Review the draft with business, development, and testing roles before baselining requirements. The diagram should retain the load-failure path, validation path, confirmed save/removal failures, and last-item removal path.
