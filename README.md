@@ -4,7 +4,7 @@
 
 **Customer Purchase Journey Improvement**  
 **Author:** Kailas Krishnan  
-**Status:** In progress — future-state process definition
+**Status:** In progress: future-state process definition
 
 An independent Business Analyst case study using an existing e-commerce learning application to practise an end-to-end business analysis workflow. This repository will grow as discovery, process analysis, requirements, validation, and evaluation work is completed and reviewed.
 

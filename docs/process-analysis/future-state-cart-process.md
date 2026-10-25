@@ -1,9 +1,9 @@
-# ShopStack — Future-State Cart Process
+# ShopStack: Future-State Cart Process
 
 **Prepared by:** Kailas Krishnan  
 **Date:** 25 October 2026  
 **Version:** 0.2  
-**Status:** Proposed process — draft for review
+**Status:** Proposed process: draft for review
 
 ## Purpose and boundaries
 
@@ -92,7 +92,7 @@ These are item-price subtotals, not a decision about a tax-inclusive final total
 | FS-Q-05 | Define behaviour when authentication expires while viewing or changing the cart. | Open; further scenario discovery required |
 | FS-Q-06 | Confirm whether quantity limits, stock rules, duplicate product lines, or changing catalog prices affect this increment. | Open; further business-rule discovery required |
 
-## Walkthrough finding — continue shopping from a non-empty cart
+## Walkthrough finding: continue shopping from a non-empty cart
 
 During the process walkthrough, the non-empty cart had no explicit route to product browsing without an update or removal. The proposed flow now offers Continue shopping from both empty and non-empty carts. This does not submit an order or alter saved cart contents.
 

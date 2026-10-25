@@ -1,4 +1,4 @@
-# ShopStack — Prioritization and Decision Record
+# ShopStack: Prioritization and Decision Record
 
 **Prepared by:** Kailas Krishnan  
 **Date:** 23 October 2026  
@@ -13,7 +13,7 @@ Related artifacts: [gap register](gap-register.md), [current-state diagram](Shop
 
 ## Prioritization method
 
-MoSCoW categories: Must have — necessary for the agreed release objective; Should have — important with an acceptable temporary workaround; Could have — useful if capacity allows; Won't have this release — deliberately excluded. Priorities below are proposals, not a finalized release baseline. No delivery estimates have been established.
+MoSCoW categories: Must have: necessary for the agreed release objective; Should have: important with an acceptable temporary workaround; Could have: useful if capacity allows; Won't have this release: deliberately excluded. Priorities below are proposals, not a finalized release baseline. No delivery estimates have been established.
 
 ## Proposed priorities
 
@@ -23,9 +23,9 @@ MoSCoW categories: Must have — necessary for the agreed release objective; Sho
 | GAP-02 | Cart review | Must have | Customers need to verify selected products, quantities, prices, and subtotal before submitting an order. | First increment, together with GAP-03. |
 | GAP-03 | Cart management | Must have | Customers need to correct quantities and remove unwanted items. No acceptable correction workaround has been identified in the interface. | First increment, together with GAP-02 so customers can see what they are editing. |
 | GAP-04 | Demo order submission and confirmation | Must have | Customers need to submit a demo order and receive confirmation to complete the agreed journey. | Remains in complete release scope; detailed sequence pending. Real payments and shipping remain excluded. |
-| GAP-05 | Logout | Must have — proposed, subject to scope confirmation | Customers need to end their session at any time; a shared browser presents a risk of unauthorized session use. No actual misuse has been established. | Newly identified need; inclusion, priority, and delivery position require a sponsor decision. |
+| GAP-05 | Logout | Must have: proposed, subject to scope confirmation | Customers need to end their session at any time; a shared browser presents a risk of unauthorized session use. No actual misuse has been established. | Newly identified need; inclusion, priority, and delivery position require a sponsor decision. |
 
-## DEC-01 — First increment
+## DEC-01: First increment
 
 | Field | Record |
 |---|---|
@@ -53,7 +53,7 @@ MoSCoW categories: Must have — necessary for the agreed release objective; Sho
 
 Define the proposed future-state process for cart review and management, including quantity changes, item removal, empty-cart behaviour, and exceptions. Proposed rules need review before becoming requirements.
 
-## Cart rule decisions — 25 October 2026
+## Cart rule decisions: 25 October 2026
 
 Source: discussion with the portfolio author in the simulated business analysis exercise. These are case-study decisions, not independent stakeholder approval, implemented behaviour, or executed UAT. The original process draft predates these decisions and still requires reconciliation.
 
@@ -63,15 +63,15 @@ Source: discussion with the portfolio author in the simulated business analysis 
 | DEC-03 | Merge additions of the identical product and variant into one cart line: two units plus one becomes three. Different designs/variants remain separate lines. | Confirmed by the portfolio author. Price differences alone do not establish a different product identity. |
 | DEC-04 | Permit whole-number quantities from 1 to 10 per product/variant, including the combined quantity after repeated additions. Reject requests that exceed 10 and preserve saved quantities and totals. Suggested message: "Enter a whole number from 1 to 10." | Confirmed demo purchase limit. Inventory data is unavailable; the limit does not establish stock availability or reserve inventory. Any increase requires review with relevant inventory evidence. |
 
-### DEC-05 — Demo pricing boundary
+### DEC-05: Demo pricing boundary
 
-Confirmed by the portfolio author on 25 October 2026 during the simulated analysis exercise: display item-price subtotals only, in CAD with two decimal places. Calculate each line as unit price multiplied by quantity and the subtotal as the sum of line totals. Do not calculate tax or shipping in this demo. Display: "Demo only—tax and shipping are not calculated. No payment is taken." Demo order confirmation must also state that no shipping is arranged. This is an agreed demo scope decision, not a statement about applicable real-world tax obligations. Implementation and verification remain pending.
+Confirmed by the portfolio author on 25 October 2026 during the simulated analysis exercise: display item-price subtotals only, in CAD with two decimal places. Calculate each line as unit price multiplied by quantity and the subtotal as the sum of line totals. Do not calculate tax or shipping in this demo. Display: "Demo only: tax and shipping are not calculated. No payment is taken." Demo order confirmation must also state that no shipping is arranged. This is an agreed demo scope decision, not a statement about applicable real-world tax obligations. Implementation and verification remain pending.
 
-### DEC-06 — Logout in the first increment
+### DEC-06: Logout in the first increment
 
 Confirmed by the portfolio author on 25 October 2026 during the simulated analysis exercise: include logout as a Must have in the first increment, alongside cart review and management for existing account holders. Customers must be able to end their signed-in session. Logout retains the account's saved cart under DEC-02; it neither clears the cart nor extends its retention period. Protected cart changes require authentication again after logout. Detailed session termination behaviour requires technical review and acceptance criteria. This decision resolves the earlier pending logout scope and priority entries (GAP-05 / ACT-03); those historical entries describe the earlier state. Implementation and UAT remain pending.
 
-### DEC-07 — Inventory boundary
+### DEC-07: Inventory boundary
 
 Confirmed by the portfolio author on 25 October 2026 during the simulated analysis exercise: exclude stock availability checks and inventory reservation from this demo release. The 10-unit limit in DEC-04 is a purchase rule, not a guarantee of availability. Adding or retaining a cart item does not reserve stock. Any future inventory capability requires separate discovery, inventory data, requirements, and a scope decision. This resolves the inventory-in-scope question in the discovery notes and the inventory portion of FS-Q-06; other product and pricing questions require their own disposition. Implementation and UAT remain pending.
 

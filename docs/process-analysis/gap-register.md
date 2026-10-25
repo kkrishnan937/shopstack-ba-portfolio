@@ -1,4 +1,4 @@
-# ShopStack — Gap Register
+# ShopStack: Gap Register
 
 **Prepared by:** Kailas Krishnan  
 **Date:** 23 October 2026  

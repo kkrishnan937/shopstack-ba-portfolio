@@ -1,9 +1,9 @@
-# ShopStack — Future-State Cart Diagrams
+# ShopStack: Future-State Cart Diagrams
 
 **Prepared by:** Kailas Krishnan  
 **Date:** 25 October 2026  
 **Version:** 0.3  
-**Status:** Proposed process — draft for review
+**Status:** Proposed process: draft for review
 
 [Open editable diagram in diagrams.net](https://app.diagrams.net/#Uhttps%3A%2F%2Fraw.githubusercontent.com%2Fkkrishnan937%2Fshopstack-ba-portfolio%2Fmain%2Fdocs%2Fprocess-analysis%2FShopStack-Future-State-Cart-Reviewed.drawio) · [Diagram source](https://raw.githubusercontent.com/kkrishnan937/shopstack-ba-portfolio/main/docs/process-analysis/ShopStack-Future-State-Cart-Reviewed.drawio)
 
