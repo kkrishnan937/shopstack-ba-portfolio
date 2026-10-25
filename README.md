@@ -64,4 +64,4 @@ Start with the discovery notes. Follow later artifacts through the table above a
 
 ## Current next step
 
-Resolve open business rules and recovery behaviour, then develop requirements and acceptance criteria from the reviewed process. Logout scope remains pending.
+Consolidate the reviewed cart recovery behaviour and recorded decisions into the future-state process, then develop requirements and acceptance criteria. Decisions recorded on 25 October include 30-day cart retention, identical-variant merging, a 10-unit limit per product/variant, item-price subtotals without tax/shipping calculations, logout in the first increment, and exclusion of stock checks and inventory reservation. Implementation and UAT remain pending.

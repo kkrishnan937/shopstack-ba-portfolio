@@ -3,7 +3,7 @@
 **Prepared by:** Kailas Krishnan  
 **Date:** 23 October 2026  
 **Version:** 0.1  
-**Status:** Working priorities; first-increment direction recorded; logout scope pending
+**Status:** Working priorities; first-increment direction and subsequent cart/scope decisions recorded. Earlier entries below retain their historical status; DEC-02 through DEC-07 record the 25 October updates.
 
 ## Purpose
 
@@ -52,3 +52,29 @@ MoSCoW categories: Must have — necessary for the agreed release objective; Sho
 ## Next activity
 
 Define the proposed future-state process for cart review and management, including quantity changes, item removal, empty-cart behaviour, and exceptions. Proposed rules need review before becoming requirements.
+
+## Cart rule decisions — 25 October 2026
+
+Source: discussion with the portfolio author in the simulated business analysis exercise. These are case-study decisions, not independent stakeholder approval, implemented behaviour, or executed UAT. The original process draft predates these decisions and still requires reconciliation.
+
+| ID | Decision | Rationale / boundary |
+|---|---|---|
+| DEC-02 | Retain an account's saved cart for 30 days after its last successful addition, quantity update, or removal. After 30 days without a successful change, clear the contents and explain that the saved cart expired. | Confirmed by the portfolio author. Login expiry does not clear the cart. This is an application retention rule, independent of browser cache expiry; it is not attributed to Walmart. Viewing or refreshing alone does not extend retention. |
+| DEC-03 | Merge additions of the identical product and variant into one cart line: two units plus one becomes three. Different designs/variants remain separate lines. | Confirmed by the portfolio author. Price differences alone do not establish a different product identity. |
+| DEC-04 | Permit whole-number quantities from 1 to 10 per product/variant, including the combined quantity after repeated additions. Reject requests that exceed 10 and preserve saved quantities and totals. Suggested message: "Enter a whole number from 1 to 10." | Confirmed demo purchase limit. Inventory data is unavailable; the limit does not establish stock availability or reserve inventory. Any increase requires review with relevant inventory evidence. |
+
+### DEC-05 — Demo pricing boundary
+
+Confirmed by the portfolio author on 25 October 2026 during the simulated analysis exercise: display item-price subtotals only, in CAD with two decimal places. Calculate each line as unit price multiplied by quantity and the subtotal as the sum of line totals. Do not calculate tax or shipping in this demo. Display: "Demo only—tax and shipping are not calculated. No payment is taken." Demo order confirmation must also state that no shipping is arranged. This is an agreed demo scope decision, not a statement about applicable real-world tax obligations. Implementation and verification remain pending.
+
+### DEC-06 — Logout in the first increment
+
+Confirmed by the portfolio author on 25 October 2026 during the simulated analysis exercise: include logout as a Must have in the first increment, alongside cart review and management for existing account holders. Customers must be able to end their signed-in session. Logout retains the account's saved cart under DEC-02; it neither clears the cart nor extends its retention period. Protected cart changes require authentication again after logout. Detailed session termination behaviour requires technical review and acceptance criteria. This decision resolves the earlier pending logout scope and priority entries (GAP-05 / ACT-03); those historical entries describe the earlier state. Implementation and UAT remain pending.
+
+### DEC-07 — Inventory boundary
+
+Confirmed by the portfolio author on 25 October 2026 during the simulated analysis exercise: exclude stock availability checks and inventory reservation from this demo release. The 10-unit limit in DEC-04 is a purchase rule, not a guarantee of availability. Adding or retaining a cart item does not reserve stock. Any future inventory capability requires separate discovery, inventory data, requirements, and a scope decision. This resolves the inventory-in-scope question in the discovery notes and the inventory portion of FS-Q-06; other product and pricing questions require their own disposition. Implementation and UAT remain pending.
+
+### Follow-up
+
+Reconcile these decisions with the future-state process, then derive acceptance criteria for expiry boundaries, login expiry, repeated additions, and quantity limits. Cart recovery and price-change discussions also need consolidation. Implementation and UAT remain pending.
