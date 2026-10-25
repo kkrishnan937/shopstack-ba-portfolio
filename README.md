@@ -33,6 +33,7 @@ Real payments and shipping/fulfilment are excluded. Demo orders must clearly sta
 | Future-state cart process | Proposed draft v0.2 | [Read future-state process](docs/process-analysis/future-state-cart-process.md) |
 | Future-state cart diagrams | Draft v0.3; three pages | [View diagrams](docs/process-analysis/future-state-diagrams.md) · [Open in diagrams.net](https://app.diagrams.net/#Uhttps%3A%2F%2Fraw.githubusercontent.com%2Fkkrishnan937%2Fshopstack-ba-portfolio%2Fmain%2Fdocs%2Fprocess-analysis%2FShopStack-Future-State-Cart-Reviewed.drawio) |
 | Future-state walkthrough | Review record v0.1 | [Read walkthrough](docs/process-analysis/future-state-walkthrough.md) |
+| Cart recovery workshop | Simulated findings; open recovery questions | [Read workshop notes](docs/discovery/cart-recovery-workshop-2026-10-25.md) |
 | Stakeholder analysis | Planned | Not yet created |
 | Requirements, business rules, and acceptance criteria | Planned | Not yet created |
 | Wireframes and requirements traceability | Planned | Not yet created |
