@@ -11,7 +11,7 @@ Define how existing signed-in customers will review and manage their cart in the
 
 The customer is already signed in. Registration and demo order submission remain part of the wider release rather than this increment. Logout is included in the first increment under DEC-06, but its success guarantees, token invalidation and failure behaviour remain unresolved. This draft describes intended behaviour, not implemented functionality or completed acceptance testing.
 
-This revision reconciles the written process with [requirements v0.3](../requirements/cart-requirements.md) and DEC-02 through DEC-09 in the [decision record](prioritization-and-decisions.md). Decisions and reviews are part of a simulated case study, not independent approval. Earlier diagram exports have not yet been reconciled; see the diagram change list below.
+This revision reconciles the written process with [requirements v0.3](../requirements/cart-requirements.md) and DEC-02 through DEC-09 in the [decision record](prioritization-and-decisions.md). Decisions and reviews are part of a simulated case study, not independent approval. Diagram v0.4 now reflects these rules; interactive editor review remains pending.
 
 ## Proposed entry and exit
 
@@ -138,7 +138,7 @@ See the [process walkthrough record](future-state-walkthrough.md) for scenarios 
 
 ## Diagram review and next step
 
-The existing diagram represents an earlier process revision. Its sources and PNG exports have not been updated as part of this written reconciliation and must not be treated as equivalent to requirements v0.3.
+Diagram v0.4 and its five generated PNG previews now reflect the written reconciliation. The following changes were incorporated:
 
 Required diagram changes:
 
@@ -147,10 +147,10 @@ Required diagram changes:
 - Expand the unknown-update placeholder to show section 4's status-check branches and affected-item restrictions, keeping unresolved prolonged recovery explicit.
 - Add or reference merging, retention, price refresh and logout boundaries; keep logout security scope and removal recovery open.
 - Preserve loading failure, empty-cart confirmation, Continue shopping from both cart states, and last-item removal.
-- Regenerate readable exports and review connector attachments after editing the source. No visual revision or visual QA is claimed here.
+- Generate readable previews from the shared source definitions, check connector references and text fit, and inspect the five PNGs. Native diagrams.net rendering and interactive review remain pending.
 
 Review the draft with business, development, and testing roles before baselining requirements. The diagram should retain the load-failure path, validation path, confirmed save/removal failures, and last-item removal path.
 
 ## Diagram files
 
-See the [three-page diagram and previews](future-state-diagrams.md) for the earlier cart review, update and removal draft. Use this written v0.3 reconciliation and requirements v0.3 to review discrepancies; neither is an approved implementation baseline.
+See the [five-page diagram and previews](future-state-diagrams.md) for cart review, update, removal, recovery and supporting rules. Review this written process and requirements v0.3 alongside them; none is an approved implementation baseline.
