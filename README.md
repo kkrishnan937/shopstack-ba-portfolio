@@ -20,7 +20,7 @@ Enable customers to register or log in, add products, review cart items and tota
 
 The simulated sponsor retained authentication before adding items. Guest cart and guest checkout are future proposals, not agreed release scope.
 
-Real payments and shipping/fulfilment are excluded. Demo orders must clearly state that no payment was taken and no shipping is arranged. Tax treatment, total calculation rules, measurement definitions, and inventory scope remain open questions.
+Real payments and shipping/fulfilment are excluded. Demo orders must clearly state that no payment was taken and no shipping is arranged. The demo uses item-price subtotals without tax/shipping calculations and excludes stock checks and reservation. Measurement definitions, logout security guarantees and prolonged recovery remain open.
 
 ## Portfolio artifacts
 
@@ -30,7 +30,7 @@ Real payments and shipping/fulfilment are excluded. Demo orders must clearly sta
 | Current-state process map | Reviewed draft v0.1 | [View diagram](docs/process-analysis/ShopStack-Current-State-Improved.png) · [Open in diagrams.net](https://app.diagrams.net/#Uhttps%3A%2F%2Fraw.githubusercontent.com%2Fkkrishnan937%2Fshopstack-ba-portfolio%2Fmain%2Fdocs%2Fprocess-analysis%2FShopStack-Current-State-Improved.drawio) · [Download source](https://raw.githubusercontent.com/kkrishnan937/shopstack-ba-portfolio/main/docs/process-analysis/ShopStack-Current-State-Improved.drawio) |
 | Gap register | Draft v0.1 | [Read gap register](docs/process-analysis/gap-register.md) |
 | Prioritization and decision record | Working priorities; first increment recorded | [Read decision record](docs/process-analysis/prioritization-and-decisions.md) |
-| Future-state cart process | Proposed draft v0.2 | [Read future-state process](docs/process-analysis/future-state-cart-process.md) |
+| Future-state cart process | Draft v0.3 reconciled with requirements; diagram updates pending | [Read future-state process](docs/process-analysis/future-state-cart-process.md) |
 | Future-state cart diagrams | Draft v0.3; three pages | [View diagrams](docs/process-analysis/future-state-diagrams.md) · [Open in diagrams.net](https://app.diagrams.net/#Uhttps%3A%2F%2Fraw.githubusercontent.com%2Fkkrishnan937%2Fshopstack-ba-portfolio%2Fmain%2Fdocs%2Fprocess-analysis%2FShopStack-Future-State-Cart-Reviewed.drawio) |
 | Future-state walkthrough | Review record v0.1 | [Read walkthrough](docs/process-analysis/future-state-walkthrough.md) |
 | Cart recovery workshop | Simulated findings; open recovery questions | [Read workshop notes](docs/discovery/cart-recovery-workshop-2026-10-25.md) |
