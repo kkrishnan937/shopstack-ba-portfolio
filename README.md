@@ -35,7 +35,7 @@ Real payments and shipping/fulfilment are excluded. Demo orders must clearly sta
 | Future-state walkthrough | Review record v0.1 | [Read walkthrough](docs/process-analysis/future-state-walkthrough.md) |
 | Cart recovery workshop | Simulated findings; open recovery questions | [Read workshop notes](docs/discovery/cart-recovery-workshop-2026-10-25.md) |
 | Stakeholder analysis and engagement plan | Draft v0.1; simulated roles and authority review pending | [Read stakeholder plan](docs/discovery/stakeholder-analysis-and-engagement.md) |
-| Cart requirements, business rules, and acceptance criteria | Draft v0.2; US-01 through US-07 drafted; recovery and boundary gaps open | [Read requirements](docs/requirements/cart-requirements.md) |
+| Cart requirements, business rules, and acceptance criteria | Draft v0.3; 37 criteria; retention/price rules clarified; recovery and logout scope open | [Read requirements](docs/requirements/cart-requirements.md) |
 | Wireframes and requirements traceability | Planned | Not yet created |
 | UAT scenarios, execution evidence, and defect log | Planned | Not yet created |
 | Solution evaluation and final case study | Planned | Not yet created |

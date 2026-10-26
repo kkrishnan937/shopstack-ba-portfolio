@@ -75,6 +75,20 @@ Confirmed by the portfolio author on 25 October 2026 during the simulated analys
 
 Confirmed by the portfolio author on 25 October 2026 during the simulated analysis exercise: exclude stock availability checks and inventory reservation from this demo release. The 10-unit limit in DEC-04 is a purchase rule, not a guarantee of availability. Adding or retaining a cart item does not reserve stock. Any future inventory capability requires separate discovery, inventory data, requirements, and a scope decision. This resolves the inventory-in-scope question in the discovery notes and the inventory portion of FS-Q-06; other product and pricing questions require their own disposition. Implementation and UAT remain pending.
 
+### DEC-08: Retention clock and expiry boundary
+
+Recorded on 25 October 2026 from the simulated product-owner refinement, reviewed in the learning discussion. Use an elapsed duration of 30 times 24 hours from the last successful cart addition, quantity update or removal. The cart is active before that expiry instant and expired at the instant and afterward. A new successful change restarts the clock; a confirmed failed attempt, viewing, refreshing, sign-in and logout do not. A change on day 20 therefore starts a new 30-day period, while a failed attempt leaves 10 days remaining. Interactions between expiry and unresolved in-flight requests still require technical/business review. This is a case-study decision, not implemented or tested behaviour.
+
+### DEC-09: Current-price policy
+
+Recorded on 25 October 2026 from the simulated product-owner refinement. Successful refresh applies current unit prices, recalculates line totals and subtotal, and provides a text notice showing the previous and current unit prices for both increases and decreases. Colour cannot be the only indication. A failed refresh must not imply that a new price is confirmed; any retained values are labelled last confirmed. This resolves the earlier proposed status of the basic current-price policy in the exercise; implementation and UAT remain pending. Concurrent updates and later order pricing require separate review.
+
+### Logout technical finding and open scope
+
+Source-code inspection on 25 October 2026 found that login issues a JWT with a 24-hour expiry, the frontend stores it in localStorage, and backend middleware validates it. Logout and token revocation are not implemented in the inspected code (`backend/routes/auth.js`, `backend/middleware/auth.js`, `frontend/src/App.jsx` in the application repository). Clearing browser login state alone would not revoke a copied token. Earlier discussion assuming a server session was hypothetical.
+
+In the subsequent simulation, token invalidation remained a proposal pending investigation of options, storage/deployment dependencies, failure behaviour, testing needs and effort. No actual investigation, owner assignment, estimate or completion date is established. The successful-logout guarantee and failure behaviour remain unresolved; do not mark the logout story ready on the basis of these simulated exchanges.
+
 ### Follow-up
 
 Reconcile these decisions with the future-state process, then derive acceptance criteria for expiry boundaries, login expiry, repeated additions, and quantity limits. Cart recovery and price-change discussions also need consolidation. Implementation and UAT remain pending.

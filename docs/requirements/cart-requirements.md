@@ -1,6 +1,6 @@
 # First-increment cart requirements
 
-**Version:** 0.2
+**Version:** 0.3
 **Date:** 25 October 2026  
 **Status:** Draft consolidated from simulated requirements workshops; review pending  
 **Author:** Kailas Krishnan, portfolio author practising the BA role
@@ -119,12 +119,25 @@ As a customer, I want my cart retained for the agreed period so I can return to 
 
 As a customer, I want to see current prices and be informed of changes so I can review the cost of my selections.
 
-The current-price policy is a workshop proposal awaiting final business review. Criteria below are conditional on that policy being accepted and do not establish implemented behaviour.
+The current-price policy was confirmed within the simulated refinement under DEC-09. It applies to increases and decreases; this is a case-study decision, not independent approval or implemented behaviour.
 
 | ID | Given / When | Then |
 |---|---|---|
 | CART-AC-30 | Given only 2 mugs previously displayed at CAD 12.50 each, when refreshing retrieves the current unit price CAD 14.00 | Display unit price CAD 14.00, line total CAD 28.00 and subtotal CAD 28.00, with text "Price changed from CAD 12.50 to CAD 14.00." Colour may supplement the notice but cannot be its only indication. |
 | CART-AC-31 | Given the last confirmed mug price CAD 12.50, when refreshing the cart fails | Do not claim a new price is confirmed. Explain "We couldn't refresh your cart. Please try again." and offer Refresh cart. If previous prices or totals remain visible, label them last confirmed rather than current. |
+
+## Additional retention and price criteria from refinement
+
+These cases assume no unresolved in-flight cart changes. Time T denotes the recorded last successful cart change; exact expiry is T plus 30 times 24 hours.
+
+| ID | Given / When | Then |
+|---|---|---|
+| CART-AC-32 | Given the last successful cart change was 20 days ago, when logout succeeds | Retain saved items with the original expiry unchanged, leaving 10 days if no further successful changes occur. This criterion does not settle the technical guarantee of successful logout. |
+| CART-AC-33 | Given the last successful cart change was 20 days ago, when a quantity change succeeds at time T | Set expiry to T plus 30 times 24 hours, unless another successful change resets it. |
+| CART-AC-34 | Given the last successful cart change was 20 days ago, when a quantity update is confirmed failed | Preserve the original expiry, leaving 10 days if no further successful changes occur. |
+| CART-AC-35 | Given a non-empty cart last changed successfully at T, when retrieval succeeds one second before T plus 30 times 24 hours | Treat the cart as active and display saved items subject to current pricing rules; retrieval does not reset expiry. |
+| CART-AC-36 | Given a non-empty cart last changed successfully at T, when retrieval succeeds exactly at T plus 30 times 24 hours or afterward | Treat the cart as expired, exclude expired saved items, explain expiry, and display subtotal CAD 0.00 and Continue shopping. Test the exact instant and an instant after it separately. |
+| CART-AC-37 | Given only 2 mugs previously displayed at CAD 14.00 each, when refresh retrieves the current price CAD 12.50 | Display unit price CAD 12.50, line total CAD 25.00, subtotal CAD 25.00 and text "Price changed from CAD 14.00 to CAD 12.50." |
 
 ## Open requirements and review gaps
 
@@ -135,11 +148,12 @@ The current-price policy is a workshop proposal awaiting final business review. 
 | CART-Q-03 | Define behaviour when status confirms failure but cart retrieval fails; also review overlapping actions on other items and cart changes from other sessions. | Product owner, developer, tester |
 | CART-Q-04 | Complete session-expiry criteria, including safe handling of an update accepted before expiry. Do not assume expiry cancels an in-flight request. | Developer, product owner, tester |
 | CART-Q-05 | Review accessibility, focus, status announcements, messages, and how blocked actions are explained. | UX/content, tester, customer representative |
-| CART-Q-06 | Review the newly drafted US-03 through US-07 criteria. Finalize current-price policy; complete removal unknown-outcome recovery, logout failure, retention reset after successful changes, and exact expiry boundary/time calculation criteria. Define retention-message behaviour and interactions with in-flight requests. | BA, product owner, developer, tester |
+| CART-Q-06 | Review US-03 through US-07 criteria; complete removal unknown-outcome recovery and logout failure. Define retention-message behaviour and expiry interactions with in-flight requests. DEC-08 and DEC-09 now clarify elapsed-time boundaries and basic current-price policy. Add explicit successful-addition/removal retention-reset cases in test planning. | BA, product owner, developer, tester |
+| CART-Q-08 | Decide what successful logout guarantees and whether token invalidation belongs in the increment. Current code uses 24-hour JWTs with no implemented logout/revocation; clearing browser state does not revoke copied tokens. Technical investigation remains proposed, with no verified estimate. | Product owner, developer / technical lead, tester |
 | CART-Q-07 | Reconcile process diagrams and written process with the later rules, and trace criteria to tests before execution. | BA with delivery review |
 
 ## Readiness and next step
 
 This is a review draft, not a release baseline. The full update story is not ready for release while prolonged recovery is unresolved. Independent validation and confirmed-outcome work may progress if the delivery team agrees the split; testing requires implemented behaviour. No criteria in this document have recorded execution results.
 
-Next: resolve or explicitly defer the remaining cart review gaps, then return to the stakeholder plan review as requested by the portfolio author. Version 0.2 adds CART-AC-21 through CART-AC-31 from the reviewed discussion; all criteria remain unexecuted.
+Next: resolve or explicitly defer the remaining cart review gaps, then return to the stakeholder plan review as requested by the portfolio author. Version 0.3 adds CART-AC-32 through CART-AC-37, records retention and price decisions, and keeps logout scope and prolonged recovery open. All criteria remain unexecuted.
