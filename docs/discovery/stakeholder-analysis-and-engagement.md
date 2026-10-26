@@ -1,7 +1,7 @@
 # Stakeholder analysis and engagement plan
 
 **Date:** 25 October 2026  
-**Version:** 0.1  
+**Version:** 0.2
 **Status:** Draft for simulated role review  
 **Prepared by:** Kailas Krishnan, portfolio author practising the BA role
 
@@ -65,6 +65,57 @@ Meeting frequency, channels and named contacts are not established. Agree them w
 | SE-03 | Define how customer needs, including accessibility needs, will be represented; obtain permission before using real feedback. | BA | Open |
 | SE-04 | Confirm role coverage for UX, support, testing and technical review; record unavailable expertise as a limitation. | Simulated product owner / delivery lead | Open |
 | SE-05 | Agree engagement methods, review timing and an escalation route for unresolved decisions. | BA with participating roles | Open |
+
+## Simulated stakeholder review findings
+
+Recorded on 25 October 2026 from the learning discussion. All participants and findings in this section are simulated. No actual customer was recruited, no usability session was executed, and no requirements approval was granted.
+
+### Customer evidence and representation
+
+The simulated product owner reported no available customer feedback or support records. Available project evidence consists of the application walkthrough, source review and explicitly simulated workshops; these do not validate customer needs. A hypothetical colleague was described as shopping online weekly, editing carts and mainly using a phone. This is a screening example, not a real participant profile. Unshared accessibility needs must not be recorded as absent, and one reviewer cannot represent all intended customers.
+
+Proposed review objectives are to assess whether a representative reviewer can understand cart quantities and totals, update and remove items, and interpret uncertain-outcome messages on their device. Explore barriers and access needs they are comfortable sharing without requiring personal disclosure.
+
+### Task, evidence and facilitator practice
+
+Candidate neutral task: "Your cart has two mugs. You've decided you need three. Please make that change."
+
+Success condition: the reviewer changes quantity from 2 to 3 without facilitator help and understands that the control saves the displayed quantity rather than adding more units. With a unit price of CAD 12.50, the expected line total is CAD 37.50 once saving is confirmed.
+
+Record task completion, errors, hesitation, requests for help, and understanding of totals and messages. Separate observations, participant comments and interpretations. Use neutral prompts such as "What would you expect that button to do?" and "What on the page led you to that expectation?" If assistance is given, record completion as assisted rather than unassisted.
+
+| Evidence category | Simulated example |
+|---|---|
+| Observation | The reviewer saw quantity 2 beside an "Add" button and asked whether it would add two more mugs or save the displayed quantity. |
+| Interpretation | The label may make the distinction between adding units and saving quantity unclear. |
+| Candidate change | Replace "Add" with "Update quantity" for the quantity-edit action and provide save confirmation. This is not a change to the separate catalog add-to-cart action. |
+| Validation approach | Repeat a goal-based task without explaining the label. Prefer another suitable reviewer to reduce prior-exposure effects; if the same reviewer participates, record that limitation. One successful session does not establish general usability. |
+
+The label change is a proposal, not a validated improvement or implemented change. These examples are not actual research findings and are not UAT.
+
+### Simulated engagement actions
+
+| Action | Simulated responsibility | Review point / dependency | Actual status |
+|---|---|---|---|
+| Identify and invite a suitable representative reviewer | Product owner | Before scheduling; participation and permission must be confirmed | Not recruited |
+| Coordinate scheduling and facilitate the review | BA | After a reviewer agrees | Not scheduled |
+| Prepare revised wording and observe/take notes | UX designer with BA | Before the session | Proposed; no prototype change completed |
+| Review observations and decide next steps | Product owner and delivery team | Next refinement if the session has occurred; otherwise report it pending | No real review date agreed |
+
+## Requirements approval and change control
+
+The following responsibilities were agreed within the simulation only. The stakeholder plan remains a draft and requirements v0.3 remains unapproved.
+
+1. The simulated product owner approves business scope and rules after developer feasibility and tester testability reviews, with unresolved issues explicitly recorded. This does not grant technical design approval or replace customer validation. Actual business acceptance authority remains unassigned.
+2. Approval must identify the exact document version and specific requirement IDs accepted. Unresolved requirements stay outside that approval. Record each exception's impact, owner, review date and blocked stories. Customer validation pending is a limitation, not implied approval.
+3. Record approval evidence with date, decision-maker, version/commit reference, accepted IDs, excluded/open IDs, rationale and conditions. Neither a Git commit nor a push constitutes approval. No such approval record has been completed.
+4. For a later change, record an ID, requestor, reason, affected requirements/criteria/processes/tests, development and test impacts, decision owner, outcome and version. Developers and testers assess impacts; the product owner decides business priority and scope; the BA maintains the record.
+5. Update the affected backlog/document references, link the decision and revised version, and notify affected developers, testers and other stakeholders through an agreed channel. Review during refinement, or sooner when active work is affected. The communication channel is still unassigned.
+6. GitHub holds the portfolio's versioned requirements and decision history. The README identifies the current draft and its status. If a version is subsequently approved, identify it separately from newer drafts so the team can find the applicable baseline. No external backlog tool has been established.
+
+### Disposition of earlier stakeholder actions
+
+Earlier open actions remain historical entries. SE-02 is partially clarified by the simulated product-owner requirements-approval responsibility; actual acceptance authority and whether sponsor/product owner are separate remain open. SE-03 now has a proposed customer-review approach, but recruitment, consent and execution are pending. SE-05 has proposed review triggers and GitHub recordkeeping; channels, actual dates and escalation arrangements remain open. SE-01 and SE-04 still need review. Simulated assignments do not establish real staff availability.
 
 ## Review and maintenance
 
