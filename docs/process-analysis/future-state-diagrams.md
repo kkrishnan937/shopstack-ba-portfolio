@@ -35,7 +35,7 @@ The revision adds 1-to-10 validation, conflicting-item restrictions and request-
 
 ## Generation and verification
 
-[Generation script](scripts/build_cart_diagrams.py) creates the editable XML and PNG previews from shared node/connector definitions using Python and Pillow. PNGs are generated previews, not exports from the diagrams.net renderer; connector routing and label placement can differ when opened in that editor. The script uses Windows Arial fonts.
+The editable XML and PNG previews were generated from shared node/connector definitions. PNGs are generated previews, not exports from the diagrams.net renderer; connector routing and label placement can differ when opened in that editor. The editable draw.io file and PNG previews are retained as the portfolio deliverables.
 
 Generation checks verify that every connector references existing endpoints and all node text fits its assigned box. The five previews were visually inspected and label/routing issues corrected. Interactive editor verification remains pending; no actual customer review, approval or UAT is claimed.
 
