@@ -37,7 +37,9 @@ Real payments and shipping/fulfilment are excluded. Demo orders must clearly sta
 | Stakeholder analysis and engagement plan | Draft v0.2; simulated review and change control recorded; customer validation pending | [Read stakeholder plan](docs/discovery/stakeholder-analysis-and-engagement.md) |
 | Cart requirements, business rules, and acceptance criteria | Draft v0.3; 37 criteria; retention/price rules clarified; recovery and logout scope open | [Read requirements](docs/requirements/cart-requirements.md) |
 | Cart wireframes | Draft v0.3; seven illustrative states including expiry and price changes; customer/UX review pending | [Review wireframes](docs/wireframes/cart-wireframes.md) |
-| Cart requirements traceability | Draft v0.1; 37 criteria mapped to planned tests; all Not run | [Read traceability matrix](docs/requirements/cart-traceability-matrix.md) |
+| Cart requirements traceability | Draft v0.1; 37 criteria mapped; 2 outlines blocked at readiness, 35 Not run | [Read traceability matrix](docs/requirements/cart-traceability-matrix.md) |
+| Cart-loading test readiness | Actual frontend inspection; application scenario blocked before execution | [Read readiness record](docs/testing/cart-loading-readiness-2026-10-28.md) |
+| Cart delivery-readiness actions | Actual blocker linked; ownership and dates remain simulated/unconfirmed | [Read handoff action log](docs/testing/cart-delivery-readiness-actions.md) |
 | UAT scenarios, execution evidence, and defect log | Planned | Not yet created |
 | Solution evaluation and final case study | Planned | Not yet created |
 

@@ -2,14 +2,14 @@
 
 **Version:** 0.1  
 **Date:** 28 October 2026  
-**Status:** Draft coverage review; all application tests Not run  
+**Status:** Draft coverage review; CART-T-04/05 blocked at readiness, other outlines Not run
 **Prepared by:** Kailas Krishnan
 
 ## Scope and interpretation
 
 Maps the first increment's seven functional requirements and 37 acceptance criteria to business sources, draft designs and planned test outlines. Sources are [requirements v0.3](cart-requirements.md), the [gap register](../process-analysis/gap-register.md), [decision record](../process-analysis/prioritization-and-decisions.md) and [wireframes v0.3](../wireframes/cart-wireframes.md). These are portfolio case-study artifacts; simulated decisions do not establish actual stakeholder approval.
 
-Each CART-T identifier below reserves a planned test outline, not an executed test or a complete UAT script. Execution status is **Not run** for every row. Actual results, execution dates, build references and evidence do not exist yet. Prototype checks reported in the wireframe notes do not count as application UAT. Parameterized outlines must be expanded into separately recorded cases in the detailed test plan.
+Each CART-T identifier below reserves a planned test outline, not an executed test or a complete UAT script. CART-T-04 and CART-T-05 are **Blocked** after the [28 October readiness check](../testing/cart-loading-readiness-2026-10-28.md). Other outlines remain **Not run**. No outlined application acceptance scenario has completed execution; readiness observations and build evidence are recorded separately. Prototype checks reported in the wireframe notes do not count as application UAT. Parameterized outlines must be expanded into separately recorded cases in the detailed test plan.
 
 Design coverage means that an illustrative screen exists. It does not prove implemented behaviour, backend consistency, feasibility, usability or accessibility. A mapped criterion is not necessarily ready for delivery. Open requirements and missing designs are tracked below; they are not silently counted as complete.
 
@@ -42,15 +42,15 @@ The CART-FR-07 register row in requirements v0.3 still says policy approval is p
 
 ## Acceptance criteria to planned tests
 
-The test status column describes application execution only. All expected outcomes below are proposals copied or summarized from the criteria, not actual results.
+The test status column describes application execution only. All expected outcomes below are proposals copied or summarized from the criteria, not actual results. See BLK-CART-01 in the readiness record for blocked prerequisites.
 
 | Criterion | Requirement | Design coverage | Planned test / expected verification | Execution |
 |---|---|---|---|---|
 | CART-AC-01 | CART-FR-01 | WF-N; illustrative | CART-T-01: Compare displayed product name, quantity, unit price, line total and CAD subtotal with owned saved-cart data. | Not run |
 | CART-AC-02 | CART-FR-01 | WF-N partial; multi-item layout missing | CART-T-02: Two mugs at CAD 12.50 plus one mouse at CAD 24.99 yield line totals CAD 25.00 / CAD 24.99 and subtotal CAD 49.99. | Not run |
 | CART-AC-03 | CART-FR-01 | WF-E | CART-T-03: Successful empty retrieval shows Cart is empty, CAD 0.00 and Continue shopping. | Not run |
-| CART-AC-04 | CART-FR-01 | WF-L | CART-T-04: Failed retrieval shows error and Retry; no confirmed empty-cart claim or zero subtotal. | Not run |
-| CART-AC-05 | CART-FR-01 | WF-L; retrieval integration absent | CART-T-05: Retry retrieves saved state without adding, updating or removing items. | Not run |
+| CART-AC-04 | CART-FR-01 | WF-L | CART-T-04: Failed retrieval shows error and Retry; no confirmed empty-cart claim or zero subtotal. | Blocked: BLK-CART-01 |
+| CART-AC-05 | CART-FR-01 | WF-L; retrieval integration absent | CART-T-05: Retry retrieves saved state without adding, updating or removing items. | Blocked: BLK-CART-01 |
 | CART-AC-06 | CART-FR-01 | WF-N / WF-E; product destination not designed | CART-T-06: Continue shopping returns to browsing with saved data unchanged; execute from empty and non-empty carts separately. | Not run |
 | CART-AC-07 | CART-FR-01 | All seven states | CART-T-07: Verify demo tax/shipping/payment notice wherever the cart is displayed. | Not run |
 | CART-AC-08 | CART-FR-02 | WF-N local interaction; persisted save absent | CART-T-08: Change two mugs to ten; confirm quantity 10, line/subtotal CAD 125.00 and success message. | Not run |
@@ -104,7 +104,7 @@ All role assignments above are proposed or simulated. They do not establish real
 - All seven CART-FR requirements have a business-source mapping.
 - All 37 existing CART-AC criteria have a mapped test outline; shared requirements are explicitly identified.
 - There are 37 planned test outlines, not 37 executed or passing tests. Parameter expansion will produce additional cases.
-- All application execution statuses are Not run. There is no recorded application acceptance evidence, baseline approval or release decision.
+- CART-T-04 and CART-T-05 are Blocked at readiness; the remaining 35 outlines are Not run. The readiness record is not completed application acceptance evidence. No baseline approval or release decision is recorded.
 - Missing criteria and designs remain visible; mapping completeness is not functional completeness.
 
 Next, review mappings with the proposed business/development/testing roles, then expand test outlines into detailed scripts with preconditions, synthetic data, steps, expected outcomes, environment/build, actual results, evidence and defect/retest references. Leave results blank until actual execution.
