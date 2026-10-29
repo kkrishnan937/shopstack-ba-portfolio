@@ -7,6 +7,8 @@
 
 ## Build and environment
 
+Uploaded implementation: [draft pull request](https://github.com/kkrishnan937/shopstack/pull/1) and [tested source revision](https://github.com/kkrishnan937/shopstack/tree/292b65e396db295763ef07cc109c324c7ca787ca). Review/merge/deployment are separate from this local execution.
+
 Application source commit: `292b65e396db295763ef07cc109c324c7ca787ca`, local branch `codex/cart-viewing-slice`. This commit records the already-executed source; no implementation source changed between the final run and that commit. Build fingerprint: `8366153a9da11ad2c05a73ae6caf1bd2fe1fae09a55d1b614bf9892f131a26e6`. [SHA-256 manifest](evidence/cart-view-2026-10-28/build-manifest.json) identifies exact tested files and built assets.
 
 Node v24.22.1, pinned PGlite 0.3.14 with a unique file-backed database, actual Express backend and authentication routes, actual Vite production build served through Express on an ephemeral loopback port, and headless Microsoft Edge. No browser-route response mocks. This is a real local SQL-backed application run, not the wireframe, but not a conventional deployed PostgreSQL server environment. Full production integration remains unverified.

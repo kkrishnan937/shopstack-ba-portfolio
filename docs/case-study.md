@@ -16,6 +16,8 @@ The [scope handoff](requirements/cart-readiness-change-and-handoff.md) selected 
 
 ## Delivered and verified
 
+[Implementation draft pull request](https://github.com/kkrishnan937/shopstack/pull/1); uploaded for review, not merged or deployed.
+
 The implemented React page uses actual authentication and Express cart routes with file-backed embedded PostgreSQL. It shows owned selections and CAD totals, offers Continue shopping, handles cart-read errors and Retry, and displays retained expiry explanations. Backend cart/order writes and frontend add controls are disabled in this increment.
 
 The executed fixture contained two mugs at CAD 12.50 and one mouse at CAD 24.99. A controlled backend read failure returned 503; the UI showed its error/Retry without empty-cart or zero-subtotal claims. Retry failed safely while the control remained, then recovered to **CAD 49.99** after removal. Database snapshots confirmed unchanged saved items and retention metadata.

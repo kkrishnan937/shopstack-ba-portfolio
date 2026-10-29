@@ -10,7 +10,7 @@ An independent Business Analyst case study using an existing e-commerce learning
 
 **Start here:** [One-page case study](docs/case-study.md) -> [executed acceptance results](docs/testing/cart-view-executed-2026-10-28.md) -> [failure screenshot](docs/testing/evidence/cart-view-2026-10-28/01-cart-load-failure.png) / [recovered cart](docs/testing/evidence/cart-view-2026-10-28/03-cart-recovered.png).
 
-**Actual outcome:** 9 planned cart-view test families and 5 supplemental checks passed against the real local UI/API and file-backed embedded PostgreSQL; 28 families remain Not run. No production deployment or independent sign-off is claimed. Implementation is committed locally on `codex/cart-viewing-slice`; remote publication is separate.
+**Actual outcome:** 9 planned cart-view test families and 5 supplemental checks passed against the real local UI/API and file-backed embedded PostgreSQL; 28 families remain Not run. No production deployment or independent sign-off is claimed. [Implementation draft pull request](https://github.com/kkrishnan937/shopstack/pull/1) is uploaded for review; it is not merged or deployed.
 
 ## Business context
 
