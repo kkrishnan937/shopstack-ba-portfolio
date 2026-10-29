@@ -20,7 +20,7 @@ Enable customers to register or log in, add products, review cart items and tota
 
 The simulated sponsor retained authentication before adding items. Guest cart and guest checkout are future proposals, not agreed release scope.
 
-Real payments and shipping/fulfilment are excluded. Demo orders must clearly state that no payment was taken and no shipping is arranged. The demo uses item-price subtotals without tax/shipping calculations and excludes stock checks and reservation. Measurement definitions, logout security guarantees and prolonged recovery remain open.
+Real payments and physical shipping/fulfilment remain excluded. Cart shows item-price subtotal only; CR-CART-01 now includes tax/shipping calculation at later demo checkout, with detailed inputs and rounding sequence still to define. No payment is taken or shipping arranged. Stock checks/reservation remain excluded. Logout invalidation is required; its design, session reconciliation and prolonged recovery remain open.
 
 ## Portfolio artifacts
 
@@ -35,11 +35,13 @@ Real payments and shipping/fulfilment are excluded. Demo orders must clearly sta
 | Future-state walkthrough | Review record v0.1 | [Read walkthrough](docs/process-analysis/future-state-walkthrough.md) |
 | Cart recovery workshop | Simulated findings; open recovery questions | [Read workshop notes](docs/discovery/cart-recovery-workshop-2026-10-25.md) |
 | Stakeholder analysis and engagement plan | Draft v0.2; simulated review and change control recorded; customer validation pending | [Read stakeholder plan](docs/discovery/stakeholder-analysis-and-engagement.md) |
-| Cart requirements, business rules, and acceptance criteria | Draft v0.3; 37 criteria; retention/price rules clarified; recovery and logout scope open | [Read requirements](docs/requirements/cart-requirements.md) |
+| Cart requirements, business rules, and acceptance criteria | Draft v0.4; 37 existing criteria; new readiness constraints require expansion | [Read requirements](docs/requirements/cart-requirements.md) |
+| Readiness changes and implementation handoff | CR-CART-01; direct author decisions, scope impact and simulated targets | [Read change and handoff](docs/requirements/cart-readiness-change-and-handoff.md) |
 | Cart wireframes | Draft v0.3; seven illustrative states including expiry and price changes; customer/UX review pending | [Review wireframes](docs/wireframes/cart-wireframes.md) |
 | Cart requirements traceability | Draft v0.1; 37 criteria mapped; 2 outlines blocked at readiness, 35 Not run | [Read traceability matrix](docs/requirements/cart-traceability-matrix.md) |
 | Cart-loading test readiness | Actual frontend inspection; application scenario blocked before execution | [Read readiness record](docs/testing/cart-loading-readiness-2026-10-28.md) |
 | Cart delivery-readiness actions | Actual blocker linked; ownership and dates remain simulated/unconfirmed | [Read handoff action log](docs/testing/cart-delivery-readiness-actions.md) |
+| Cart-viewing delivery workshop | Simulated slice planning; expiry-message persistence and API design proposed | [Read workshop findings](docs/discovery/cart-viewing-delivery-workshop.md) |
 | Defect-lifecycle training example | Hypothetical quantity mismatch; no observed defect or retest | [Read training example](docs/testing/hypothetical-quantity-defect-exercise.md) |
 | Detailed quantity-update UAT case | Draft v0.2; partial-result/access rules included; execution Not run | [Read UAT case](docs/testing/quantity-update-uat-case.md) |
 | Cart UAT test pack | Draft v0.1; 37 outline families expanded; execution evidence pending | [Read UAT pack](docs/testing/cart-uat-pack.md) |
@@ -70,4 +72,4 @@ Start with the discovery notes. Follow later artifacts through the table above a
 
 ## Current next step
 
-Consolidate the reviewed cart recovery behaviour and recorded decisions into the future-state process, then develop requirements and acceptance criteria. Decisions recorded on 25 October include 30-day cart retention, identical-variant merging, a 10-unit limit per product/variant, item-price subtotals without tax/shipping calculations, logout in the first increment, and exclusion of stock checks and inventory reservation. Implementation and UAT remain pending.
+Specify the read-only API contract and expand acceptance/test coverage for CR-CART-01, then estimate and implement the dedicated cart-view slice in an isolated environment. Revise affected designs and process flows. Retention is a release dependency; no mutations ship until session reconciliation, logout invalidation and retention contract close. Sprint targets are simulated, with no actual calendar commitments. Implementation and UAT remain pending.

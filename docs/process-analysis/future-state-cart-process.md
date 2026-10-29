@@ -7,6 +7,8 @@
 
 ## Purpose and boundaries
 
+**Latest change-impact notice:** [CR-CART-01](../requirements/cart-readiness-change-and-handoff.md) and requirements v0.4 add a dedicated cart page, server-authoritative cents, token-expiry reconciliation, persistent expiry reason/dismissal and required token invalidation. Wider checkout now calculates tax/shipping. This written v0.3 and diagram v0.4 require corresponding flow revision; older open-scope labels and pricing notices below are historical where conflicting. Technical contracts and estimates remain pending.
+
 Define how existing signed-in customers will review and manage their cart in the first increment. The process addresses [GAP-02 and GAP-03](gap-register.md), following [DEC-01](prioritization-and-decisions.md).
 
 The customer is already signed in. Registration and demo order submission remain part of the wider release rather than this increment. Logout is included in the first increment under DEC-06, but its success guarantees, token invalidation and failure behaviour remain unresolved. This draft describes intended behaviour, not implemented functionality or completed acceptance testing.

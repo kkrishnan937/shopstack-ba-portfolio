@@ -15,6 +15,8 @@ The revision adds 1-to-10 validation, conflicting-item restrictions and request-
 
 ## 1. Cart review
 
+**Pending revision:** Requirements v0.4 and [CR-CART-01](../requirements/cart-readiness-change-and-handoff.md) add later decisions not depicted here, including required invalidation, session reconciliation and backend amounts. These v0.4 diagrams remain the prior visual draft, not evidence that the new constraints are implemented or fully modeled.
+
 ![Cart review](ShopStack-Future-State-Cart-01.png)
 
 ## 2. Quantity update

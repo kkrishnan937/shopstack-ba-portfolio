@@ -7,6 +7,8 @@
 
 ## Scope and interpretation
 
+**Version-impact update:** Requirements v0.4 now revises CART-AC-07 and records new constraints in [CR-CART-01](cart-readiness-change-and-handoff.md). The 37 existing mappings remain useful, but do not cover all newly required behaviour. Dedicated-page, backend amount, session reconciliation, logout invalidation and expiry-flag lifecycle coverage must be expanded after contract review. Execution statuses are unchanged.
+
 Maps the first increment's seven functional requirements and 37 acceptance criteria to business sources, draft designs and planned test outlines. Sources are [requirements v0.3](cart-requirements.md), the [gap register](../process-analysis/gap-register.md), [decision record](../process-analysis/prioritization-and-decisions.md) and [wireframes v0.3](../wireframes/cart-wireframes.md). These are portfolio case-study artifacts; simulated decisions do not establish actual stakeholder approval.
 
 Each CART-T identifier below reserves a planned test outline, not an executed test or a complete UAT script. CART-T-04 and CART-T-05 are **Blocked** after the [28 October readiness check](../testing/cart-loading-readiness-2026-10-28.md). Other outlines remain **Not run**. No outlined application acceptance scenario has completed execution; readiness observations and build evidence are recorded separately. Prototype checks reported in the wireframe notes do not count as application UAT. Parameterized outlines must be expanded into separately recorded cases in the detailed test plan.
@@ -52,7 +54,7 @@ The test status column describes application execution only. All expected outcom
 | CART-AC-04 | CART-FR-01 | WF-L | CART-T-04: Failed retrieval shows error and Retry; no confirmed empty-cart claim or zero subtotal. | Blocked: BLK-CART-01 |
 | CART-AC-05 | CART-FR-01 | WF-L; retrieval integration absent | CART-T-05: Retry retrieves saved state without adding, updating or removing items. | Blocked: BLK-CART-01 |
 | CART-AC-06 | CART-FR-01 | WF-N / WF-E; product destination not designed | CART-T-06: Continue shopping returns to browsing with saved data unchanged; execute from empty and non-empty carts separately. | Not run |
-| CART-AC-07 | CART-FR-01 | All seven states | CART-T-07: Verify demo tax/shipping/payment notice wherever the cart is displayed. | Not run |
+| CART-AC-07 | CART-FR-01 | All seven states show older notice; design revision pending | CART-T-07: Verify cart-subtotal-only notice, tax/shipping at demo checkout, and no payment under requirements v0.4. | Not run |
 | CART-AC-08 | CART-FR-02 | WF-N local interaction; persisted save absent | CART-T-08: Change two mugs to ten; confirm quantity 10, line/subtotal CAD 125.00 and success message. | Not run |
 | CART-AC-09 | CART-FR-02 | WF-N local interaction; persisted save absent | CART-T-09: Change two mugs to one; confirm quantity 1, line/subtotal CAD 12.50 and success message. | Not run |
 | CART-AC-10 | CART-FR-02 | WF-N local validation; dedicated error capture missing | CART-T-10: Separately reject 0, -1, 1.5, text, blank and 11 with the agreed message and no saved quantity/total changes. | Not run |

@@ -6,6 +6,8 @@
 
 ## Scope, references and execution controls
 
+**Change impact:** Requirements v0.4 / [CR-CART-01](../requirements/cart-readiness-change-and-handoff.md) update the cart notice and add constraints beyond these original 37 families. T-07 below reflects the new wording. Add/review tests for backend cents, session conflicts/idempotency, logout invalidation, and persisted expiry reason/view-local dismissal before claiming full coverage. Execution results remain unchanged.
+
 Expands the [37 planned outlines](../requirements/cart-traceability-matrix.md) for [requirements v0.3](../requirements/cart-requirements.md). CART-T-11 has its detailed procedure in [CART-UAT-01 v0.2](quantity-update-uat-case.md); the other 36 outlines are expanded here. These are draft procedures, not executed results. Scenario families with multiple variants need a separate execution record per variant. No baseline approval, technical feasibility or customer acceptance is implied.
 
 The [actual readiness inspection](cart-loading-readiness-2026-10-28.md) blocked CART-T-04 and CART-T-05 before scenario execution. That recorded status is preserved. Other outlines remain Not run; this does not assert they are ready. Missing implementation and environment prerequisites must be checked before each execution. Recovery and logout cases also need decisions before expected behaviour can be baselined.
@@ -59,7 +61,7 @@ For the procedures below, expected results are not actual results. Preserve resu
 | CART-T-04 / CART-AC-04 | F1 once prerequisites exist. 1. Developer/tester enables a reversible cart-read server error. 2. Customer opens View cart. 3. Inspect message, action and totals area. | Couldn't load your cart. Please try again.; Retry available; no confirmed empty-cart or zero-subtotal claim. Current actual readiness results are in BLK-CART-01, not an executed server-error scenario. | Blocked: BLK-CART-01 | |
 | CART-T-05 / CART-AC-05 | Continue controlled setup from T-04. 1. Record saved fixture. 2. Select Retry with failure active. 3. Verify another cart read and repeated error. 4. Remove failure; select Retry again. 5. Compare displayed and saved data. | Retry reads rather than mutates. Error remains while failure is active; recovery shows original F1 values and clears the load error. No items/quantities changed. | Blocked: BLK-CART-01 | |
 | CART-T-06 / CART-AC-06 | Run separately from F0 and F1. 1. Open cart. 2. Select Continue shopping. 3. Reopen cart through a fresh retrieval and compare saved contents. | Navigate to product browsing; saved contents unchanged in both variants. | Not run | |
-| CART-T-07 / CART-AC-07 | Run against each implemented cart state in scope; log unavailable states separately. 1. Open/trigger the state. 2. Inspect demo pricing wording. | Demo only. Tax and shipping are not calculated. No payment is taken. Wording does not promise actual payment or delivery. | Not run | |
+| CART-T-07 / CART-AC-07 | Run against each implemented cart state in scope; log unavailable states separately. 1. Open/trigger the state. 2. Inspect pricing wording under requirements v0.4. | Cart subtotal only. Tax and shipping are calculated at demo checkout. No payment is taken. Do not interpret this scope notice as evidence of implemented checkout. | Not run | |
 
 ## Quantity validation and confirmed outcomes
 

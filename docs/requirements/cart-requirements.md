@@ -1,11 +1,13 @@
 # First-increment cart requirements
 
-**Version:** 0.3
-**Date:** 25 October 2026  
+**Version:** 0.4
+**Date:** 28 October 2026
 **Status:** Draft consolidated from simulated requirements workshops; review pending  
 **Author:** Kailas Krishnan, portfolio author practising the BA role
 
 ## Scope and evidence
+
+**Latest change:** [CR-CART-01](cart-readiness-change-and-handoff.md) records the author's dedicated-page, server amount, token-expiry reconciliation, expiry-flag, logout invalidation and release-gate decisions. It also adds tax/shipping calculation to wider checkout scope, with calculation inputs still open. Existing 37 criteria need expansion for these new constraints. Earlier proposals are superseded where they conflict; this is not an independently approved or implemented baseline.
 
 Consolidates the cart-review and quantity-update criteria practised in discussion. These describe intended behaviour, not implemented features, executed tests, or independent stakeholder approval. Request-status tracking and safe resolution are proposed capabilities whose feasibility has not been verified. Simulated estimates and release dates are not actual project forecasts.
 
@@ -20,10 +22,10 @@ IDs in this document form the portfolio's working story namespace. The earlier s
 | CART-FR-01 | A signed-in customer can review their saved cart, prices, quantities and subtotal, and return to browsing without changing it. | GAP-02; US-01 below | Draft criteria prepared |
 | CART-FR-02 | A signed-in customer can request valid quantity changes, with confirmed outcomes and accurate totals. | GAP-03; US-02 below | Draft criteria prepared; recovery gaps open |
 | CART-FR-03 | A customer can remove an entire cart line and receive an accurate resulting cart state. | GAP-03 | Main and confirmed-failure criteria drafted; unknown-outcome recovery open |
-| CART-FR-04 | A customer can log out while retaining the saved cart under its retention rule. | DEC-06 | Success criterion drafted; failure criteria pending |
+| CART-FR-04 | A customer can log out, invalidating the token while retaining the saved cart under its retention rule. | DEC-06; CR-CART-01 | Required release blocker; design, failure and verification criteria pending |
 | CART-FR-05 | Identical product/variant additions merge, subject to the combined quantity limit. | DEC-03, DEC-04 | Main and exception criteria drafted; review gaps open |
 | CART-FR-06 | Saved cart retention follows the 30-day inactivity rule. | DEC-02 | Main and exception criteria drafted; review gaps open |
-| CART-FR-07 | Current catalog prices are reflected with explicit notice when a cart item's price changes. | Workshop proposal | Conditional criteria drafted; policy approval pending |
+| CART-FR-07 | Current catalog prices are reflected with explicit notice when a cart item's price changes. | DEC-09 | Policy recorded for case study; implementation and independent review pending |
 
 ## Working business rules
 
@@ -31,12 +33,15 @@ IDs in this document form the portfolio's working story namespace. The earlier s
 |---|---|---|
 | CART-BR-01 | Quantity is a whole number from 1 to 10 per product/variant. The limit includes merged additions. | DEC-04 |
 | CART-BR-02 | Invalid input does not change saved quantities, line totals or subtotal. Zero is not a removal action. | Process rules; simulated refinement |
-| CART-BR-03 | Line total equals quantity multiplied by unit price; subtotal equals the sum of line totals. Display CAD with two decimal places. | DEC-05 |
+| CART-BR-03 | Backend calculates amounts in integer cents; client formats authoritative values as CAD with two decimals. Line total is quantity times unit price; subtotal sums line totals. No tax/shipping total in cart. | DEC-05 amended by CR-CART-01 |
 | CART-BR-04 | Show success only after the requested change is confirmed. An absent response or failed status check does not establish failure or continued processing. | Recovery workshop and refinement |
 | CART-BR-05 | While an item's earlier update is processing or unconfirmed, prevent further quantity updates and removal of that item. Status checks do not repeat a mutation. | Simulated recovery decision; technical review pending |
 | CART-BR-06 | Re-enable removal after the original request is resolved and can no longer alter the cart, and fresh saved-cart retrieval succeeds with the item present. | Simulated refinement |
 | CART-BR-07 | No stock checks or reservation are included. The quantity limit does not guarantee availability. | DEC-07 |
 | CART-BR-08 | Retain the account cart for 30 days after its last successful addition, update or removal. Login expiry, logout, viewing and refreshing do not extend retention. | DEC-02, DEC-06 |
+| CART-BR-09 | Token lapse requires sign-in before protected changes. Backend reconciles pre-expiry updates using idempotency keys and cart versions; stale versions return conflict and require refetch before safe retry. | CR-CART-01; contract details pending |
+| CART-BR-10 | Cart-record expiry flag survives repeat visits and failed additions; clear only on successful addition. Dismiss hides the explanation for the current view only. Session expiry does not trigger it. Later removal does not restore old expiry reason. | CR-CART-01 |
+| CART-BR-11 | No cart mutations ship until session-expiry reconciliation, logout token invalidation and retention response contract close. Other release conditions remain applicable. | CR-CART-01 |
 
 ## US-01: Review my cart
 
@@ -52,7 +57,7 @@ Each criterion assumes access to the customer's own cart.
 | CART-AC-04 | When cart retrieval fails | Show "Couldn't load your cart. Please try again." and Retry. Do not represent the cart as confirmed empty or its subtotal as confirmed zero. |
 | CART-AC-05 | Given a cart-loading failure, when the customer selects Retry | Retrieve the current saved cart again without adding, updating or removing items. |
 | CART-AC-06 | Given an empty or non-empty cart, when the customer selects Continue shopping | Return to product browsing on the home page without changing saved items. |
-| CART-AC-07 | When the cart is displayed | Show "Demo only. Tax and shipping are not calculated. No payment is taken." |
+| CART-AC-07 | When the cart is displayed | Show "Cart subtotal only. Tax and shipping are calculated at demo checkout. No payment is taken." This identifies the wider checkout policy, not existing implementation. |
 
 ## US-02: Update cart quantity
 
@@ -149,11 +154,17 @@ These cases assume no unresolved in-flight cart changes. Time T denotes the reco
 | CART-Q-04 | Complete session-expiry criteria, including safe handling of an update accepted before expiry. Do not assume expiry cancels an in-flight request. | Developer, product owner, tester |
 | CART-Q-05 | Review accessibility, focus, status announcements, messages, and how blocked actions are explained. | UX/content, tester, customer representative |
 | CART-Q-06 | Review US-03 through US-07 criteria; complete removal unknown-outcome recovery and logout failure. Define retention-message behaviour and expiry interactions with in-flight requests. DEC-08 and DEC-09 now clarify elapsed-time boundaries and basic current-price policy. Add explicit successful-addition/removal retention-reset cases in test planning. | BA, product owner, developer, tester |
-| CART-Q-08 | Decide what successful logout guarantees and whether token invalidation belongs in the increment. Current code uses 24-hour JWTs with no implemented logout/revocation; clearing browser state does not revoke copied tokens. Technical investigation remains proposed, with no verified estimate. | Product owner, developer / technical lead, tester |
+| CART-Q-08 | Token invalidation is required as a release blocker under CR-CART-01. Define scope, failure handling, active-request boundaries and verification; current code has no implemented logout/revocation. No verified estimate or actual assignee. | Backend/Security, product owner, tester |
 | CART-Q-07 | Reconcile process diagrams and written process with the later rules, and trace criteria to tests before execution. | BA with delivery review |
+
+### Updated disposition under CR-CART-01
+
+CART-Q-04 now needs criteria/contract expansion for required token-lapse, idempotency and cart-version conflict handling. CART-Q-06 now has a decided message-lifetime/dismissal rule; storage/API details, in-flight interactions and criteria remain open. CART-Q-08 no longer asks whether invalidation belongs in scope: it is required as a release blocker, with technical design, failure behaviour and verification open. Simulated owners/targets are Backend/Security in Sprint 1 for invalidation, Backend Lead in Sprint 1 for retention contract, and Product/UX in Sprint 2 for prolonged recovery. No actual staffing, dates or estimates are established.
+
+Additional review: define integer-cent amount fields and authoritative backend calculations; define checkout tax/shipping rates, bases and exact once-per-order half-up rounding sequence. No regulatory assumptions or checkout implementation are supplied.
 
 ## Readiness and next step
 
 This is a review draft, not a release baseline. The full update story is not ready for release while prolonged recovery is unresolved. Independent validation and confirmed-outcome work may progress if the delivery team agrees the split; testing requires implemented behaviour. No criteria in this document have recorded execution results.
 
-Next: resolve or explicitly defer the remaining cart review gaps, then return to the stakeholder plan review as requested by the portfolio author. Version 0.3 adds CART-AC-32 through CART-AC-37, records retention and price decisions, and keeps logout scope and prolonged recovery open. All criteria remain unexecuted.
+Next: specify the read-only API contract and expand criteria under CR-CART-01, then estimate the cart-view slice. Version 0.4 retains 37 criterion IDs, revises CART-AC-07 and adds readiness constraints. All criteria remain unexecuted. Existing test/design mappings need change-impact review; the 37 criteria do not exhaust the new scope.

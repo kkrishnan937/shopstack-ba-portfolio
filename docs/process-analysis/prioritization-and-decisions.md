@@ -7,6 +7,8 @@
 
 ## Purpose
 
+**Latest amendment:** [CR-CART-01, 28 October 2026](../requirements/cart-readiness-change-and-handoff.md) records direct portfolio-author decisions. It supersedes earlier alternatives for cart layout, calculation ownership, session reconciliation, expiry-message lifetime and invalidation scope. It also changes DEC-05's wider tax/shipping-calculation exclusion: cart remains subtotal-only, with tax/shipping calculation at demo checkout. Earlier entries remain historical; implementation and independent baseline review are pending.
+
 Record proposed business priorities, delivery dependencies, and the rationale for the first increment. Business priority describes importance to the release objective; delivery order also considers dependencies and which customers an increment serves.
 
 Related artifacts: [gap register](gap-register.md), [current-state diagram](ShopStack-Current-State-Improved.png), and [discovery notes](../discovery/meeting-notes-2026-10-23.md).

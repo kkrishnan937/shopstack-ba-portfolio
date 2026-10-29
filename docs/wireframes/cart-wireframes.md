@@ -6,6 +6,8 @@
 
 ## Purpose and scope
 
+**Change-impact notice:** [CR-CART-01](../requirements/cart-readiness-change-and-handoff.md) and requirements v0.4 supersede some assumptions in this v0.3 design. A dedicated page, backend-authoritative amounts, view-local expiry dismissal and revised cart/checkout notice now require design revision. Preview calculations are illustrative; its broad "tax and shipping are not calculated" notice is outdated for wider checkout scope. No actual UI implementation or updated design is claimed by this notice.
+
 Explore the first increment's normal, empty, expired, price-increase, price-decrease, loading-failure and unconfirmed-update states. These are illustrative wireframes with local demonstration interactions, not a working application, verified backend integration, customer validation or executed UAT. The portfolio author gave positive initial feedback on the initial designs; this does not establish requirements approval or usability validation of later changes.
 
 [Download the interactive preview](cart-wireframes.html) and open it locally in a browser. GitHub's file view displays the HTML source rather than hosting the interactive preview. No website deployment is claimed. The Review state selector and acceptance-criteria captions are review aids, not proposed storefront controls.
