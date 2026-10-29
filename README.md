@@ -2,6 +2,8 @@
 
 **How I took a missing cart-review journey from discovery to requirements, delivery decisions and executed acceptance evidence.**
 
+**[Read the portfolio website](https://kkrishnan937.github.io/shopstack-ba-portfolio/)** · [Website source](website/)
+
 I acted as the **Business Analyst** in this independent e-commerce portfolio project. I used AI agents to simulate the sponsor, product owner, developer/technical lead, tester, UX and customer-reviewer roles. I asked questions, challenged assumptions, documented decisions and connected business needs to testable requirements.
 
 > Stakeholder discussions, assignments, estimates and approvals were simulated. AI agents also assisted with analysis, documentation, implementation and automated testing. The linked application evidence comes from actual local and CI runs. This was not a real client engagement, and independent customer validation and business sign-off have not occurred.
