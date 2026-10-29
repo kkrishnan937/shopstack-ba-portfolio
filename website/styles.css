@@ -53,3 +53,18 @@ footer{font-size:13px}
   .hero-actions{align-items:flex-start;flex-direction:column;gap:18px}
 }
 @media(max-width:380px){.brand{font-size:14px}.brand small{font-size:10px}.tag{font-size:12px}.project-facts div{padding:13px}dd{font-size:14px}}
+
+/* Personal portfolio masthead, based on the supplied header reference. */
+.site-header{height:auto;min-height:82px;padding:0 32px}
+.header-inner{width:min(1400px,100%);margin:auto;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:36px;padding:17px 0}
+.brand{font-size:19px;gap:14px;white-space:nowrap}
+.brand small{font-size:14px;line-height:1.5;letter-spacing:0}
+.profile-avatar{width:44px;height:44px;border-radius:50%;object-fit:cover;border:2px solid var(--ink);flex-shrink:0}
+.site-header nav{font-size:17px;font-weight:600;gap:34px;justify-content:center}
+.header-actions{display:flex;align-items:center;justify-content:flex-end;gap:12px}
+.header-actions .icon-button{width:49px;height:49px;flex-shrink:0}
+.connect-button{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:9px 22px;border-radius:28px;background:var(--ink);color:var(--bg);font-size:17px;font-weight:600;white-space:nowrap}
+.connect-button:hover{background:var(--accent);color:var(--bg)}
+@media(max-width:1150px){.header-inner{grid-template-columns:1fr auto;gap:16px}.site-header nav{grid-row:2;grid-column:1/-1;padding-top:9px;border-top:1px solid var(--line);font-size:15px;gap:30px}.header-actions{grid-column:2;grid-row:1}}
+@media(max-width:760px){.site-header{padding:0 20px}.header-inner{padding:14px 0}.brand{font-size:17px}.brand small{font-size:12px}.profile-avatar{width:40px;height:40px}.header-actions{gap:8px}.header-actions .icon-button{width:42px;height:42px}.connect-button{font-size:14px;min-height:42px;padding:8px 16px}.site-header nav{gap:24px;justify-content:flex-start;overflow:auto;font-size:14px}.site-header nav>a{display:block;white-space:nowrap}}
+@media(max-width:420px){.site-header{padding:0 14px}.brand{font-size:15px;gap:9px}.brand small{font-size:11px}.profile-avatar{width:36px;height:36px}.connect-button{padding:8px 12px;font-size:12px}.header-actions .icon-button{width:36px;height:36px}.header-inner{gap:10px}.site-header nav{gap:22px}}
