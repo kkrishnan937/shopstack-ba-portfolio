@@ -6,3 +6,50 @@
 @media(max-width:760px){.wrap{width:calc(100% - 40px)}.site-header{height:74px;padding:0 20px}.site-header nav{gap:18px}.site-header nav>a{display:none}.brand small{font-size:10px}.hero{padding-top:30px}.breadcrumbs{margin-bottom:30px}h1{font-size:66px}.intro{font-size:16px}.hero>.eyebrow{font-size:9px}.project-facts{grid-template-columns:repeat(2,1fr);margin-bottom:30px}.project-facts div{padding:17px}.project-facts div:nth-child(2){border-right:0}.project-facts div:nth-child(-n+2){border-bottom:1px solid var(--line)}.disclosure{padding:17px;font-size:11px}.hero-actions{gap:20px}.button{padding:11px 15px;font-size:12px;gap:18px}.text-link{font-size:12px}.section-nav nav{gap:24px}.summary-strip{grid-template-columns:1fr;gap:22px;padding:30px 0}.summary-strip p{margin-top:5px}.chapter{padding:45px 0}h2{font-size:34px}.steps{grid-template-columns:repeat(2,1fr)}.steps article{padding:20px}.steps article:nth-child(3n){border-right:1px solid var(--line)}.steps article:nth-child(2n){border-right:0}.steps article:nth-last-child(-n+3){border-bottom:1px solid var(--line)}.steps article:nth-last-child(-n+2){border-bottom:0}.flow{justify-content:flex-start;font-size:9px;gap:10px}.evidence-toolbar{flex-direction:column;align-items:flex-start}.scenario{padding:20px}.results{gap:10px}.results>div{padding-left:13px}.results strong{font-size:48px}.results span{font-size:10px;line-height:1.5;display:block}.document{grid-template-columns:1fr 20px;gap:7px;padding:17px 3px}.document .category{grid-column:1/-1}.document p{font-size:11px}.lessons{grid-template-columns:1fr;gap:23px}.closing{padding:50px 0}.closing h2{font-size:48px}footer{flex-direction:column}.evidence-links{gap:20px}.hero:before{right:0;width:100%}}
 @media(max-width:380px){h1{font-size:55px}.hero-actions{align-items:flex-start;flex-direction:column;gap:18px}.steps{grid-template-columns:1fr}.steps article:nth-child(n){border-right:0;border-bottom:1px solid var(--line)}.steps article:last-child{border:0}.tag{font-size:10px}.brand{font-size:13px}.brand small{font-size:9px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+
+/* Larger reading sizes for the public case study. */
+.intro{font-size:21px}
+.brand{font-size:17px}.brand small{font-size:13px}
+.site-header nav{font-size:15px}
+.breadcrumbs,.tag,.text-link,.button{font-size:14px}
+.eyebrow,.hero>.eyebrow{font-size:12px}
+.disclosure{font-size:15px}
+dt{font-size:11px}dd{font-size:15px}
+.section-nav nav{font-size:14px}
+.summary-strip p{font-size:17px}
+h2{font-size:46px}h3{font-size:21px}
+.prose,.section-lead{font-size:19px}
+blockquote p{font-size:32px}
+.artifact-link{font-size:15px}
+.steps .eyebrow{font-size:11px}
+.steps p,.lessons p{font-size:17px}
+.flow{font-size:13px}
+.decision-list p{font-size:18px}
+.scope-label{font-size:13px}
+.scenario ol{font-size:17px}
+.evidence-toolbar>span{font-size:11px}
+.evidence-toolbar button,.filters button{font-size:14px;min-height:44px}
+.evidence-view>p,.note{font-size:14px}
+.results span{font-size:15px}
+.document .category{font-size:11px}
+.document h3{font-size:18px}.document p{font-size:15px}
+.lessons h3{font-size:30px}
+.limits p,.closing>p:not(.eyebrow){font-size:17px}
+footer{font-size:13px}
+@media(max-width:760px){
+  .intro{font-size:19px}
+  .brand{font-size:16px}.brand small{font-size:11px}
+  .disclosure{font-size:14px}
+  .hero>.eyebrow{font-size:11px}
+  h2{font-size:38px}h3{font-size:20px}
+  .prose,.section-lead,.decision-list p{font-size:17px}
+  .steps{grid-template-columns:1fr}
+  .steps article:nth-child(n){border-right:0;border-bottom:1px solid var(--line)}
+  .steps article:last-child{border-bottom:0}
+  .steps p,.lessons p,.scenario ol{font-size:16px}
+  .flow{font-size:12px}
+  .results span{font-size:13px}
+  .document p{font-size:14px}
+  .hero-actions{align-items:flex-start;flex-direction:column;gap:18px}
+}
+@media(max-width:380px){.brand{font-size:14px}.brand small{font-size:10px}.tag{font-size:12px}.project-facts div{padding:13px}dd{font-size:14px}}
