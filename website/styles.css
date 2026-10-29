@@ -55,6 +55,8 @@ footer{font-size:13px}
 @media(max-width:380px){.brand{font-size:14px}.brand small{font-size:10px}.tag{font-size:12px}.project-facts div{padding:13px}dd{font-size:14px}}
 
 /* Personal portfolio masthead, based on the supplied header reference. */
+.contribution{margin:34px 0;padding:26px 28px;border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:8px;background:var(--panel)}
+.contribution h2{font-size:32px;margin-bottom:17px}.contribution p{font-size:16px;color:var(--muted);margin-bottom:13px}.contribution p:last-child{margin-bottom:0}.contribution strong{color:var(--ink)}
 .site-header{height:auto;min-height:82px;padding:0 32px}
 .header-inner{width:min(1400px,100%);margin:auto;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:36px;padding:17px 0}
 .brand{font-size:19px;gap:14px;white-space:nowrap}

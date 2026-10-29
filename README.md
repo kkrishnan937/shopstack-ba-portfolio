@@ -8,6 +8,14 @@ I acted as the **Business Analyst** in this independent e-commerce portfolio pro
 
 > Stakeholder discussions, assignments, estimates and approvals were simulated. AI agents also assisted with analysis, documentation, implementation and automated testing. The linked application evidence comes from actual local and CI runs. This was not a real client engagement, and independent customer validation and business sign-off have not occurred.
 
+### How I directed AI agents
+
+**I authored and decided:** I authored and refined the cart business rules and acceptance scenarios with AI feedback. I decided on the 10-unit limit per product/variant, the 30-day retention rule, and checking an unknown update before retrying it.
+
+**I delegated:** I delegated stakeholder role-play, document drafting, code implementation and automated test execution to AI agents.
+
+**I reviewed:** I directed the agents through questions and corrections, checked their proposed behavior against the agreed rules, and kept simulated findings separate from agent-produced execution evidence.
+
 **Start here:** [My one-page case study](docs/case-study.md) · [Actual execution evidence](docs/testing/cart-review-2026-10-28.md) · [Requirements](docs/requirements/cart-requirements.md)
 
 ## The business problem

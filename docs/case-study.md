@@ -10,6 +10,12 @@ I acted as the Business Analyst in this independent learning project. I used AI 
 
 ## Analysis and decisions
 
+**I authored and decided:** I authored and refined the cart business rules and acceptance scenarios with AI feedback, including the 10-unit limit per product/variant, the 30-day retention rule, and checking an unknown update before retrying it.
+
+**I delegated:** AI agents simulated stakeholder roles, drafted documents, implemented the code and executed automated tests.
+
+**I reviewed:** I directed agents through questions and corrections, checked proposed behavior against agreed rules, and distinguished simulated findings from agent-produced execution evidence.
+
 I connected the missing customer capability through a [gap register](process-analysis/gap-register.md), [requirements](requirements/cart-requirements.md), [process diagrams](process-analysis/future-state-diagrams.md), [wireframes](wireframes/cart-wireframes.md) and a [traceability matrix](requirements/cart-traceability-matrix.md). I clarified that retrieval failure does not prove a cart is empty: Retry must retrieve saved data without adding, updating or removing selections.
 
 I documented a dedicated mobile-readable cart page, backend-authoritative integer-cent amounts and separate ordinary-empty, cart-expired and login-expired states in the [scope handoff](requirements/cart-readiness-change-and-handoff.md). I bounded the first slice to cart viewing and recorded the open gates affecting mutation work.
