@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="627" viewBox="0 0 1200 627">
+  <defs>
+    <radialGradient id="glow" cx="100%" cy="0%" r="100%"><stop stop-color="#174239"/><stop offset="1" stop-color="#0b1115"/></radialGradient>
+    <pattern id="grid" width="72" height="72" patternUnits="userSpaceOnUse"><path d="M72 0H0V72" fill="none" stroke="#82cfbd" stroke-opacity=".055"/></pattern>
+  </defs>
+  <rect width="1200" height="627" fill="#0b1115"/>
+  <rect width="1200" height="627" fill="url(#glow)"/>
+  <rect width="1200" height="627" fill="url(#grid)"/>
+  <rect x="56" y="51" width="5" height="28" rx="2" fill="#82cfbd"/>
+  <text x="79" y="73" fill="#82cfbd" font-family="Arial, sans-serif" font-size="20" font-weight="700" letter-spacing="4">SHOPSTACK</text>
+  <text x="1138" y="72" text-anchor="end" fill="#a4b5b8" font-family="Arial, sans-serif" font-size="16" letter-spacing="1">MY BUSINESS ANALYSIS PORTFOLIO</text>
+  <text x="58" y="192" fill="#edf0ef" font-family="Georgia, 'Times New Roman', serif" font-size="64">What do you tell a customer</text>
+  <text x="58" y="273" fill="#edf0ef" font-family="Georgia, 'Times New Roman', serif" font-size="64">when you don’t know</text>
+  <text x="58" y="358" fill="#82cfbd" font-family="Georgia, 'Times New Roman', serif" font-size="74" font-style="italic">what happened?</text>
+  <text x="61" y="425" fill="#b5c2c5" font-family="Arial, sans-serif" font-size="24">My BA case study · Requirements, decisions &amp; evidence</text>
+  <line x1="60" y1="476" x2="1140" y2="476" stroke="#34454b"/>
+  <text x="61" y="524" fill="#dbe4e4" font-family="Arial, sans-serif" font-size="20">I directed the analysis. AI agents supported the delivery.</text>
+  <text x="61" y="565" fill="#91a3a7" font-family="Arial, sans-serif" font-size="17">SIMULATED STAKEHOLDER ROLES · ACTUAL EXECUTION EVIDENCE</text>
+  <text x="1138" y="565" text-anchor="end" fill="#82cfbd" font-family="Arial, sans-serif" font-size="18">Kailas Krishnan ↗</text>
+</svg>
