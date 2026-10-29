@@ -1,0 +1,26 @@
+{
+  "id": "cart-1",
+  "version": 1,
+  "currency": "CAD",
+  "state": "active",
+  "expiryReason": null,
+  "items": [
+    {
+      "id": 1,
+      "productId": 4,
+      "name": "Coffee Mug",
+      "quantity": 2,
+      "unitPriceCents": 1250,
+      "lineTotalCents": 2500
+    },
+    {
+      "id": 2,
+      "productId": 1,
+      "name": "Wireless Mouse",
+      "quantity": 1,
+      "unitPriceCents": 2499,
+      "lineTotalCents": 2499
+    }
+  ],
+  "subtotalCents": 4999
+}

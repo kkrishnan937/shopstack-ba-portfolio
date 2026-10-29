@@ -4,13 +4,13 @@
 
 **Customer Purchase Journey Improvement**  
 **Author:** Kailas Krishnan  
-**Status:** Read-only cart slice implemented and locally acceptance-tested; wider release incomplete
+**Status:** Read-only cart slice verified locally and in CI on PostgreSQL 17; wider release incomplete
 
 An independent Business Analyst case study using an existing e-commerce learning application to practise an end-to-end business analysis workflow. This repository will grow as discovery, process analysis, requirements, validation, and evaluation work is completed and reviewed.
 
 **Start here:** [One-page case study](docs/case-study.md) -> [executed acceptance results](docs/testing/cart-view-executed-2026-10-28.md) -> [failure screenshot](docs/testing/evidence/cart-view-2026-10-28/01-cart-load-failure.png) / [recovered cart](docs/testing/evidence/cart-view-2026-10-28/03-cart-recovered.png).
 
-**Actual outcome:** 9 planned cart-view test families and 5 supplemental checks passed against the real local UI/API and file-backed embedded PostgreSQL; 28 families remain Not run. No production deployment or independent sign-off is claimed. [Implementation draft pull request](https://github.com/kkrishnan937/shopstack/pull/1) is uploaded for review; it is not merged or deployed.
+**Actual outcome:** 9 planned cart-view test families and 6 supplemental checks passed locally and in CI on embedded PostgreSQL and PostgreSQL 17; 28 families remain Not run. [Review findings and durable evidence](docs/testing/cart-review-2026-10-28.md). The owner merged [initial PR #1](https://github.com/kkrishnan937/shopstack/pull/1); [follow-up PR #2](https://github.com/kkrishnan937/shopstack/pull/2) remains a draft with passing checks. The existing AWS workflow failed before deployment. No production release or independent sign-off is claimed.
 
 ## Business context
 

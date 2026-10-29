@@ -16,16 +16,16 @@ The [scope handoff](requirements/cart-readiness-change-and-handoff.md) selected 
 
 ## Delivered and verified
 
-[Implementation draft pull request](https://github.com/kkrishnan937/shopstack/pull/1); uploaded for review, not merged or deployed.
+[Initial implementation](https://github.com/kkrishnan937/shopstack/pull/1) merged by the repository owner; [review fixes and CI](https://github.com/kkrishnan937/shopstack/pull/2) remain a draft. Production deployment is unconfirmed.
 
-The implemented React page uses actual authentication and Express cart routes with file-backed embedded PostgreSQL. It shows owned selections and CAD totals, offers Continue shopping, handles cart-read errors and Retry, and displays retained expiry explanations. Backend cart/order writes and frontend add controls are disabled in this increment.
+The implemented React page uses actual authentication and Express cart routes, verified on embedded PostgreSQL and PostgreSQL 17. It shows owned selections and CAD totals, offers Continue shopping, handles cart-read errors and Retry, and displays retained expiry explanations. Backend cart/order writes and frontend add controls are disabled in this increment.
 
 The executed fixture contained two mugs at CAD 12.50 and one mouse at CAD 24.99. A controlled backend read failure returned 503; the UI showed its error/Retry without empty-cart or zero-subtotal claims. Retry failed safely while the control remained, then recovered to **CAD 49.99** after removal. Database snapshots confirmed unchanged saved items and retention metadata.
 
-**Results: 9 planned test families passed, plus 5 supplemental checks; 28 planned families remain Not run.** See the [actual execution record](testing/cart-view-executed-2026-10-28.md), [failure screenshot](testing/evidence/cart-view-2026-10-28/01-cart-load-failure.png), [recovered cart](testing/evidence/cart-view-2026-10-28/03-cart-recovered.png) and [machine-readable results](testing/evidence/cart-view-2026-10-28/run-results.json). Evidence includes source/build fingerprints and a database close/reopen persistence check. The original local readiness blocker is resolved for this slice.
+**Results: 9 planned families plus 6 supplemental checks passed on both CI database adapters; 28 planned families remain Not run.** See the [review and execution evidence](testing/cart-review-2026-10-28.md), [failure screenshot](testing/evidence/cart-review-postgres-2026-10-28/01-cart-load-failure.png), [recovered cart](testing/evidence/cart-review-postgres-2026-10-28/03-cart-recovered.png) and [PostgreSQL results](testing/evidence/cart-review-postgres-2026-10-28/run-results.json). Evidence includes source/build fingerprints and persistence checks. The original local readiness blocker is resolved for this slice.
 
 ## Limits and lesson
 
-This is local agent-executed acceptance evidence, not independent business approval or production validation. Embedded PostgreSQL differs from a deployed server. Quantity changes, removal, logout revocation, safe mutation recovery and checkout are not delivered; exact retention boundaries and full accessibility remain unverified. Legacy cart-age migration is an explicit tradeoff, not assumed historical knowledge.
+This is agent-executed local/CI acceptance evidence, not independent business approval or production validation. The existing cloud workflow failed at AWS credential configuration. Quantity changes, removal, logout revocation, safe mutation recovery and checkout are not delivered; exact retention boundaries and full accessibility remain unverified. Legacy cart-age migration is an explicit tradeoff.
 
 The principal lesson was to stop at a testable scope: one traced business need, working UI/API/data integration, and reproducible failure/recovery evidence demonstrated more than additional unexecuted documents. Next work should extend that verified path without erasing its boundaries or overstating business results.
