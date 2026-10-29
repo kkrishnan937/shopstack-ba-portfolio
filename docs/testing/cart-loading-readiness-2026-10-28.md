@@ -7,6 +7,8 @@
 
 ## Environment and scope
 
+**Later resolution:** The [executed read-only slice](cart-view-executed-2026-10-28.md) implemented the missing path and supplied actual login, isolated persisted data and controlled server errors. T-04/05 now Pass for that environment. This document preserves the original blocked-readiness history.
+
 Actual local frontend readiness inspection using Vite and headless Microsoft Edge, not the wireframe. Application checkout HEAD: `4f918f173bb8328750e4455af780759f76f82a28`. Portfolio HEAD before this record: `fd91401108ca3a7f066ef6950a50442423740f94`. No tracked application source modifications were made for this check. The isolated browser context was logged out; no real credentials, tokens or customer data were used.
 
 The frontend was served on local loopback port 5173. The backend API/database were not available for this run. This limits runtime observations; source inspection separately establishes that the frontend has no cart-view/retry implementation. No authenticated journey, controlled cart-read failure, retained database state or retry recovery was executed.

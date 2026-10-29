@@ -1,16 +1,18 @@
 # Cart UAT test pack
 
-**Version:** 0.1  
+**Version:** 0.2
 **Prepared:** 28 October 2026  
-**Status:** Draft for business, technical and test review; no acceptance scenarios completed
+**Status:** 9 families executed Pass locally; 28 Not run; independent review pending
 
 ## Scope, references and execution controls
 
+**Execution update:** [Actual run and evidence](cart-view-executed-2026-10-28.md) identifies the build and results for nine read-only families. Status/actual columns reflect that run. The original two blockers are resolved in this environment. Other procedures and blank fields remain unexecuted, not implicitly passed.
+
 **Change impact:** Requirements v0.4 / [CR-CART-01](../requirements/cart-readiness-change-and-handoff.md) update the cart notice and add constraints beyond these original 37 families. T-07 below reflects the new wording. Add/review tests for backend cents, session conflicts/idempotency, logout invalidation, and persisted expiry reason/view-local dismissal before claiming full coverage. Execution results remain unchanged.
 
-Expands the [37 planned outlines](../requirements/cart-traceability-matrix.md) for [requirements v0.3](../requirements/cart-requirements.md). CART-T-11 has its detailed procedure in [CART-UAT-01 v0.2](quantity-update-uat-case.md); the other 36 outlines are expanded here. These are draft procedures, not executed results. Scenario families with multiple variants need a separate execution record per variant. No baseline approval, technical feasibility or customer acceptance is implied.
+Expands the [37 planned outlines](../requirements/cart-traceability-matrix.md) for [requirements v0.3](../requirements/cart-requirements.md). CART-T-11 has its detailed procedure in [CART-UAT-01 v0.2](quantity-update-uat-case.md); the other 36 outlines are expanded here. The procedures remain reviewable; actual results are populated only for the recorded local execution. Scenario families with multiple variants need a separate execution record per variant. No baseline approval, technical feasibility or customer acceptance is implied.
 
-The [actual readiness inspection](cart-loading-readiness-2026-10-28.md) blocked CART-T-04 and CART-T-05 before scenario execution. That recorded status is preserved. Other outlines remain Not run; this does not assert they are ready. Missing implementation and environment prerequisites must be checked before each execution. Recovery and logout cases also need decisions before expected behaviour can be baselined.
+The [earlier readiness inspection](cart-loading-readiness-2026-10-28.md) blocked CART-T-04/05. Its historical record is preserved; later execution supersedes those current statuses. Missing prerequisites still require checking for other cases. Unresolved mutation/recovery behaviour is not ready merely because read-only checks pass.
 
 The business reviewer validates customer outcomes; developer/tester assistance is needed for controlled failures, request tracking, clock manipulation and persisted-data evidence. Do not require business reviewers to inject failures or inspect databases themselves. Perform technical supporting checks in an isolated test environment and connect their evidence to the business scenario.
 
@@ -55,13 +57,13 @@ For the procedures below, expected results are not actual results. Preserve resu
 
 | Test / criterion | Setup and procedure | Expected result | Status | Actual / evidence |
 |---|---|---|---|---|
-| CART-T-01 / CART-AC-01 | F1. 1. Open View cart. 2. Compare each visible field with the fixture and saved read. | Mug name/variant as designed, quantity 2, unit CAD 12.50, line/subtotal CAD 25.00. Values belong to the signed-in customer's cart. | Not run | |
-| CART-T-02 / CART-AC-02 | F2. 1. Open cart. 2. Verify both lines and independently calculate each amount. | Mug line CAD 25.00; mouse line CAD 24.99; subtotal CAD 49.99. | Not run | |
-| CART-T-03 / CART-AC-03 | F0. 1. Open cart. 2. Confirm retrieval actually succeeded. 3. Inspect message, subtotal and action. | Cart is empty, CAD 0.00 and Continue shopping. Do not infer emptiness from an error. | Not run | |
-| CART-T-04 / CART-AC-04 | F1 once prerequisites exist. 1. Developer/tester enables a reversible cart-read server error. 2. Customer opens View cart. 3. Inspect message, action and totals area. | Couldn't load your cart. Please try again.; Retry available; no confirmed empty-cart or zero-subtotal claim. Current actual readiness results are in BLK-CART-01, not an executed server-error scenario. | Blocked: BLK-CART-01 | |
-| CART-T-05 / CART-AC-05 | Continue controlled setup from T-04. 1. Record saved fixture. 2. Select Retry with failure active. 3. Verify another cart read and repeated error. 4. Remove failure; select Retry again. 5. Compare displayed and saved data. | Retry reads rather than mutates. Error remains while failure is active; recovery shows original F1 values and clears the load error. No items/quantities changed. | Blocked: BLK-CART-01 | |
-| CART-T-06 / CART-AC-06 | Run separately from F0 and F1. 1. Open cart. 2. Select Continue shopping. 3. Reopen cart through a fresh retrieval and compare saved contents. | Navigate to product browsing; saved contents unchanged in both variants. | Not run | |
-| CART-T-07 / CART-AC-07 | Run against each implemented cart state in scope; log unavailable states separately. 1. Open/trigger the state. 2. Inspect pricing wording under requirements v0.4. | Cart subtotal only. Tax and shipping are calculated at demo checkout. No payment is taken. Do not interpret this scope notice as evidence of implemented checkout. | Not run | |
+| CART-T-01 / CART-AC-01 | F2. 1. Open View cart. 2. Compare each visible field with the fixture and saved read. | Mug name/variant as designed, quantity 2, unit CAD 12.50, line/subtotal CAD 25.00. Values belong to the signed-in customer's cart. | Pass (local run) | Owned mug/mouse fields match API and saved fixture. See executed run record. |
+| CART-T-02 / CART-AC-02 | F2. 1. Open cart. 2. Verify both lines and independently calculate each amount. | Mug line CAD 25.00; mouse line CAD 24.99; subtotal CAD 49.99. | Pass (local run) | 2500 + 2499 cents; UI CAD 49.99. See executed run record. |
+| CART-T-03 / CART-AC-03 | F0. 1. Open cart. 2. Confirm retrieval actually succeeded. 3. Inspect message, subtotal and action. | Cart is empty, CAD 0.00 and Continue shopping. Do not infer emptiness from an error. | Pass (local run) | Empty message, CAD 0.00, Continue shopping; no expiry notice. See executed run record. |
+| CART-T-04 / CART-AC-04 | F2 after verified prerequisites. 1. Developer/tester enables a reversible cart-read server error. 2. Customer opens View cart. 3. Inspect message, action and totals area. | Couldn't load your cart. Please try again.; Retry available; no confirmed empty-cart or zero-subtotal claim. See the executed run for the actual server-error evidence; the earlier readiness blocker remains historical. | Pass (local run) | GET 503; load error and Retry; no empty/zero claim; saved snapshot unchanged. See executed run record. |
+| CART-T-05 / CART-AC-05 | Continue controlled setup from T-04. 1. Record saved fixture. 2. Select Retry with failure active. 3. Verify another cart read and repeated error. 4. Remove failure; select Retry again. 5. Compare displayed and saved data. | Retry reads rather than mutates. Error remains while failure is active; recovery shows original fixture values and clears the load error. No items/quantities changed. | Pass (local run) | Retry 503 then 200; recovered CAD 49.99; saved items and retention unchanged. See executed run record. |
+| CART-T-06 / CART-AC-06 | Run separately from F0 and F1. 1. Open cart. 2. Select Continue shopping. 3. Reopen cart through a fresh retrieval and compare saved contents. | Navigate to product browsing; saved contents unchanged in both variants. | Pass (local run) | Both empty and nonempty continuation returned to catalog without saved changes. See executed run record. |
+| CART-T-07 / CART-AC-07 | Run against each implemented cart state in scope; log unavailable states separately. 1. Open/trigger the state. 2. Inspect pricing wording under requirements v0.4. | Cart subtotal only. Tax and shipping are calculated at demo checkout. No payment is taken. Do not interpret this scope notice as evidence of implemented checkout. | Pass (local run) | Current cart/demo notice present in four implemented states. See executed run record. |
 
 ## Quantity validation and confirmed outcomes
 
@@ -108,8 +110,8 @@ Use an agreed controllable test clock or supported fixture timestamps. Do not al
 
 | Test / criterion | Setup and procedure | Expected result | Status | Actual / evidence |
 |---|---|---|---|---|
-| CART-T-28 / CART-AC-28 | F1 with retention elapsed; no in-flight changes. 1. Retrieve cart at agreed post-expiry test time. 2. Inspect contents and message. | No expired items returned/displayed; expiry explanation, CAD 0.00 and Continue shopping. Physical cleanup timing need not match logical expiry. | Not run | |
-| CART-T-29 / CART-AC-29 | F1; last successful change 20 elapsed days earlier. 1. Record E. 2. Sign in and retrieve. 3. Compare saved contents and E. | Active fixture shown; sign-in/viewing do not change E. Ten elapsed days remain absent another successful change. | Not run | |
+| CART-T-28 / CART-AC-28 | F1 with retention elapsed; no in-flight changes. 1. Retrieve cart at agreed post-expiry test time. 2. Inspect contents and message. | No expired items returned/displayed; expiry explanation, CAD 0.00 and Continue shopping. Physical cleanup timing need not match logical expiry. | Pass (local run) | 721-hour fixture expired; items removed; reason persisted across views. See executed run record. |
+| CART-T-29 / CART-AC-29 | F2; last successful change 20 elapsed days earlier. 1. Record E. 2. Sign in and retrieve. 3. Compare saved contents and E. | Active fixture shown; sign-in/viewing do not change E. Ten elapsed days remain absent another successful change. | Pass (local run) | Day-20 active read left last-change timestamp unchanged. See executed run record. |
 | CART-T-32 / CART-AC-32 | F1 at day 20; successful-logout guarantee agreed. 1. Record E. 2. Log out successfully. 3. Verify retained saved items and E using authorized method. | Items retained; E unchanged, ten days remain. No restart from logout. | Not run | |
 | CART-T-33 / CART-AC-33 | F1 last changed 20 days ago. 1. Record old E. 2. Successfully set quantity 3 at controlled time T2. 3. Inspect recorded retention reference and new expiry. | New expiry T2 plus 30 times 24 hours, replacing the old E. Define authoritative successful-change timestamp through technical review. | Not run | |
 | CART-T-34 / CART-AC-34 | F1 at day 20; controlled confirmed save rejection. 1. Record E. 2. Request quantity 3 and confirm failure. 3. Inspect contents and E. | Quantity 2 retained and E unchanged; ten days remain. Remove failure control afterward. | Not run | |
@@ -133,6 +135,6 @@ Restore controlled catalog prices after price cases. Do not reuse changed fixtur
 - Review additional coverage for multiple product lines, differing variants and price changes, customer ownership, keyboard/focus/status announcements and unexpected responses. This pack covers the existing 37 criteria, not every necessary release test.
 - Request identity, mutation counts, persistence and expiry require technical evidence beyond customer screenshots. Agree safe access and evidence limitations before execution.
 - Several controls/screens are not implemented and some wireframe states remain missing; local prototype checks do not establish application readiness.
-- Every blank result above is intentional. No simulated defect or role response is execution evidence. The two existing Blocked records are actual readiness findings, not failed cart-error tests.
+- Remaining blank results are intentional. No simulated role response or hypothetical defect is execution evidence. Historical blockers are retained, with actual local execution superseding T-04/05's current statuses.
 
 Next: review the pack with the appropriate roles, agree missing expectations and test-support methods, prioritize an implementation slice and environment setup, then execute only cases whose prerequisites are verified. Record real results and defects/retests as they occur.

@@ -1,17 +1,19 @@
 # Cart requirements traceability matrix
 
-**Version:** 0.1  
+**Version:** 0.2
 **Date:** 28 October 2026  
-**Status:** Draft coverage review; CART-T-04/05 blocked at readiness, other outlines Not run
+**Status:** Local executed slice: 9 Pass, 28 Not run; independent approval pending
 **Prepared by:** Kailas Krishnan
 
 ## Scope and interpretation
+
+**Execution update:** [28 October local run](../testing/cart-view-executed-2026-10-28.md) records Pass for CART-T-01 through CART-T-07, CART-T-28 and CART-T-29. Five supplemental checks are separate from the 37-family count. Original BLK-CART-01 is resolved in this identified embedded-database environment only. Actual screenshots/results supersede design-only coverage for tested paths; wireframe references below remain historical design mappings.
 
 **Version-impact update:** Requirements v0.4 now revises CART-AC-07 and records new constraints in [CR-CART-01](cart-readiness-change-and-handoff.md). The 37 existing mappings remain useful, but do not cover all newly required behaviour. Dedicated-page, backend amount, session reconciliation, logout invalidation and expiry-flag lifecycle coverage must be expanded after contract review. Execution statuses are unchanged.
 
 Maps the first increment's seven functional requirements and 37 acceptance criteria to business sources, draft designs and planned test outlines. Sources are [requirements v0.3](cart-requirements.md), the [gap register](../process-analysis/gap-register.md), [decision record](../process-analysis/prioritization-and-decisions.md) and [wireframes v0.3](../wireframes/cart-wireframes.md). These are portfolio case-study artifacts; simulated decisions do not establish actual stakeholder approval.
 
-Each CART-T identifier below reserves a planned test outline, not an executed test or a complete UAT script. CART-T-04 and CART-T-05 are **Blocked** after the [28 October readiness check](../testing/cart-loading-readiness-2026-10-28.md). Other outlines remain **Not run**. No outlined application acceptance scenario has completed execution; readiness observations and build evidence are recorded separately. Prototype checks reported in the wireframe notes do not count as application UAT. Parameterized outlines must be expanded into separately recorded cases in the detailed test plan.
+Each CART-T identifier identifies a test family. The earlier [readiness check](../testing/cart-loading-readiness-2026-10-28.md) blocked T-04/05; actual execution now supplies results for nine families. The remaining 28 are Not run. Prototype checks are not application UAT. Parameterized variants require separate evidence; Pass means the recorded local procedure, not independent acceptance of every possible condition.
 
 Design coverage means that an illustrative screen exists. It does not prove implemented behaviour, backend consistency, feasibility, usability or accessibility. A mapped criterion is not necessarily ready for delivery. Open requirements and missing designs are tracked below; they are not silently counted as complete.
 
@@ -44,17 +46,17 @@ The CART-FR-07 register row in requirements v0.3 still says policy approval is p
 
 ## Acceptance criteria to planned tests
 
-The test status column describes application execution only. All expected outcomes below are proposals copied or summarized from the criteria, not actual results. See BLK-CART-01 in the readiness record for blocked prerequisites.
+Expected outcomes remain distinct from actual results. The status column records execution; see the linked run for actual values, screenshots, environment limits and exact build.
 
 | Criterion | Requirement | Design coverage | Planned test / expected verification | Execution |
 |---|---|---|---|---|
-| CART-AC-01 | CART-FR-01 | WF-N; illustrative | CART-T-01: Compare displayed product name, quantity, unit price, line total and CAD subtotal with owned saved-cart data. | Not run |
-| CART-AC-02 | CART-FR-01 | WF-N partial; multi-item layout missing | CART-T-02: Two mugs at CAD 12.50 plus one mouse at CAD 24.99 yield line totals CAD 25.00 / CAD 24.99 and subtotal CAD 49.99. | Not run |
-| CART-AC-03 | CART-FR-01 | WF-E | CART-T-03: Successful empty retrieval shows Cart is empty, CAD 0.00 and Continue shopping. | Not run |
-| CART-AC-04 | CART-FR-01 | WF-L | CART-T-04: Failed retrieval shows error and Retry; no confirmed empty-cart claim or zero subtotal. | Blocked: BLK-CART-01 |
-| CART-AC-05 | CART-FR-01 | WF-L; retrieval integration absent | CART-T-05: Retry retrieves saved state without adding, updating or removing items. | Blocked: BLK-CART-01 |
-| CART-AC-06 | CART-FR-01 | WF-N / WF-E; product destination not designed | CART-T-06: Continue shopping returns to browsing with saved data unchanged; execute from empty and non-empty carts separately. | Not run |
-| CART-AC-07 | CART-FR-01 | All seven states show older notice; design revision pending | CART-T-07: Verify cart-subtotal-only notice, tax/shipping at demo checkout, and no payment under requirements v0.4. | Not run |
+| CART-AC-01 | CART-FR-01 | WF-N; illustrative | CART-T-01: Compare displayed product name, quantity, unit price, line total and CAD subtotal with owned saved-cart data. | Pass (local run) |
+| CART-AC-02 | CART-FR-01 | Implemented multi-item page; execution screenshot | CART-T-02: Two mugs at CAD 12.50 plus one mouse at CAD 24.99 yield line totals CAD 25.00 / CAD 24.99 and subtotal CAD 49.99. | Pass (local run) |
+| CART-AC-03 | CART-FR-01 | WF-E | CART-T-03: Successful empty retrieval shows Cart is empty, CAD 0.00 and Continue shopping. | Pass (local run) |
+| CART-AC-04 | CART-FR-01 | WF-L | CART-T-04: Failed retrieval shows error and Retry; no confirmed empty-cart claim or zero subtotal. | Pass (local run) |
+| CART-AC-05 | CART-FR-01 | Implemented error/retry flow; actual API/DB evidence | CART-T-05: Retry retrieves saved state without adding, updating or removing items. | Pass (local run) |
+| CART-AC-06 | CART-FR-01 | Implemented cart/catalog navigation | CART-T-06: Continue shopping returns to browsing with saved data unchanged; execute from empty and non-empty carts separately. | Pass (local run) |
+| CART-AC-07 | CART-FR-01 | Four implemented states use current notice; other states not delivered | CART-T-07: Verify cart-subtotal-only notice, tax/shipping at demo checkout, and no payment under requirements v0.4. | Pass (local run) |
 | CART-AC-08 | CART-FR-02 | WF-N local interaction; persisted save absent | CART-T-08: Change two mugs to ten; confirm quantity 10, line/subtotal CAD 125.00 and success message. | Not run |
 | CART-AC-09 | CART-FR-02 | WF-N local interaction; persisted save absent | CART-T-09: Change two mugs to one; confirm quantity 1, line/subtotal CAD 12.50 and success message. | Not run |
 | CART-AC-10 | CART-FR-02 | WF-N local validation; dedicated error capture missing | CART-T-10: Separately reject 0, -1, 1.5, text, blank and 11 with the agreed message and no saved quantity/total changes. | Not run |
@@ -75,8 +77,8 @@ The test status column describes application execution only. All expected outcom
 | CART-AC-25 | CART-FR-05 | WF-N result concept only; addition interaction missing | CART-T-25: Add one identical product/variant to two mugs; exactly one line, quantity 3, unit CAD 12.50 and line CAD 37.50. | Not run |
 | CART-AC-26 | CART-FR-05 | Missing merged-limit rejection state | CART-T-26: Add one identical mug to ten; reject, preserve ten and totals, show per-product/variant limit message. | Not run |
 | CART-AC-27 | CART-FR-05 | Missing multi-variant state | CART-T-27: Add one red mug to two blue mugs; display separate variant lines with quantities 1 and 2. | Not run |
-| CART-AC-28 | CART-FR-06 | WF-X; no real expiry implementation | CART-T-28: Retrieve after elapsed retention; no expired items, expiry explanation, CAD 0.00 and Continue shopping. | Not run |
-| CART-AC-29 | CART-FR-06 | WF-N result only; persistence not represented | CART-T-29: Retrieve 20 days after last change; saved items remain and sign-in/viewing leave original expiry unchanged. | Not run |
+| CART-AC-28 | CART-FR-06 | WF-X; no real expiry implementation | CART-T-28: Retrieve after elapsed retention; no expired items, expiry explanation, CAD 0.00 and Continue shopping. | Pass (local run) |
+| CART-AC-29 | CART-FR-06 | WF-N result only; persistence not represented | CART-T-29: Retrieve 20 days after last change; saved items remain and sign-in/viewing leave original expiry unchanged. | Pass (local run) |
 | CART-AC-30 | CART-FR-07 | WF-P+; DG-01 review pending | CART-T-30: Two mugs increase from CAD 12.50 to CAD 14.00; affected-line text shows old/new prices and line/subtotal CAD 28.00 without colour dependence. | Not run |
 | CART-AC-31 | CART-FR-07 | Missing stale-price refresh-failure state; WF-L lacks retained values | CART-T-31: Failed price refresh never confirms a new price; retained values last confirmed, accurate error and Refresh cart. | Not run |
 | CART-AC-32 | CART-FR-04 / CART-FR-06 | Missing logout interaction; retention backend-only aspect | CART-T-32: Logout at day 20 preserves original expiry and ten days remaining; security guarantee requires separate resolution. | Not run |
@@ -109,8 +111,8 @@ All role assignments above are proposed or simulated. They do not establish real
 
 - All seven CART-FR requirements have a business-source mapping.
 - All 37 existing CART-AC criteria have a mapped test outline; shared requirements are explicitly identified.
-- There are 37 planned test outlines, not 37 executed or passing tests. Parameter expansion will produce additional cases.
-- CART-T-04 and CART-T-05 are Blocked at readiness; the remaining 35 outlines are Not run. The readiness record is not completed application acceptance evidence. No baseline approval or release decision is recorded.
+- There are 37 test families: 9 Pass in the recorded local run and 28 Not run. Parameter expansion may produce additional cases.
+- The original readiness blocker is resolved for the local read-only slice. No independent baseline approval or production/full-release decision is recorded.
 - Missing criteria and designs remain visible; mapping completeness is not functional completeness.
 
 Next, review mappings with the proposed business/development/testing roles, then expand test outlines into detailed scripts with preconditions, synthetic data, steps, expected outcomes, environment/build, actual results, evidence and defect/retest references. Leave results blank until actual execution.

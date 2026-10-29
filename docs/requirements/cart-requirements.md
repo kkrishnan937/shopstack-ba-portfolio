@@ -7,6 +7,8 @@
 
 ## Scope and evidence
 
+**Actual execution update:** The [local cart-viewing run](../testing/cart-view-executed-2026-10-28.md) now implements and verifies the read-only path. CART-AC-01 through CART-AC-07, CART-AC-28 and CART-AC-29 have corresponding local Pass evidence. Other criteria remain unexecuted. This does not approve the full baseline or implement the mutation/recovery scope described below.
+
 **Latest change:** [CR-CART-01](cart-readiness-change-and-handoff.md) records the author's dedicated-page, server amount, token-expiry reconciliation, expiry-flag, logout invalidation and release-gate decisions. It also adds tax/shipping calculation to wider checkout scope, with calculation inputs still open. Existing 37 criteria need expansion for these new constraints. Earlier proposals are superseded where they conflict; this is not an independently approved or implemented baseline.
 
 Consolidates the cart-review and quantity-update criteria practised in discussion. These describe intended behaviour, not implemented features, executed tests, or independent stakeholder approval. Request-status tracking and safe resolution are proposed capabilities whose feasibility has not been verified. Simulated estimates and release dates are not actual project forecasts.
@@ -167,4 +169,4 @@ Additional review: define integer-cent amount fields and authoritative backend c
 
 This is a review draft, not a release baseline. The full update story is not ready for release while prolonged recovery is unresolved. Independent validation and confirmed-outcome work may progress if the delivery team agrees the split; testing requires implemented behaviour. No criteria in this document have recorded execution results.
 
-Next: specify the read-only API contract and expand criteria under CR-CART-01, then estimate the cart-view slice. Version 0.4 retains 37 criterion IDs, revises CART-AC-07 and adds readiness constraints. All criteria remain unexecuted. Existing test/design mappings need change-impact review; the 37 criteria do not exhaust the new scope.
+Next: review actual read-only execution evidence and remaining contract/acceptance gaps before extending the delivered path. Version 0.4 retains 37 criterion IDs and does not exhaust new constraints; nine have local test-family Pass evidence, while 28 remain unexecuted. No complete-release approval is implied.

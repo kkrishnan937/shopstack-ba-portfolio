@@ -1,0 +1,261 @@
+{
+  "runId": "2026-10-29T02-21-37-090Z",
+  "observedAt": "2026-10-29T02:21:43.532Z",
+  "buildFingerprint": "8366153a9da11ad2c05a73ae6caf1bd2fe1fae09a55d1b614bf9892f131a26e6",
+  "environment": {
+    "node": "v24.22.1",
+    "database": "PGlite 0.3.14, file-backed embedded PostgreSQL",
+    "browser": "Microsoft Edge headless",
+    "frontend": "Vite production build served by Express on loopback",
+    "syntheticOnly": true
+  },
+  "results": [
+    {
+      "id": "CART-T-04",
+      "title": "Controlled cart-read failure is not shown as empty",
+      "status": "Pass",
+      "startedAt": "2026-10-29T02:21:41.588Z",
+      "detail": {
+        "responseStatus": 503,
+        "noEmptyClaim": true,
+        "noConfirmedSubtotal": true,
+        "savedStateUnchanged": true,
+        "screenshot": "01-cart-load-failure.png"
+      }
+    },
+    {
+      "id": "CART-T-05",
+      "title": "Retry fails safely, then recovers when failure is removed",
+      "status": "Pass",
+      "startedAt": "2026-10-29T02:21:41.751Z",
+      "detail": {
+        "retryStatuses": [
+          503,
+          200
+        ],
+        "subtotalCents": 4999,
+        "savedStateUnchanged": true,
+        "onlyCartReads": true,
+        "screenshots": [
+          "02-retry-still-failing.png",
+          "03-cart-recovered.png"
+        ]
+      }
+    },
+    {
+      "id": "CART-T-01",
+      "title": "Saved products and integer-cent amounts match rendered cart",
+      "status": "Pass",
+      "startedAt": "2026-10-29T02:21:41.944Z",
+      "detail": {
+        "products": [
+          "Coffee Mug",
+          "Wireless Mouse"
+        ],
+        "amountsComeFromAPI": true
+      }
+    },
+    {
+      "id": "CART-T-02",
+      "title": "Two-mug/one-mouse subtotal is CAD 49.99",
+      "status": "Pass",
+      "startedAt": "2026-10-29T02:21:41.959Z",
+      "detail": {
+        "quantities": [
+          2,
+          1
+        ],
+        "unitCents": [
+          1250,
+          2499
+        ],
+        "lineCents": [
+          2500,
+          2499
+        ],
+        "subtotalCents": 4999
+      }
+    },
+    {
+      "id": "CART-T-29",
+      "title": "Read at day 20 does not restart retention",
+      "status": "Pass",
+      "startedAt": "2026-10-29T02:21:41.962Z",
+      "detail": {
+        "lastChangedUnchanged": true,
+        "activeAtTwentyDays": true
+      }
+    },
+    {
+      "id": "SUP-AUTH-WRITES",
+      "title": "Unauthenticated reads rejected and mutation gates enforced",
+      "status": "Pass",
+      "startedAt": "2026-10-29T02:21:41.967Z",
+      "detail": {
+        "unauthenticatedRead": 401,
+        "mutationResponses": [
+          501,
+          501,
+          501
+        ],
+        "savedStateUnchanged": true
+      }
+    },
+    {
+      "id": "CART-T-06",
+      "title": "Continue shopping preserves nonempty and empty fixtures",
+      "status": "Pass",
+      "startedAt": "2026-10-29T02:21:42.009Z",
+      "detail": {
+        "nonemptyAndEmptyVariants": "Pass",
+        "noNavigationMutation": true
+      }
+    },
+    {
+      "id": "CART-T-03",
+      "title": "Confirmed empty cart shows zero and continuation",
+      "status": "Pass",
+      "startedAt": "2026-10-29T02:21:42.177Z",
+      "detail": {
+        "subtotalCents": 0,
+        "expiryNoticeAbsent": true,
+        "screenshot": "04-empty-cart.png"
+      }
+    },
+    {
+      "id": "CART-T-28",
+      "title": "Expired saved items removed with persistent explanation",
+      "status": "Pass",
+      "startedAt": "2026-10-29T02:21:42.249Z",
+      "detail": {
+        "expiredAfter721Hours": true,
+        "savedItemsRemoved": true,
+        "persistentReason": true,
+        "viewLocalDismissal": true,
+        "screenshot": "05-expired-cart.png"
+      }
+    },
+    {
+      "id": "CART-T-07",
+      "title": "Pricing notice present in implemented cart states",
+      "status": "Pass",
+      "startedAt": "2026-10-29T02:21:42.508Z",
+      "detail": {
+        "notice": "Cart subtotal only. Tax and shipping are calculated at demo checkout. No payment is taken.",
+        "scope": "Four implemented states; mutations/checkout not enabled"
+      }
+    },
+    {
+      "id": "SUP-SESSION",
+      "title": "Expired token requests sign-in without expiring cart",
+      "status": "Pass",
+      "startedAt": "2026-10-29T02:21:42.510Z",
+      "detail": {
+        "cartReadStatus": 401,
+        "noCartStateChange": true,
+        "noExpiryNoticeFromTokenLapse": true
+      }
+    },
+    {
+      "id": "SUP-MOBILE",
+      "title": "Cart view fits 320px viewport",
+      "status": "Pass",
+      "startedAt": "2026-10-29T02:21:42.743Z",
+      "detail": {
+        "width": 320,
+        "horizontalOverflow": false,
+        "screenshot": "07-mobile-cart.png"
+      }
+    },
+    {
+      "id": "SUP-OWNERSHIP",
+      "title": "Another customer's saved line cannot appear in this cart",
+      "status": "Pass",
+      "startedAt": "2026-10-29T02:21:42.811Z",
+      "detail": {
+        "otherCustomerItemsNotExposed": true,
+        "otherCustomerStateUnchanged": true
+      }
+    },
+    {
+      "id": "SUP-PERSIST",
+      "title": "Close and reopen file-backed database without losing fixture",
+      "status": "Pass",
+      "startedAt": "2026-10-29T02:21:42.900Z",
+      "detail": {
+        "persistedAfterDatabaseReopen": true,
+        "quantities": [
+          2,
+          1
+        ]
+      }
+    }
+  ],
+  "cartRequests": [
+    {
+      "method": "GET",
+      "path": "/api/cart",
+      "status": 503,
+      "observedAt": "2026-10-29T02:21:41.619Z"
+    },
+    {
+      "method": "GET",
+      "path": "/api/cart",
+      "status": 503,
+      "observedAt": "2026-10-29T02:21:41.784Z"
+    },
+    {
+      "method": "GET",
+      "path": "/api/cart",
+      "status": 200,
+      "observedAt": "2026-10-29T02:21:41.875Z"
+    },
+    {
+      "method": "GET",
+      "path": "/api/cart",
+      "status": 200,
+      "observedAt": "2026-10-29T02:21:42.073Z"
+    },
+    {
+      "method": "GET",
+      "path": "/api/cart",
+      "status": 200,
+      "observedAt": "2026-10-29T02:21:42.109Z"
+    },
+    {
+      "method": "GET",
+      "path": "/api/cart",
+      "status": 200,
+      "observedAt": "2026-10-29T02:21:42.169Z"
+    },
+    {
+      "method": "GET",
+      "path": "/api/cart",
+      "status": 200,
+      "observedAt": "2026-10-29T02:21:42.279Z"
+    },
+    {
+      "method": "GET",
+      "path": "/api/cart",
+      "status": 200,
+      "observedAt": "2026-10-29T02:21:42.500Z"
+    },
+    {
+      "method": "GET",
+      "path": "/api/cart",
+      "status": 401,
+      "observedAt": "2026-10-29T02:21:42.534Z"
+    },
+    {
+      "method": "GET",
+      "path": "/api/cart",
+      "status": 200,
+      "observedAt": "2026-10-29T02:21:42.741Z"
+    }
+  ],
+  "caveats": [
+    "Agent-executed local acceptance checks; no independent business sign-off",
+    "Not a conventional PostgreSQL server deployment",
+    "No mutations, checkout, logout revocation or unresolved recovery release claimed"
+  ]
+}

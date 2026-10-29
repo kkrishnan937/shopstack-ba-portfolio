@@ -1,0 +1,20 @@
+{
+  "buildFingerprint": "8366153a9da11ad2c05a73ae6caf1bd2fe1fae09a55d1b614bf9892f131a26e6",
+  "files": {
+    "backend/db.js": "ce531a7d31cb50d3af4f04376432e95992edb926982ca661cccf7a6ead9f9466",
+    "backend/server.js": "b3e665aed636b3569dfc810303f5e5274c214fe35d8fbaadd56827d6a03e2d32",
+    "backend/routes/cart.js": "8a44fa9ae6fe276a4250b83711033c8a61a16c51f407723e548fa85af1ba7775",
+    "backend/services/cart-read.js": "261f47455b6ab42be732e19a68bf8306307da1efe3e73218f42aaf72ab144f36",
+    "backend/middleware/auth.js": "fe89d0fc0748573eacee61ad4d1d12e12e57a3bdd6a1b62ac3546ca8017f4ede",
+    "backend/routes/auth.js": "5c5fe48cab295faa5d271ba22be611490def82d5912c9099a23d089aabc41408",
+    "backend/test/cart-view.e2e.cjs": "3528514fc57c65a8be0a73809d1aee20466c15da1bbc14454dce8da752db4d0d",
+    "frontend/src/App.jsx": "b23e609dfd2dbfc5c2f9b3464c27ab4a64df4e2310079b2ff78d97e922d74eb7",
+    "frontend/src/styles.css": "e0cfad63760a4a841f442cde0a761beb7bd77c26274e50a0162b80feb76954e8",
+    "frontend/vite.config.js": "053f29f9d5ef6d272dccd43ffca2ee3afda8b8e0118eca0f8daa40f42d7e565d",
+    "backend/package.json": "3fd68a59f1f01b4129d828d587fb8b1b8aa71c07fa87d898865b59a7886c5e53",
+    "backend/pnpm-lock.yaml": "da317eb0b4573f32bab3dcd2f6e4427c6eed1f83733174f793b90d18d3559175",
+    "frontend/dist/index.html": "356a0bf90f99abf55d15f75a6c73e1e57fee4392d4fb951b25e2865b3e2d632d",
+    "frontend/dist/assets/index-CyVCp9fA.css": "02c1c78fecde0c9818996a33746956a0b66088a5532d3a7c886bab73c1fd133e",
+    "frontend/dist/assets/index-DtTCWQEk.js": "9ec50ae3a62ed64eebc2b1c13daf47e5643998dbfc7f5ca7383c5a018f601cd8"
+  }
+}

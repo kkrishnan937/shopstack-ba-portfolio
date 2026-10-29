@@ -4,13 +4,17 @@
 
 **Customer Purchase Journey Improvement**  
 **Author:** Kailas Krishnan  
-**Status:** In progress: future-state process definition
+**Status:** Read-only cart slice implemented and locally acceptance-tested; wider release incomplete
 
 An independent Business Analyst case study using an existing e-commerce learning application to practise an end-to-end business analysis workflow. This repository will grow as discovery, process analysis, requirements, validation, and evaluation work is completed and reviewed.
 
+**Start here:** [One-page case study](docs/case-study.md) -> [executed acceptance results](docs/testing/cart-view-executed-2026-10-28.md) -> [failure screenshot](docs/testing/evidence/cart-view-2026-10-28/01-cart-load-failure.png) / [recovered cart](docs/testing/evidence/cart-view-2026-10-28/03-cart-recovered.png).
+
+**Actual outcome:** 9 planned cart-view test families and 5 supplemental checks passed against the real local UI/API and file-backed embedded PostgreSQL; 28 families remain Not run. No production deployment or independent sign-off is claimed. Implementation is committed locally on `codex/cart-viewing-slice`; remote publication is separate.
+
 ## Business context
 
-[ShopStack](https://github.com/kkrishnan937/shopstack) is an e-commerce application. Its customer interface displays products and supports login and add-to-cart requests, but has no visible cart review or order submission journey.
+[ShopStack](https://github.com/kkrishnan937/shopstack) originally supported catalog browsing, login and add-to-cart requests without cart review. The local implemented slice adds a dedicated cart page with real authentication, server-calculated totals, empty/expired states and safe Retry. Cart/order writes are disabled while mutation gates remain open; checkout is not implemented.
 
 This case study investigates how customers could review their selections and submit a demo order. Customer abandonment, conversion impact, and financial benefits have not been measured.
 
@@ -37,15 +41,17 @@ Real payments and physical shipping/fulfilment remain excluded. Cart shows item-
 | Stakeholder analysis and engagement plan | Draft v0.2; simulated review and change control recorded; customer validation pending | [Read stakeholder plan](docs/discovery/stakeholder-analysis-and-engagement.md) |
 | Cart requirements, business rules, and acceptance criteria | Draft v0.4; 37 existing criteria; new readiness constraints require expansion | [Read requirements](docs/requirements/cart-requirements.md) |
 | Readiness changes and implementation handoff | CR-CART-01; direct author decisions, scope impact and simulated targets | [Read change and handoff](docs/requirements/cart-readiness-change-and-handoff.md) |
+| Cart-read information contract | Draft v0.1; five response situations; exact schema/version semantics open | [Read contract](docs/requirements/cart-read-contract.md) |
 | Cart wireframes | Draft v0.3; seven illustrative states including expiry and price changes; customer/UX review pending | [Review wireframes](docs/wireframes/cart-wireframes.md) |
-| Cart requirements traceability | Draft v0.1; 37 criteria mapped; 2 outlines blocked at readiness, 35 Not run | [Read traceability matrix](docs/requirements/cart-traceability-matrix.md) |
+| Cart requirements traceability | 37 families mapped; 9 local Pass, 28 Not run | [Read traceability matrix](docs/requirements/cart-traceability-matrix.md) |
 | Cart-loading test readiness | Actual frontend inspection; application scenario blocked before execution | [Read readiness record](docs/testing/cart-loading-readiness-2026-10-28.md) |
 | Cart delivery-readiness actions | Actual blocker linked; ownership and dates remain simulated/unconfirmed | [Read handoff action log](docs/testing/cart-delivery-readiness-actions.md) |
 | Cart-viewing delivery workshop | Simulated slice planning; expiry-message persistence and API design proposed | [Read workshop findings](docs/discovery/cart-viewing-delivery-workshop.md) |
 | Defect-lifecycle training example | Hypothetical quantity mismatch; no observed defect or retest | [Read training example](docs/testing/hypothetical-quantity-defect-exercise.md) |
 | Detailed quantity-update UAT case | Draft v0.2; partial-result/access rules included; execution Not run | [Read UAT case](docs/testing/quantity-update-uat-case.md) |
-| Cart UAT test pack | Draft v0.1; 37 outline families expanded; execution evidence pending | [Read UAT pack](docs/testing/cart-uat-pack.md) |
-| Solution evaluation and final case study | Planned | Not yet created |
+| Cart UAT test pack | 37 families; 9 executed locally with results | [Read UAT pack](docs/testing/cart-uat-pack.md) |
+| Executed cart-viewing slice | Actual results, screenshots, snapshots and build fingerprint; no independent sign-off | [Read execution record](docs/testing/cart-view-executed-2026-10-28.md) |
+| One-page case study | Delivered slice, observed results, limitations and supporting links | [Read case study](docs/case-study.md) |
 
 ## Approach
 
@@ -59,7 +65,7 @@ Real payments and physical shipping/fulfilment remain excluded. Cart shows item-
 
 ## How to review this project
 
-Start with the discovery notes. Follow later artifacts through the table above as they are added. The application source remains in the original ShopStack repository; this repository contains BA deliverables rather than a duplicate application.
+Start with the case study and actual execution record, then follow the linked requirements and analysis. Application source belongs in the ShopStack application repository; this portfolio holds analysis and execution evidence rather than duplicate implementation scripts.
 
 ## Updating this repository
 
@@ -72,4 +78,4 @@ Start with the discovery notes. Follow later artifacts through the table above a
 
 ## Current next step
 
-Specify the read-only API contract and expand acceptance/test coverage for CR-CART-01, then estimate and implement the dedicated cart-view slice in an isolated environment. Revise affected designs and process flows. Retention is a release dependency; no mutations ship until session reconciliation, logout invalidation and retention contract close. Sprint targets are simulated, with no actual calendar commitments. Implementation and UAT remain pending.
+Review the implemented read-only slice and evidence, seek independent feedback, and verify the normal PostgreSQL deployment before a release claim. Close session-reconciliation/logout/retention-contract gates before shipping mutations. The remaining 28 test families and wider checkout are incomplete. Extend the verified path rather than adding further unexecuted drafts.

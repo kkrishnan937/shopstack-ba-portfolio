@@ -6,6 +6,8 @@
 
 ## Actual readiness finding
 
+**Current disposition:** A later [actual read-only implementation/run](cart-view-executed-2026-10-28.md) satisfied the local cart-view/retry prerequisites and passed T-04/05. The actions and simulated assignments below preserve the prior handoff history; they are not a claim that external staff performed this work. Broader mutation and deployment dependencies remain open.
+
 [BLK-CART-01](cart-loading-readiness-2026-10-28.md) prevents CART-T-04 and CART-T-05 from executing. The inspected application lacks View cart, cart-loading failure presentation and Retry controls. The backend/database were unavailable during the local check, so authenticated synthetic saved-cart preconditions were not established. No cart-specific failure injection or retry recovery was performed. Execution status is Blocked, not Pass or Fail.
 
 Traceability: GAP-02 -> CART-FR-01 -> CART-AC-04 / CART-AC-05 -> CART-T-04 / CART-T-05. See the [matrix](../requirements/cart-traceability-matrix.md), [requirements](../requirements/cart-requirements.md) and [wireframes](../wireframes/cart-wireframes.md).
