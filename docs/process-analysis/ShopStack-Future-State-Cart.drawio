@@ -1,0 +1,1234 @@
+<mxfile host="app.diagrams.net" pages="4">
+  <diagram name="Page-1" id="VfwHsbaUWGB79pLA-SDu">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-4" edge="1" parent="1" source="D0_NeOUTwkWYFfcXZok4-3" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="280" y="150" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Start: Signed-in customer opens cart" vertex="1">
+          <mxGeometry height="60" width="150" x="30" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-9" edge="1" parent="1" source="D0_NeOUTwkWYFfcXZok4-8" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="500" y="150" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-8" parent="1" style="whiteSpace=wrap;html=1;" value="System attempts to load saved cart" vertex="1">
+          <mxGeometry height="60" width="120" x="280" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-15" edge="1" parent="1" source="D0_NeOUTwkWYFfcXZok4-12" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;" target="D0_NeOUTwkWYFfcXZok4-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-17" edge="1" parent="1" source="D0_NeOUTwkWYFfcXZok4-12" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="730" y="150" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-12" parent="1" style="rhombus;whiteSpace=wrap;html=1;shapeInside=1;" value="Did the cart load successfully?" vertex="1">
+          <mxGeometry height="90" width="130" x="500" y="105" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-26" edge="1" parent="1" source="D0_NeOUTwkWYFfcXZok4-14" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="750" y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-33" edge="1" parent="1" source="D0_NeOUTwkWYFfcXZok4-14" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="565" y="440" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-14" parent="1" style="rhombus;whiteSpace=wrap;html=1;shapeInside=1;" value="Is the cart empty?" vertex="1">
+          <mxGeometry height="80" width="80" x="525" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-16" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=16;" value="Yes&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="550" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-18" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=16;" value="No" vertex="1">
+          <mxGeometry height="30" width="60" x="640" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-20" edge="1" parent="1" source="D0_NeOUTwkWYFfcXZok4-19" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="950" y="150" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-19" parent="1" style="whiteSpace=wrap;html=1;" value="System displays &quot;Couldn’t load your cart. Please try again&quot;&amp;nbsp;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="75" width="130" x="740" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-22" parent="1" style="whiteSpace=wrap;html=1;" value="&lt;strong&gt;Customer selects Retry&lt;/strong&gt;." vertex="1">
+          <mxGeometry height="60" width="120" x="950" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-24" edge="1" parent="1" source="D0_NeOUTwkWYFfcXZok4-22" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.313;entryY=0.007;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;" target="D0_NeOUTwkWYFfcXZok4-8">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="700" y="-50" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-27" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=16;" value="Yes" vertex="1">
+          <mxGeometry height="30" width="60" x="610" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-29" edge="1" parent="1" source="D0_NeOUTwkWYFfcXZok4-28" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="950" y="300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-28" parent="1" style="whiteSpace=wrap;html=1;" value=" &lt;strong&gt;System shows “Cart is empty,” subtotal CAD 0.00, and Continue shopping.&lt;/strong&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="750" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-31" edge="1" parent="1" source="D0_NeOUTwkWYFfcXZok4-30" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1150" y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-30" parent="1" style="whiteSpace=wrap;html=1;" value=" &lt;strong&gt;Customer selects Continue shopping.&lt;/strong&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="940" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-32" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&#xa;End: Customer returns to product browsing.&#xa;&#xa;" vertex="1">
+          <mxGeometry height="60" width="120" x="1160" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-34" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=16;" value="No&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="560" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-36" edge="1" parent="1" source="D0_NeOUTwkWYFfcXZok4-35" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="760" y="490" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-70" edge="1" parent="1" source="D0_NeOUTwkWYFfcXZok4-35" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;" target="D0_NeOUTwkWYFfcXZok4-71">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="570" y="670" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-35" parent="1" style="whiteSpace=wrap;html=1;" value="&#xa;System displays product names, quantities, unit prices, line totals, and subtotal in CAD, with Update quantity and Remove actions.&#xa;&#xa;" vertex="1">
+          <mxGeometry height="100" width="200" x="460" y="455" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-38" edge="1" parent="1" source="D0_NeOUTwkWYFfcXZok4-37" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="970" y="490" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-37" parent="1" style="whiteSpace=wrap;html=1;" value="Customer enters a new quantity." vertex="1">
+          <mxGeometry height="60" width="120" x="760" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-40" edge="1" parent="1" source="D0_NeOUTwkWYFfcXZok4-39" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1180" y="505" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-47" edge="1" parent="1" source="D0_NeOUTwkWYFfcXZok4-39" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1030" y="650" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-39" parent="1" style="rhombus;whiteSpace=wrap;html=1;shapeInside=1;" value="Is the quantity a whole number of 1 or more?" vertex="1">
+          <mxGeometry height="110" width="120" x="970" y="445" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-41" parent="1" style="whiteSpace=wrap;html=1;" value="System displays “Enter a whole number of 1 or more.” Saved quantity and totals remain unchanged." vertex="1">
+          <mxGeometry height="80" width="160" x="1180" y="475" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-42" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=16;" value="No&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="1090" y="475" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-43" edge="1" parent="1" source="D0_NeOUTwkWYFfcXZok4-41" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.34;entryY=-0.033;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;" target="D0_NeOUTwkWYFfcXZok4-37">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1020" y="380" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-46" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=16;" value="&lt;strong&gt;Customer corrects input&lt;/strong&gt;." vertex="1">
+          <mxGeometry height="30" width="60" x="970" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-48" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=16;" value="Yes" vertex="1">
+          <mxGeometry height="30" width="60" x="1020" y="580" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-51" edge="1" parent="1" source="D0_NeOUTwkWYFfcXZok4-50" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="D0_NeOUTwkWYFfcXZok4-52">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1180" y="670" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-50" parent="1" style="whiteSpace=wrap;html=1;" value="&#xa;System attempts to save the new quantity&#xa;&#xa;" vertex="1">
+          <mxGeometry height="60" width="120" x="970" y="650" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-53" edge="1" parent="1" source="D0_NeOUTwkWYFfcXZok4-52" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1410" y="675" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-61" edge="1" parent="1" source="D0_NeOUTwkWYFfcXZok4-52" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1250" y="870" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-67" edge="1" parent="1" source="D0_NeOUTwkWYFfcXZok4-52" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0;exitDx=0;exitDy=0;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1570" y="530" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-52" parent="1" style="rhombus;whiteSpace=wrap;html=1;shapeInside=1;" value="Was the quantity update saved successfully?" vertex="1">
+          <mxGeometry height="110" width="140" x="1180" y="620" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-54" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=16;" value="Yes" vertex="1">
+          <mxGeometry height="30" width="60" x="1330" y="650" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-59" edge="1" parent="1" source="D0_NeOUTwkWYFfcXZok4-56" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;" target="D0_NeOUTwkWYFfcXZok4-35">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="780" y="1000" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-56" parent="1" style="whiteSpace=wrap;html=1;" value="System displays saved quantity, recalculated line total and subtotal, and “Update successful.”" vertex="1">
+          <mxGeometry height="75" width="170" x="1410" y="645" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-60" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=16;" value="&lt;strong&gt;Return to cart review&lt;/strong&gt;." vertex="1">
+          <mxGeometry height="30" width="60" x="880" y="850" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-65" edge="1" parent="1" source="D0_NeOUTwkWYFfcXZok4-63" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1060" y="1170" />
+            </Array>
+            <mxPoint x="820" y="530" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-63" parent="1" style="whiteSpace=wrap;html=1;" value="System displays “Update failed. Please try again” and restores the last confirmed saved quantity, line total, and subtotal." vertex="1">
+          <mxGeometry height="110" width="190" x="1160" y="860" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-64" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=16;" value="&lt;strong&gt;No — confirmed failure&lt;/strong&gt;." vertex="1">
+          <mxGeometry height="30" width="60" x="1260" y="800" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-66" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=16;" value="&lt;strong&gt;Customer retries&lt;/strong&gt;." vertex="1">
+          <mxGeometry height="30" width="60" x="1060" y="1020" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-68" parent="1" style="whiteSpace=wrap;html=1;" value="Outcome unknown. Do not claim success or failure. Recovery behaviour pending review — FS-Q-02." vertex="1">
+          <mxGeometry height="110" width="170" x="1570" y="475" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-69" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=16;" value="&lt;strong&gt;Unknown — response not received&lt;/strong&gt;." vertex="1">
+          <mxGeometry height="40" width="100" x="1390" y="530" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-72" edge="1" parent="1" source="D0_NeOUTwkWYFfcXZok4-71" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="560" y="839.9999999999998" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-71" parent="1" style="whiteSpace=wrap;html=1;" value="Customer selects Remove for an item." vertex="1">
+          <mxGeometry height="60" width="120" x="500" y="690" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-74" edge="1" parent="1" source="D0_NeOUTwkWYFfcXZok4-73" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="560" y="980" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-73" parent="1" style="whiteSpace=wrap;html=1;" value="System attempts to remove the selected cart line." vertex="1">
+          <mxGeometry height="60" width="120" x="500" y="840" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-77" edge="1" parent="1" source="D0_NeOUTwkWYFfcXZok4-75" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="710" y="1050.0000000000002" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-89" edge="1" parent="1" source="D0_NeOUTwkWYFfcXZok4-75" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="260" y="1040.0000000000002" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-98" edge="1" parent="1" source="D0_NeOUTwkWYFfcXZok4-75" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;entryX=0.75;entryY=1;entryDx=0;entryDy=0;" target="D0_NeOUTwkWYFfcXZok4-68">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1490" y="1510" />
+            </Array>
+            <mxPoint x="2129.384577824519" y="600" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-75" parent="1" style="rhombus;whiteSpace=wrap;html=1;shapeInside=1;" value="Was the item removed successfully?" vertex="1">
+          <mxGeometry height="110" width="120" x="500" y="980" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-76" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=16;" value="remove item&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="490" y="610" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-78" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=16;" value="yes" vertex="1">
+          <mxGeometry height="30" width="60" x="620" y="1000" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-80" edge="1" parent="1" source="D0_NeOUTwkWYFfcXZok4-79" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;" target="D0_NeOUTwkWYFfcXZok4-82">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="815.0000000000005" y="1240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-79" parent="1" style="whiteSpace=wrap;html=1;" value="System removes the cart line, recalculates the subtotal, and displays “Item removed successfully.”" vertex="1">
+          <mxGeometry height="100" width="210" x="710" y="1030" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-84" edge="1" parent="1" source="D0_NeOUTwkWYFfcXZok4-82" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;" target="D0_NeOUTwkWYFfcXZok4-28">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1040" y="1160" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-87" edge="1" parent="1" source="D0_NeOUTwkWYFfcXZok4-82" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=1;entryDx=0;entryDy=0;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;" target="D0_NeOUTwkWYFfcXZok4-35">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="410" y="1310" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-82" parent="1" style="rhombus;whiteSpace=wrap;html=1;shapeInside=1;" value=" &lt;strong&gt;Is the cart empty?&lt;/strong&gt;" vertex="1">
+          <mxGeometry height="140" width="160" x="735" y="1240" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-86" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=16;" value="Yes" vertex="1">
+          <mxGeometry height="30" width="60" x="870" y="1260" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-88" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=16;" value="No" vertex="1">
+          <mxGeometry height="30" width="60" x="560" y="1220" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-90" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=16;" value="&lt;strong&gt;No — confirmed failure&lt;/strong&gt;." vertex="1">
+          <mxGeometry height="30" width="60" x="290" y="1000" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-92" edge="1" parent="1" source="D0_NeOUTwkWYFfcXZok4-91" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;" target="D0_NeOUTwkWYFfcXZok4-71">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="150" y="740" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-91" parent="1" style="whiteSpace=wrap;html=1;" value="&#xa;System displays “Item removal failed. Please try again.” Item, quantity, and subtotal remain unchanged.&#xa;&#xa;" vertex="1">
+          <mxGeometry height="80" width="220" x="40" y="1000" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-93" parent="1" style="text;whiteSpace=wrap;html=1;" value="&lt;strong&gt;&lt;span&gt;Customer retries&lt;/span&gt;&lt;/strong&gt;&lt;span&gt;.&lt;/span&gt;" vertex="1">
+          <mxGeometry height="40" width="130" x="160" y="770" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-99" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=16;" value=" &lt;strong&gt;Unknown — response not received&lt;/strong&gt;." vertex="1">
+          <mxGeometry height="30" width="60" x="1240" y="1240" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-101" edge="1" parent="1" source="D0_NeOUTwkWYFfcXZok4-102" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="280" y="150" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-102" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Start: Signed-in customer opens cart" vertex="1">
+          <mxGeometry height="60" width="150" x="30" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-103" edge="1" parent="1" source="D0_NeOUTwkWYFfcXZok4-104" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="500" y="150" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-104" parent="1" style="whiteSpace=wrap;html=1;" value="System attempts to load saved cart" vertex="1">
+          <mxGeometry height="60" width="120" x="280" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-105" edge="1" parent="1" source="D0_NeOUTwkWYFfcXZok4-107" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;" target="D0_NeOUTwkWYFfcXZok4-110">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-106" edge="1" parent="1" source="D0_NeOUTwkWYFfcXZok4-107" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="730" y="150" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-107" parent="1" style="rhombus;whiteSpace=wrap;html=1;shapeInside=1;" value="Did the cart load successfully?" vertex="1">
+          <mxGeometry height="90" width="130" x="500" y="105" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-108" edge="1" parent="1" source="D0_NeOUTwkWYFfcXZok4-110" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="750" y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-109" edge="1" parent="1" source="D0_NeOUTwkWYFfcXZok4-110" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="565" y="440" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-110" parent="1" style="rhombus;whiteSpace=wrap;html=1;shapeInside=1;" value="Is the cart empty?" vertex="1">
+          <mxGeometry height="80" width="80" x="525" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-111" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=16;" value="Yes&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="550" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-112" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=16;" value="No" vertex="1">
+          <mxGeometry height="30" width="60" x="640" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-113" edge="1" parent="1" source="D0_NeOUTwkWYFfcXZok4-114" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="950" y="150" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-114" parent="1" style="whiteSpace=wrap;html=1;" value="System displays &quot;Couldn’t load your cart. Please try again&quot;&amp;nbsp;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="75" width="130" x="740" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-115" parent="1" style="whiteSpace=wrap;html=1;" value="&lt;strong&gt;Customer selects Retry&lt;/strong&gt;." vertex="1">
+          <mxGeometry height="60" width="120" x="950" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-116" edge="1" parent="1" source="D0_NeOUTwkWYFfcXZok4-115" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.313;entryY=0.007;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;" target="D0_NeOUTwkWYFfcXZok4-104">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="700" y="-50" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-117" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=16;" value="Yes" vertex="1">
+          <mxGeometry height="30" width="60" x="610" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-118" edge="1" parent="1" source="D0_NeOUTwkWYFfcXZok4-119" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="950" y="300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-119" parent="1" style="whiteSpace=wrap;html=1;" value=" &lt;strong&gt;System shows “Cart is empty,” subtotal CAD 0.00, and Continue shopping.&lt;/strong&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="750" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-120" edge="1" parent="1" source="D0_NeOUTwkWYFfcXZok4-121" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1150" y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-121" parent="1" style="whiteSpace=wrap;html=1;" value=" &lt;strong&gt;Customer selects Continue shopping.&lt;/strong&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="940" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-122" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&#xa;End: Customer returns to product browsing.&#xa;&#xa;" vertex="1">
+          <mxGeometry height="60" width="120" x="1160" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-123" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=16;" value="No&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="560" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-124" edge="1" parent="1" source="D0_NeOUTwkWYFfcXZok4-126" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="760" y="490" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-125" edge="1" parent="1" source="D0_NeOUTwkWYFfcXZok4-126" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;" target="D0_NeOUTwkWYFfcXZok4-154">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="570" y="670" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-126" parent="1" style="whiteSpace=wrap;html=1;" value="&#xa;System displays product names, quantities, unit prices, line totals, and subtotal in CAD, with Update quantity and Remove actions.&#xa;&#xa;" vertex="1">
+          <mxGeometry height="100" width="200" x="460" y="455" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-127" edge="1" parent="1" source="D0_NeOUTwkWYFfcXZok4-128" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="970" y="490" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-128" parent="1" style="whiteSpace=wrap;html=1;" value="Customer enters a new quantity." vertex="1">
+          <mxGeometry height="60" width="120" x="760" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-129" edge="1" parent="1" source="D0_NeOUTwkWYFfcXZok4-131" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1180" y="505" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-130" edge="1" parent="1" source="D0_NeOUTwkWYFfcXZok4-131" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1030" y="650" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-131" parent="1" style="rhombus;whiteSpace=wrap;html=1;shapeInside=1;" value="Is the quantity a whole number of 1 or more?" vertex="1">
+          <mxGeometry height="110" width="120" x="970" y="445" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-132" parent="1" style="whiteSpace=wrap;html=1;" value="System displays “Enter a whole number of 1 or more.” Saved quantity and totals remain unchanged." vertex="1">
+          <mxGeometry height="80" width="160" x="1180" y="475" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-133" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=16;" value="No&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="1090" y="475" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-134" edge="1" parent="1" source="D0_NeOUTwkWYFfcXZok4-132" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.34;entryY=-0.033;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;" target="D0_NeOUTwkWYFfcXZok4-128">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1020" y="380" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-135" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=16;" value="&lt;strong&gt;Customer corrects input&lt;/strong&gt;." vertex="1">
+          <mxGeometry height="30" width="60" x="970" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-136" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=16;" value="Yes" vertex="1">
+          <mxGeometry height="30" width="60" x="1020" y="580" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-137" edge="1" parent="1" source="D0_NeOUTwkWYFfcXZok4-138" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="D0_NeOUTwkWYFfcXZok4-142">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1180" y="670" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-138" parent="1" style="whiteSpace=wrap;html=1;" value="&#xa;System attempts to save the new quantity&#xa;&#xa;" vertex="1">
+          <mxGeometry height="60" width="120" x="970" y="650" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-139" edge="1" parent="1" source="D0_NeOUTwkWYFfcXZok4-142" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1410" y="675" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-140" edge="1" parent="1" source="D0_NeOUTwkWYFfcXZok4-142" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1250" y="870" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-141" edge="1" parent="1" source="D0_NeOUTwkWYFfcXZok4-142" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0;exitDx=0;exitDy=0;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1570" y="530" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-142" parent="1" style="rhombus;whiteSpace=wrap;html=1;shapeInside=1;" value="Was the quantity update saved successfully?" vertex="1">
+          <mxGeometry height="110" width="140" x="1180" y="620" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-143" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=16;" value="Yes" vertex="1">
+          <mxGeometry height="30" width="60" x="1330" y="650" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-144" edge="1" parent="1" source="D0_NeOUTwkWYFfcXZok4-145" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;" target="D0_NeOUTwkWYFfcXZok4-126">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="780" y="1000" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-145" parent="1" style="whiteSpace=wrap;html=1;" value="System displays saved quantity, recalculated line total and subtotal, and “Update successful.”" vertex="1">
+          <mxGeometry height="75" width="170" x="1410" y="645" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-146" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=16;" value="&lt;strong&gt;Return to cart review&lt;/strong&gt;." vertex="1">
+          <mxGeometry height="30" width="60" x="880" y="850" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-147" edge="1" parent="1" source="D0_NeOUTwkWYFfcXZok4-148" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1060" y="1170" />
+            </Array>
+            <mxPoint x="820" y="530" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-148" parent="1" style="whiteSpace=wrap;html=1;" value="System displays “Update failed. Please try again” and restores the last confirmed saved quantity, line total, and subtotal." vertex="1">
+          <mxGeometry height="110" width="190" x="1160" y="860" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-149" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=16;" value="&lt;strong&gt;No — confirmed failure&lt;/strong&gt;." vertex="1">
+          <mxGeometry height="30" width="60" x="1260" y="800" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-150" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=16;" value="&lt;strong&gt;Customer retries&lt;/strong&gt;." vertex="1">
+          <mxGeometry height="30" width="60" x="1060" y="1020" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-151" parent="1" style="whiteSpace=wrap;html=1;" value="Outcome unknown. Do not claim success or failure. Recovery behaviour pending review — FS-Q-02." vertex="1">
+          <mxGeometry height="110" width="170" x="1570" y="475" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-152" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=16;" value="&lt;strong&gt;Unknown — response not received&lt;/strong&gt;." vertex="1">
+          <mxGeometry height="40" width="100" x="1390" y="530" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-153" edge="1" parent="1" source="D0_NeOUTwkWYFfcXZok4-154" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="560" y="839.9999999999998" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-154" parent="1" style="whiteSpace=wrap;html=1;" value="Customer selects Remove for an item." vertex="1">
+          <mxGeometry height="60" width="120" x="500" y="690" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-155" edge="1" parent="1" source="D0_NeOUTwkWYFfcXZok4-156" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="560" y="980" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-156" parent="1" style="whiteSpace=wrap;html=1;" value="System attempts to remove the selected cart line." vertex="1">
+          <mxGeometry height="60" width="120" x="500" y="840" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-157" edge="1" parent="1" source="D0_NeOUTwkWYFfcXZok4-160" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="710" y="1050.0000000000002" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-158" edge="1" parent="1" source="D0_NeOUTwkWYFfcXZok4-160" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="260" y="1040.0000000000002" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-159" edge="1" parent="1" source="D0_NeOUTwkWYFfcXZok4-160" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;entryX=0.75;entryY=1;entryDx=0;entryDy=0;" target="D0_NeOUTwkWYFfcXZok4-151">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1490" y="1510" />
+            </Array>
+            <mxPoint x="2129.384577824519" y="600" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-160" parent="1" style="rhombus;whiteSpace=wrap;html=1;shapeInside=1;" value="Was the item removed successfully?" vertex="1">
+          <mxGeometry height="110" width="120" x="500" y="980" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-161" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=16;" value="remove item&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="490" y="610" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-162" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=16;" value="yes" vertex="1">
+          <mxGeometry height="30" width="60" x="620" y="1000" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-163" edge="1" parent="1" source="D0_NeOUTwkWYFfcXZok4-164" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;" target="D0_NeOUTwkWYFfcXZok4-167">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="815.0000000000005" y="1240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-164" parent="1" style="whiteSpace=wrap;html=1;" value="System removes the cart line, recalculates the subtotal, and displays “Item removed successfully.”" vertex="1">
+          <mxGeometry height="100" width="210" x="710" y="1030" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-165" edge="1" parent="1" source="D0_NeOUTwkWYFfcXZok4-167" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;" target="D0_NeOUTwkWYFfcXZok4-119">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1040" y="1160" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-166" edge="1" parent="1" source="D0_NeOUTwkWYFfcXZok4-167" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=1;entryDx=0;entryDy=0;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;" target="D0_NeOUTwkWYFfcXZok4-126">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="410" y="1310" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-167" parent="1" style="rhombus;whiteSpace=wrap;html=1;shapeInside=1;" value=" &lt;strong&gt;Is the cart empty?&lt;/strong&gt;" vertex="1">
+          <mxGeometry height="140" width="160" x="735" y="1240" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-168" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=16;" value="Yes" vertex="1">
+          <mxGeometry height="30" width="60" x="870" y="1260" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-169" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=16;" value="No" vertex="1">
+          <mxGeometry height="30" width="60" x="560" y="1220" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-170" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=16;" value="&lt;strong&gt;No — confirmed failure&lt;/strong&gt;." vertex="1">
+          <mxGeometry height="30" width="60" x="290" y="1000" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-171" edge="1" parent="1" source="D0_NeOUTwkWYFfcXZok4-172" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;" target="D0_NeOUTwkWYFfcXZok4-154">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="150" y="740" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-172" parent="1" style="whiteSpace=wrap;html=1;" value="&#xa;System displays “Item removal failed. Please try again.” Item, quantity, and subtotal remain unchanged.&#xa;&#xa;" vertex="1">
+          <mxGeometry height="80" width="220" x="40" y="1000" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-173" parent="1" style="text;whiteSpace=wrap;html=1;" value="&lt;strong&gt;&lt;span&gt;Customer retries&lt;/span&gt;&lt;/strong&gt;&lt;span&gt;.&lt;/span&gt;" vertex="1">
+          <mxGeometry height="40" width="130" x="160" y="770" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-174" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=16;" value=" &lt;strong&gt;Unknown — response not received&lt;/strong&gt;." vertex="1">
+          <mxGeometry height="30" width="60" x="1240" y="1240" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="cx_Leycvp9C3mEc_-tYy" name="Page-2">
+    <mxGraphModel dx="804" dy="552" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="Page-1" id="Tc7aD2O87OVXJFrtt2OM">
+    <mxGraphModel dx="1961" dy="1346" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-4" edge="1" parent="1" source="D0_NeOUTwkWYFfcXZok4-3" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="280" y="150" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Start: Signed-in customer opens cart" vertex="1">
+          <mxGeometry height="60" width="150" x="30" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-9" edge="1" parent="1" source="D0_NeOUTwkWYFfcXZok4-8" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="500" y="150" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-8" parent="1" style="whiteSpace=wrap;html=1;" value="System attempts to load saved cart" vertex="1">
+          <mxGeometry height="60" width="120" x="280" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-15" edge="1" parent="1" source="D0_NeOUTwkWYFfcXZok4-12" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;" target="D0_NeOUTwkWYFfcXZok4-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-17" edge="1" parent="1" source="D0_NeOUTwkWYFfcXZok4-12" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="730" y="150" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-12" parent="1" style="rhombus;whiteSpace=wrap;html=1;shapeInside=1;" value="Did the cart load successfully?" vertex="1">
+          <mxGeometry height="90" width="130" x="500" y="105" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-26" edge="1" parent="1" source="D0_NeOUTwkWYFfcXZok4-14" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="750" y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-33" edge="1" parent="1" source="D0_NeOUTwkWYFfcXZok4-14" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="565" y="440" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-14" parent="1" style="rhombus;whiteSpace=wrap;html=1;shapeInside=1;" value="Is the cart empty?" vertex="1">
+          <mxGeometry height="80" width="80" x="525" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-16" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=16;" value="Yes&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="550" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-18" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=16;" value="No" vertex="1">
+          <mxGeometry height="30" width="60" x="640" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-20" edge="1" parent="1" source="D0_NeOUTwkWYFfcXZok4-19" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="950" y="150" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-19" parent="1" style="whiteSpace=wrap;html=1;" value="System displays &quot;Couldn’t load your cart. Please try again&quot;&amp;nbsp;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="75" width="130" x="740" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-22" parent="1" style="whiteSpace=wrap;html=1;" value="&lt;strong&gt;Customer selects Retry&lt;/strong&gt;." vertex="1">
+          <mxGeometry height="60" width="120" x="950" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-24" edge="1" parent="1" source="D0_NeOUTwkWYFfcXZok4-22" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.313;entryY=0.007;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;" target="D0_NeOUTwkWYFfcXZok4-8">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="700" y="-50" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-27" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=16;" value="Yes" vertex="1">
+          <mxGeometry height="30" width="60" x="610" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-29" edge="1" parent="1" source="D0_NeOUTwkWYFfcXZok4-28" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="950" y="300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-28" parent="1" style="whiteSpace=wrap;html=1;" value=" &lt;strong&gt;System shows “Cart is empty,” subtotal CAD 0.00, and Continue shopping.&lt;/strong&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="750" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-31" edge="1" parent="1" source="D0_NeOUTwkWYFfcXZok4-30" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1150" y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-30" parent="1" style="whiteSpace=wrap;html=1;" value=" &lt;strong&gt;Customer selects Continue shopping.&lt;/strong&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="940" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-32" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&#xa;End: Customer returns to product browsing.&#xa;&#xa;" vertex="1">
+          <mxGeometry height="60" width="120" x="1160" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-34" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=16;" value="No&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="560" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-36" edge="1" parent="1" source="D0_NeOUTwkWYFfcXZok4-35" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="760" y="490" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-70" edge="1" parent="1" source="D0_NeOUTwkWYFfcXZok4-35" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;" target="D0_NeOUTwkWYFfcXZok4-71">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="570" y="670" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-35" parent="1" style="whiteSpace=wrap;html=1;" value="&#xa;System displays product names, quantities, unit prices, line totals, and subtotal in CAD, with Update quantity and Remove actions.&#xa;&#xa;" vertex="1">
+          <mxGeometry height="100" width="200" x="460" y="455" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-38" edge="1" parent="1" source="D0_NeOUTwkWYFfcXZok4-37" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="970" y="490" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-37" parent="1" style="whiteSpace=wrap;html=1;" value="Customer enters a new quantity." vertex="1">
+          <mxGeometry height="60" width="120" x="760" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-40" edge="1" parent="1" source="D0_NeOUTwkWYFfcXZok4-39" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1180" y="505" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-47" edge="1" parent="1" source="D0_NeOUTwkWYFfcXZok4-39" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1030" y="650" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-39" parent="1" style="rhombus;whiteSpace=wrap;html=1;shapeInside=1;" value="Is the quantity a whole number of 1 or more?" vertex="1">
+          <mxGeometry height="110" width="120" x="970" y="445" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-41" parent="1" style="whiteSpace=wrap;html=1;" value="System displays “Enter a whole number of 1 or more.” Saved quantity and totals remain unchanged." vertex="1">
+          <mxGeometry height="80" width="160" x="1180" y="475" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-42" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=16;" value="No&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="1090" y="475" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-43" edge="1" parent="1" source="D0_NeOUTwkWYFfcXZok4-41" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.34;entryY=-0.033;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;" target="D0_NeOUTwkWYFfcXZok4-37">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1020" y="380" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-46" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=16;" value="&lt;strong&gt;Customer corrects input&lt;/strong&gt;." vertex="1">
+          <mxGeometry height="30" width="60" x="970" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-48" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=16;" value="Yes" vertex="1">
+          <mxGeometry height="30" width="60" x="1020" y="580" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-51" edge="1" parent="1" source="D0_NeOUTwkWYFfcXZok4-50" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="D0_NeOUTwkWYFfcXZok4-52">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1180" y="670" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-50" parent="1" style="whiteSpace=wrap;html=1;" value="&#xa;System attempts to save the new quantity&#xa;&#xa;" vertex="1">
+          <mxGeometry height="60" width="120" x="970" y="650" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-53" edge="1" parent="1" source="D0_NeOUTwkWYFfcXZok4-52" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1410" y="675" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-61" edge="1" parent="1" source="D0_NeOUTwkWYFfcXZok4-52" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1250" y="870" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-67" edge="1" parent="1" source="D0_NeOUTwkWYFfcXZok4-52" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0;exitDx=0;exitDy=0;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1570" y="530" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-52" parent="1" style="rhombus;whiteSpace=wrap;html=1;shapeInside=1;" value="Was the quantity update saved successfully?" vertex="1">
+          <mxGeometry height="110" width="140" x="1180" y="620" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-54" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=16;" value="Yes" vertex="1">
+          <mxGeometry height="30" width="60" x="1330" y="650" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-59" edge="1" parent="1" source="D0_NeOUTwkWYFfcXZok4-56" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;" target="D0_NeOUTwkWYFfcXZok4-35">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="780" y="1000" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-56" parent="1" style="whiteSpace=wrap;html=1;" value="System displays saved quantity, recalculated line total and subtotal, and “Update successful.”" vertex="1">
+          <mxGeometry height="75" width="170" x="1410" y="645" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-60" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=16;" value="&lt;strong&gt;Return to cart review&lt;/strong&gt;." vertex="1">
+          <mxGeometry height="30" width="60" x="880" y="850" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-65" edge="1" parent="1" source="D0_NeOUTwkWYFfcXZok4-63" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1060" y="1170" />
+            </Array>
+            <mxPoint x="820" y="530" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-63" parent="1" style="whiteSpace=wrap;html=1;" value="System displays “Update failed. Please try again” and restores the last confirmed saved quantity, line total, and subtotal." vertex="1">
+          <mxGeometry height="110" width="190" x="1160" y="860" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-64" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=16;" value="&lt;strong&gt;No — confirmed failure&lt;/strong&gt;." vertex="1">
+          <mxGeometry height="30" width="60" x="1260" y="800" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-66" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=16;" value="&lt;strong&gt;Customer retries&lt;/strong&gt;." vertex="1">
+          <mxGeometry height="30" width="60" x="1060" y="1020" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-68" parent="1" style="whiteSpace=wrap;html=1;" value="Outcome unknown. Do not claim success or failure. Recovery behaviour pending review — FS-Q-02." vertex="1">
+          <mxGeometry height="110" width="170" x="1570" y="475" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-69" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=16;" value="&lt;strong&gt;Unknown — response not received&lt;/strong&gt;." vertex="1">
+          <mxGeometry height="40" width="100" x="1390" y="530" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-72" edge="1" parent="1" source="D0_NeOUTwkWYFfcXZok4-71" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="560" y="839.9999999999998" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-71" parent="1" style="whiteSpace=wrap;html=1;" value="Customer selects Remove for an item." vertex="1">
+          <mxGeometry height="60" width="120" x="500" y="690" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-74" edge="1" parent="1" source="D0_NeOUTwkWYFfcXZok4-73" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="560" y="980" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-73" parent="1" style="whiteSpace=wrap;html=1;" value="System attempts to remove the selected cart line." vertex="1">
+          <mxGeometry height="60" width="120" x="500" y="840" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-77" edge="1" parent="1" source="D0_NeOUTwkWYFfcXZok4-75" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="710" y="1050.0000000000002" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-89" edge="1" parent="1" source="D0_NeOUTwkWYFfcXZok4-75" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="260" y="1040.0000000000002" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-98" edge="1" parent="1" source="D0_NeOUTwkWYFfcXZok4-75" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;entryX=0.75;entryY=1;entryDx=0;entryDy=0;" target="D0_NeOUTwkWYFfcXZok4-68">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1490" y="1510" />
+            </Array>
+            <mxPoint x="2129.384577824519" y="600" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-75" parent="1" style="rhombus;whiteSpace=wrap;html=1;shapeInside=1;" value="Was the item removed successfully?" vertex="1">
+          <mxGeometry height="110" width="120" x="500" y="980" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-76" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=16;" value="remove item&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="490" y="610" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-78" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=16;" value="yes" vertex="1">
+          <mxGeometry height="30" width="60" x="620" y="1000" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-80" edge="1" parent="1" source="D0_NeOUTwkWYFfcXZok4-79" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;" target="D0_NeOUTwkWYFfcXZok4-82">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="815.0000000000005" y="1240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-79" parent="1" style="whiteSpace=wrap;html=1;" value="System removes the cart line, recalculates the subtotal, and displays “Item removed successfully.”" vertex="1">
+          <mxGeometry height="100" width="210" x="710" y="1030" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-84" edge="1" parent="1" source="D0_NeOUTwkWYFfcXZok4-82" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;" target="D0_NeOUTwkWYFfcXZok4-28">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1040" y="1160" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-87" edge="1" parent="1" source="D0_NeOUTwkWYFfcXZok4-82" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=1;entryDx=0;entryDy=0;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;" target="D0_NeOUTwkWYFfcXZok4-35">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="410" y="1310" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-82" parent="1" style="rhombus;whiteSpace=wrap;html=1;shapeInside=1;" value=" &lt;strong&gt;Is the cart empty?&lt;/strong&gt;" vertex="1">
+          <mxGeometry height="140" width="160" x="735" y="1240" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-86" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=16;" value="Yes" vertex="1">
+          <mxGeometry height="30" width="60" x="870" y="1260" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-88" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=16;" value="No" vertex="1">
+          <mxGeometry height="30" width="60" x="560" y="1220" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-90" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=16;" value="&lt;strong&gt;No — confirmed failure&lt;/strong&gt;." vertex="1">
+          <mxGeometry height="30" width="60" x="290" y="1000" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-92" edge="1" parent="1" source="D0_NeOUTwkWYFfcXZok4-91" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;" target="D0_NeOUTwkWYFfcXZok4-71">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="150" y="740" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-91" parent="1" style="whiteSpace=wrap;html=1;" value="&#xa;System displays “Item removal failed. Please try again.” Item, quantity, and subtotal remain unchanged.&#xa;&#xa;" vertex="1">
+          <mxGeometry height="80" width="220" x="40" y="1000" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-93" parent="1" style="text;whiteSpace=wrap;html=1;" value="&lt;strong&gt;&lt;span&gt;Customer retries&lt;/span&gt;&lt;/strong&gt;&lt;span&gt;.&lt;/span&gt;" vertex="1">
+          <mxGeometry height="40" width="130" x="160" y="770" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-99" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=16;" value=" &lt;strong&gt;Unknown — response not received&lt;/strong&gt;." vertex="1">
+          <mxGeometry height="30" width="60" x="1240" y="1240" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-101" edge="1" parent="1" source="D0_NeOUTwkWYFfcXZok4-102" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="280" y="150" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-102" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Start: Signed-in customer opens cart" vertex="1">
+          <mxGeometry height="60" width="150" x="30" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-103" edge="1" parent="1" source="D0_NeOUTwkWYFfcXZok4-104" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="500" y="150" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-104" parent="1" style="whiteSpace=wrap;html=1;" value="System attempts to load saved cart" vertex="1">
+          <mxGeometry height="60" width="120" x="280" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-105" edge="1" parent="1" source="D0_NeOUTwkWYFfcXZok4-107" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;" target="D0_NeOUTwkWYFfcXZok4-110">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-106" edge="1" parent="1" source="D0_NeOUTwkWYFfcXZok4-107" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="730" y="150" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-107" parent="1" style="rhombus;whiteSpace=wrap;html=1;shapeInside=1;" value="Did the cart load successfully?" vertex="1">
+          <mxGeometry height="90" width="130" x="500" y="105" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-108" edge="1" parent="1" source="D0_NeOUTwkWYFfcXZok4-110" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="750" y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-109" edge="1" parent="1" source="D0_NeOUTwkWYFfcXZok4-110" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="565" y="440" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-110" parent="1" style="rhombus;whiteSpace=wrap;html=1;shapeInside=1;" value="Is the cart empty?" vertex="1">
+          <mxGeometry height="80" width="80" x="525" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-111" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=16;" value="Yes&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="550" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-112" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=16;" value="No" vertex="1">
+          <mxGeometry height="30" width="60" x="640" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-113" edge="1" parent="1" source="D0_NeOUTwkWYFfcXZok4-114" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="950" y="150" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-114" parent="1" style="whiteSpace=wrap;html=1;" value="System displays &quot;Couldn’t load your cart. Please try again&quot;&amp;nbsp;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="75" width="130" x="740" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-115" parent="1" style="whiteSpace=wrap;html=1;" value="&lt;strong&gt;Customer selects Retry&lt;/strong&gt;." vertex="1">
+          <mxGeometry height="60" width="120" x="950" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-116" edge="1" parent="1" source="D0_NeOUTwkWYFfcXZok4-115" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.313;entryY=0.007;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;" target="D0_NeOUTwkWYFfcXZok4-104">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="700" y="-50" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-117" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=16;" value="Yes" vertex="1">
+          <mxGeometry height="30" width="60" x="610" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-118" edge="1" parent="1" source="D0_NeOUTwkWYFfcXZok4-119" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="950" y="300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-119" parent="1" style="whiteSpace=wrap;html=1;" value=" &lt;strong&gt;System shows “Cart is empty,” subtotal CAD 0.00, and Continue shopping.&lt;/strong&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="750" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-120" edge="1" parent="1" source="D0_NeOUTwkWYFfcXZok4-121" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1150" y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-121" parent="1" style="whiteSpace=wrap;html=1;" value=" &lt;strong&gt;Customer selects Continue shopping.&lt;/strong&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="940" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-122" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&#xa;End: Customer returns to product browsing.&#xa;&#xa;" vertex="1">
+          <mxGeometry height="60" width="120" x="1160" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-123" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=16;" value="No&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="560" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-124" edge="1" parent="1" source="D0_NeOUTwkWYFfcXZok4-126" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="760" y="490" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-125" edge="1" parent="1" source="D0_NeOUTwkWYFfcXZok4-126" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;" target="D0_NeOUTwkWYFfcXZok4-154">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="570" y="670" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-126" parent="1" style="whiteSpace=wrap;html=1;" value="&#xa;System displays product names, quantities, unit prices, line totals, and subtotal in CAD, with Update quantity and Remove actions.&#xa;&#xa;" vertex="1">
+          <mxGeometry height="100" width="200" x="460" y="455" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-127" edge="1" parent="1" source="D0_NeOUTwkWYFfcXZok4-128" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="970" y="490" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-128" parent="1" style="whiteSpace=wrap;html=1;" value="Customer enters a new quantity." vertex="1">
+          <mxGeometry height="60" width="120" x="760" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-129" edge="1" parent="1" source="D0_NeOUTwkWYFfcXZok4-131" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1180" y="505" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-130" edge="1" parent="1" source="D0_NeOUTwkWYFfcXZok4-131" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1030" y="650" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-131" parent="1" style="rhombus;whiteSpace=wrap;html=1;shapeInside=1;" value="Is the quantity a whole number of 1 or more?" vertex="1">
+          <mxGeometry height="110" width="120" x="970" y="445" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-132" parent="1" style="whiteSpace=wrap;html=1;" value="System displays “Enter a whole number of 1 or more.” Saved quantity and totals remain unchanged." vertex="1">
+          <mxGeometry height="80" width="160" x="1180" y="475" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-133" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=16;" value="No&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="1090" y="475" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-134" edge="1" parent="1" source="D0_NeOUTwkWYFfcXZok4-132" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.34;entryY=-0.033;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;" target="D0_NeOUTwkWYFfcXZok4-128">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1020" y="380" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-135" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=16;" value="&lt;strong&gt;Customer corrects input&lt;/strong&gt;." vertex="1">
+          <mxGeometry height="30" width="60" x="970" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-136" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=16;" value="Yes" vertex="1">
+          <mxGeometry height="30" width="60" x="1020" y="580" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-137" edge="1" parent="1" source="D0_NeOUTwkWYFfcXZok4-138" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="D0_NeOUTwkWYFfcXZok4-142">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1180" y="670" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-138" parent="1" style="whiteSpace=wrap;html=1;" value="&#xa;System attempts to save the new quantity&#xa;&#xa;" vertex="1">
+          <mxGeometry height="60" width="120" x="970" y="650" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-139" edge="1" parent="1" source="D0_NeOUTwkWYFfcXZok4-142" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1410" y="675" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-140" edge="1" parent="1" source="D0_NeOUTwkWYFfcXZok4-142" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1250" y="870" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-141" edge="1" parent="1" source="D0_NeOUTwkWYFfcXZok4-142" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0;exitDx=0;exitDy=0;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1570" y="530" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-142" parent="1" style="rhombus;whiteSpace=wrap;html=1;shapeInside=1;" value="Was the quantity update saved successfully?" vertex="1">
+          <mxGeometry height="110" width="140" x="1180" y="620" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-143" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=16;" value="Yes" vertex="1">
+          <mxGeometry height="30" width="60" x="1330" y="650" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-144" edge="1" parent="1" source="D0_NeOUTwkWYFfcXZok4-145" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;" target="D0_NeOUTwkWYFfcXZok4-126">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="780" y="1000" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-145" parent="1" style="whiteSpace=wrap;html=1;" value="System displays saved quantity, recalculated line total and subtotal, and “Update successful.”" vertex="1">
+          <mxGeometry height="75" width="170" x="1410" y="645" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-146" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=16;" value="&lt;strong&gt;Return to cart review&lt;/strong&gt;." vertex="1">
+          <mxGeometry height="30" width="60" x="880" y="850" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-147" edge="1" parent="1" source="D0_NeOUTwkWYFfcXZok4-148" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1060" y="1170" />
+            </Array>
+            <mxPoint x="820" y="530" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-148" parent="1" style="whiteSpace=wrap;html=1;" value="System displays “Update failed. Please try again” and restores the last confirmed saved quantity, line total, and subtotal." vertex="1">
+          <mxGeometry height="110" width="190" x="1160" y="860" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-149" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=16;" value="&lt;strong&gt;No — confirmed failure&lt;/strong&gt;." vertex="1">
+          <mxGeometry height="30" width="60" x="1260" y="800" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-150" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=16;" value="&lt;strong&gt;Customer retries&lt;/strong&gt;." vertex="1">
+          <mxGeometry height="30" width="60" x="1060" y="1020" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-151" parent="1" style="whiteSpace=wrap;html=1;" value="Outcome unknown. Do not claim success or failure. Recovery behaviour pending review — FS-Q-02." vertex="1">
+          <mxGeometry height="110" width="170" x="1570" y="475" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-152" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=16;" value="&lt;strong&gt;Unknown — response not received&lt;/strong&gt;." vertex="1">
+          <mxGeometry height="40" width="100" x="1390" y="530" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-153" edge="1" parent="1" source="D0_NeOUTwkWYFfcXZok4-154" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="560" y="839.9999999999998" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-154" parent="1" style="whiteSpace=wrap;html=1;" value="Customer selects Remove for an item." vertex="1">
+          <mxGeometry height="60" width="120" x="500" y="690" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-155" edge="1" parent="1" source="D0_NeOUTwkWYFfcXZok4-156" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="560" y="980" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-156" parent="1" style="whiteSpace=wrap;html=1;" value="System attempts to remove the selected cart line." vertex="1">
+          <mxGeometry height="60" width="120" x="500" y="840" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-157" edge="1" parent="1" source="D0_NeOUTwkWYFfcXZok4-160" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="710" y="1050.0000000000002" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-158" edge="1" parent="1" source="D0_NeOUTwkWYFfcXZok4-160" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="260" y="1040.0000000000002" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-159" edge="1" parent="1" source="D0_NeOUTwkWYFfcXZok4-160" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;entryX=0.75;entryY=1;entryDx=0;entryDy=0;" target="D0_NeOUTwkWYFfcXZok4-151">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1490" y="1510" />
+            </Array>
+            <mxPoint x="2129.384577824519" y="600" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-160" parent="1" style="rhombus;whiteSpace=wrap;html=1;shapeInside=1;" value="Was the item removed successfully?" vertex="1">
+          <mxGeometry height="110" width="120" x="500" y="980" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-161" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=16;" value="remove item&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="490" y="610" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-162" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=16;" value="yes" vertex="1">
+          <mxGeometry height="30" width="60" x="620" y="1000" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-163" edge="1" parent="1" source="D0_NeOUTwkWYFfcXZok4-164" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;" target="D0_NeOUTwkWYFfcXZok4-167">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="815.0000000000005" y="1240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-164" parent="1" style="whiteSpace=wrap;html=1;" value="System removes the cart line, recalculates the subtotal, and displays “Item removed successfully.”" vertex="1">
+          <mxGeometry height="100" width="210" x="710" y="1030" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-165" edge="1" parent="1" source="D0_NeOUTwkWYFfcXZok4-167" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;" target="D0_NeOUTwkWYFfcXZok4-119">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1040" y="1160" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-166" edge="1" parent="1" source="D0_NeOUTwkWYFfcXZok4-167" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=1;entryDx=0;entryDy=0;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;" target="D0_NeOUTwkWYFfcXZok4-126">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="410" y="1310" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-167" parent="1" style="rhombus;whiteSpace=wrap;html=1;shapeInside=1;" value=" &lt;strong&gt;Is the cart empty?&lt;/strong&gt;" vertex="1">
+          <mxGeometry height="140" width="160" x="735" y="1240" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-168" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=16;" value="Yes" vertex="1">
+          <mxGeometry height="30" width="60" x="870" y="1260" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-169" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=16;" value="No" vertex="1">
+          <mxGeometry height="30" width="60" x="560" y="1220" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-170" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=16;" value="&lt;strong&gt;No — confirmed failure&lt;/strong&gt;." vertex="1">
+          <mxGeometry height="30" width="60" x="290" y="1000" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-171" edge="1" parent="1" source="D0_NeOUTwkWYFfcXZok4-172" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;" target="D0_NeOUTwkWYFfcXZok4-154">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="150" y="740" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-172" parent="1" style="whiteSpace=wrap;html=1;" value="&#xa;System displays “Item removal failed. Please try again.” Item, quantity, and subtotal remain unchanged.&#xa;&#xa;" vertex="1">
+          <mxGeometry height="80" width="220" x="40" y="1000" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-173" parent="1" style="text;whiteSpace=wrap;html=1;" value="&lt;strong&gt;&lt;span&gt;Customer retries&lt;/span&gt;&lt;/strong&gt;&lt;span&gt;.&lt;/span&gt;" vertex="1">
+          <mxGeometry height="40" width="130" x="160" y="770" as="geometry" />
+        </mxCell>
+        <mxCell id="D0_NeOUTwkWYFfcXZok4-174" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=16;" value=" &lt;strong&gt;Unknown — response not received&lt;/strong&gt;." vertex="1">
+          <mxGeometry height="30" width="60" x="1240" y="1240" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="Page-2" id="F_DGoJSfJocgOU5hEKTJ">
+    <mxGraphModel grid="0" page="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

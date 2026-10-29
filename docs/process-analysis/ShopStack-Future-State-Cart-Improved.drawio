@@ -1,0 +1,151 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net">
+  <diagram name="Future-State-Cart" id="shopstack-to-be-partial-v01">
+    <mxGraphModel grid="1" gridSize="10" page="1" pageScale="1" pageWidth="1800" pageHeight="1950" background="#FFFFFF">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="ShopStack — Future-State Cart Process" style="text;html=0;fontSize=26;fontStyle=1;align=left;fontColor=#172B4D;" vertex="1" parent="1">
+          <mxGeometry x="40" y="25" width="1160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="subtitle" value="Kailas Krishnan | 24 October 2026 | Draft v0.2 — cart loading and quantity updates" style="text;html=0;fontSize=15;align=left;fontColor=#526277;" vertex="1" parent="1">
+          <mxGeometry x="40" y="75" width="1160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="legend" value="Work in progress: removal and unknown-outcome branches pending; tax rules remain open." style="text;html=0;fontSize=13;align=left;fontColor=#526277;" vertex="1" parent="1">
+          <mxGeometry x="40" y="1880" width="1720" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="start" value="Start: Signed-in customer opens cart" style="rounded=1;arcSize=25;whiteSpace=wrap;html=0;fillColor=#DEF3EB;strokeColor=#2C8566;fontColor=#172B4D;fontSize=16;fontFamily=Arial;spacing=10;" vertex="1" parent="1">
+          <mxGeometry x="650" y="140" width="280" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="load" value="System attempts to load saved cart" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#F1F5F9;strokeColor=#64748B;fontColor=#172B4D;fontSize=16;fontFamily=Arial;spacing=10;" vertex="1" parent="1">
+          <mxGeometry x="650" y="240" width="280" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="loaded" value="Did the cart load successfully?" style="rhombus;whiteSpace=wrap;html=0;fillColor=#FFF4D5;strokeColor=#C58B18;fontColor=#172B4D;fontSize=16;fontFamily=Arial;spacing=10;" vertex="1" parent="1">
+          <mxGeometry x="685" y="350" width="210" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="error" value="System displays: “Couldn’t load your cart. Please try again.”" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#FFF0EC;strokeColor=#C76C50;fontColor=#172B4D;fontSize=16;fontFamily=Arial;spacing=10;" vertex="1" parent="1">
+          <mxGeometry x="1200" y="365" width="280" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="retry" value="Customer selects Retry" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#F1F5F9;strokeColor=#64748B;fontColor=#172B4D;fontSize=16;fontFamily=Arial;spacing=10;" vertex="1" parent="1">
+          <mxGeometry x="1200" y="510" width="280" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="empty" value="Is the cart empty?" style="rhombus;whiteSpace=wrap;html=0;fillColor=#FFF4D5;strokeColor=#C58B18;fontColor=#172B4D;fontSize=16;fontFamily=Arial;spacing=10;" vertex="1" parent="1">
+          <mxGeometry x="685" y="540" width="210" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="message" value="System shows “Cart is empty,” subtotal CAD 0.00, and Continue shopping" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#F1F5F9;strokeColor=#64748B;fontColor=#172B4D;fontSize=16;fontFamily=Arial;spacing=10;" vertex="1" parent="1">
+          <mxGeometry x="80" y="550" width="280" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="continue" value="Customer selects Continue shopping" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#F1F5F9;strokeColor=#64748B;fontColor=#172B4D;fontSize=16;fontFamily=Arial;spacing=10;" vertex="1" parent="1">
+          <mxGeometry x="80" y="720" width="280" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="end" value="End: Customer returns to product browsing" style="rounded=1;arcSize=25;whiteSpace=wrap;html=0;fillColor=#DEF3EB;strokeColor=#2C8566;fontColor=#172B4D;fontSize=16;fontFamily=Arial;spacing=10;" vertex="1" parent="1">
+          <mxGeometry x="80" y="860" width="280" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="review" value="System displays products, quantities, unit prices, line totals and subtotal in CAD; Update quantity and Remove actions" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#F1F5F9;strokeColor=#64748B;fontColor=#172B4D;fontSize=16;fontFamily=Arial;spacing=10;" vertex="1" parent="1">
+          <mxGeometry x="650" y="750" width="280" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="input" value="Customer enters a new quantity" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#F1F5F9;strokeColor=#64748B;fontColor=#172B4D;fontSize=16;fontFamily=Arial;spacing=10;" vertex="1" parent="1">
+          <mxGeometry x="650" y="960" width="280" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="valid" value="Is the quantity a whole number of 1 or more?" style="rhombus;whiteSpace=wrap;html=0;fillColor=#FFF4D5;strokeColor=#C58B18;fontColor=#172B4D;fontSize=16;fontFamily=Arial;spacing=10;" vertex="1" parent="1">
+          <mxGeometry x="660" y="1080" width="260" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="invalid" value="System displays “Enter a whole number of 1 or more.” Saved quantity and totals remain unchanged." style="rounded=0;whiteSpace=wrap;html=0;fillColor=#FFF0EC;strokeColor=#C76C50;fontColor=#172B4D;fontSize=16;fontFamily=Arial;spacing=10;" vertex="1" parent="1">
+          <mxGeometry x="1200" y="1100" width="280" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="save" value="System attempts to save the new quantity" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#F1F5F9;strokeColor=#64748B;fontColor=#172B4D;fontSize=16;fontFamily=Arial;spacing=10;" vertex="1" parent="1">
+          <mxGeometry x="650" y="1300" width="280" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="saved" value="Was the quantity update saved successfully?" style="rhombus;whiteSpace=wrap;html=0;fillColor=#FFF4D5;strokeColor=#C58B18;fontColor=#172B4D;fontSize=16;fontFamily=Arial;spacing=10;" vertex="1" parent="1">
+          <mxGeometry x="660" y="1420" width="260" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="success" value="System displays saved quantity, recalculated line total and subtotal, and “Update successful.”" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#F1F5F9;strokeColor=#64748B;fontColor=#172B4D;fontSize=16;fontFamily=Arial;spacing=10;" vertex="1" parent="1">
+          <mxGeometry x="1200" y="1440" width="280" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="failure" value="System displays “Update failed. Please try again” and restores last confirmed saved quantity, line total and subtotal." style="rounded=0;whiteSpace=wrap;html=0;fillColor=#FFF0EC;strokeColor=#C76C50;fontColor=#172B4D;fontSize=16;fontFamily=Arial;spacing=10;" vertex="1" parent="1">
+          <mxGeometry x="650" y="1650" width="280" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-0" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#53677F;strokeWidth=2;fontColor=#172B4D;fontSize=14;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1.0;exitDx=0;exitDy=0;entryX=0.5;entryY=0.0;entryDx=0;entryDy=0;" edge="1" parent="1" source="start" target="load">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#53677F;strokeWidth=2;fontColor=#172B4D;fontSize=14;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1.0;exitDx=0;exitDy=0;entryX=0.5;entryY=0.0;entryDx=0;entryDy=0;" edge="1" parent="1" source="load" target="loaded">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-2" value="Yes" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#53677F;strokeWidth=2;fontColor=#172B4D;fontSize=14;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1.0;exitDx=0;exitDy=0;entryX=0.5;entryY=0.0;entryDx=0;entryDy=0;" edge="1" parent="1" source="loaded" target="empty">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-3" value="No" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#53677F;strokeWidth=2;fontColor=#172B4D;fontSize=14;labelBackgroundColor=#FFFFFF;exitX=1.0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.0;entryY=0.47058823529411764;entryDx=0;entryDy=0;" edge="1" parent="1" source="loaded" target="error">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#53677F;strokeWidth=2;fontColor=#172B4D;fontSize=14;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1.0;exitDx=0;exitDy=0;entryX=0.5;entryY=0.0;entryDx=0;entryDy=0;" edge="1" parent="1" source="error" target="retry">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-5" value="Retry" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#53677F;strokeWidth=2;fontColor=#172B4D;fontSize=14;labelBackgroundColor=#FFFFFF;exitX=1.0;exitY=0.5833333333333334;exitDx=0;exitDy=0;entryX=1.0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="retry" target="load">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1740" y="545" />
+              <mxPoint x="1740" y="275" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-6" value="Yes" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#53677F;strokeWidth=2;fontColor=#172B4D;fontSize=14;labelBackgroundColor=#FFFFFF;exitX=0.0;exitY=0.5;exitDx=0;exitDy=0;entryX=1.0;entryY=0.45;entryDx=0;entryDy=0;" edge="1" parent="1" source="empty" target="message">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#53677F;strokeWidth=2;fontColor=#172B4D;fontSize=14;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1.0;exitDx=0;exitDy=0;entryX=0.5;entryY=0.0;entryDx=0;entryDy=0;" edge="1" parent="1" source="message" target="continue">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#53677F;strokeWidth=2;fontColor=#172B4D;fontSize=14;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1.0;exitDx=0;exitDy=0;entryX=0.5;entryY=0.0;entryDx=0;entryDy=0;" edge="1" parent="1" source="continue" target="end">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-9" value="No" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#53677F;strokeWidth=2;fontColor=#172B4D;fontSize=14;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1.0;exitDx=0;exitDy=0;entryX=0.5;entryY=0.0;entryDx=0;entryDy=0;" edge="1" parent="1" source="empty" target="review">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#53677F;strokeWidth=2;fontColor=#172B4D;fontSize=14;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1.0;exitDx=0;exitDy=0;entryX=0.5;entryY=0.0;entryDx=0;entryDy=0;" edge="1" parent="1" source="review" target="input">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#53677F;strokeWidth=2;fontColor=#172B4D;fontSize=14;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1.0;exitDx=0;exitDy=0;entryX=0.5;entryY=0.0;entryDx=0;entryDy=0;" edge="1" parent="1" source="input" target="valid">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-12" value="No" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#53677F;strokeWidth=2;fontColor=#172B4D;fontSize=14;labelBackgroundColor=#FFFFFF;exitX=1.0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="valid" target="invalid">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-13" value="Customer corrects input" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#53677F;strokeWidth=2;fontColor=#172B4D;fontSize=14;labelBackgroundColor=#FFFFFF;exitX=1.0;exitY=0.5;exitDx=0;exitDy=0;entryX=1.0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="invalid" target="input">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1560" y="1160" />
+              <mxPoint x="1560" y="995" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-14" value="Yes" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#53677F;strokeWidth=2;fontColor=#172B4D;fontSize=14;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1.0;exitDx=0;exitDy=0;entryX=0.5;entryY=0.0;entryDx=0;entryDy=0;" edge="1" parent="1" source="valid" target="save">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#53677F;strokeWidth=2;fontColor=#172B4D;fontSize=14;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1.0;exitDx=0;exitDy=0;entryX=0.5;entryY=0.0;entryDx=0;entryDy=0;" edge="1" parent="1" source="save" target="saved">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-16" value="Yes" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#53677F;strokeWidth=2;fontColor=#172B4D;fontSize=14;labelBackgroundColor=#FFFFFF;exitX=1.0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.0;entryY=0.45454545454545453;entryDx=0;entryDy=0;" edge="1" parent="1" source="saved" target="success">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-17" value="Return to cart review" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#53677F;strokeWidth=2;fontColor=#172B4D;fontSize=14;labelBackgroundColor=#FFFFFF;exitX=1.0;exitY=0.5;exitDx=0;exitDy=0;entryX=1.0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="success" target="review">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1660" y="1495" />
+              <mxPoint x="1660" y="815" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-18" value="No — confirmed failure" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#53677F;strokeWidth=2;fontColor=#172B4D;fontSize=14;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1.0;exitDx=0;exitDy=0;entryX=0.5;entryY=0.0;entryDx=0;entryDy=0;" edge="1" parent="1" source="saved" target="failure">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-19" value="Customer retries" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#53677F;strokeWidth=2;fontColor=#172B4D;fontSize=14;labelBackgroundColor=#FFFFFF;exitX=0.0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="failure" target="input">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="520" y="1720" />
+              <mxPoint x="520" y="995" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

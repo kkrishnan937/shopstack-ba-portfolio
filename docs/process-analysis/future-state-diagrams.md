@@ -41,6 +41,8 @@ Generation checks verify that every connector references existing endpoints and 
 
 ## Related analysis
 
+- [Historical working drafts](historical-diagram-drafts.md): superseded sources and an older preview, retained separately from the current revision
+
 - [Written future-state process](future-state-cart-process.md)
 - [Walkthrough record](future-state-walkthrough.md)
 - [Gap register](gap-register.md)

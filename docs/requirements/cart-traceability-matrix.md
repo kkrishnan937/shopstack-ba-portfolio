@@ -84,6 +84,10 @@ The test status column describes application execution only. All expected outcom
 | CART-AC-36 | CART-FR-06 | WF-X result only; clock boundary not represented | CART-T-36: Execute exact-expiry and after-expiry cases separately; exclude expired items, explain expiry, CAD 0.00 and Continue shopping. | Not run |
 | CART-AC-37 | CART-FR-07 | WF-P-; DG-01 review pending | CART-T-37: Two mugs decrease from CAD 14.00 to CAD 12.50; affected-line notice and line/subtotal CAD 25.00 without colour dependence. | Not run |
 
+## Detailed test scripts
+
+[CART-UAT-01: Successful quantity update](../testing/quantity-update-uat-case.md) expands CART-T-11 using its two-mug/one-mouse fixture. The [cart UAT pack](../testing/cart-uat-pack.md) expands the other 36 outlines with setup, procedures, expected results and blank execution fields. Supporting persistence checks and technical test methods require review. Existing execution statuses remain unchanged: no completed application acceptance scenarios or new readiness checks are claimed.
+
 ## Open decisions and coverage actions
 
 | Reference | Impact | Proposed next action / review roles |
