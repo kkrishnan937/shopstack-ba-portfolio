@@ -6,13 +6,13 @@
 
 ShopStack's storefront supported browsing, login and add-to-cart requests but offered no cart review. Customers could not verify saved selections or totals. The initial acceptance attempt was [blocked](testing/cart-loading-readiness-2026-10-28.md): the required screen/retry controls were missing and no running backend fixture was available. No customer conversion or financial impact had been measured.
 
-Kailas Krishnan practised the BA role through an independent learning project, with AI-assisted analysis and implementation. Stakeholder conversations were simulated; they are not client interviews or sign-off. The deliverable became a deliberately small read-only cart slice, followed by agent-executed acceptance checks with actual evidence.
+I acted as the Business Analyst in this independent learning project. I used AI agents to simulate the sponsor, product owner, developer/technical lead, tester, UX and customer-reviewer roles. I asked questions, refined requirements and documented decisions with AI assistance. These discussions were simulations, not client interviews or sign-off. Agents also assisted with implementation and executed the automated acceptance checks against the real application.
 
 ## Analysis and decisions
 
-The [gap register](process-analysis/gap-register.md) connected the missing customer capability to [requirements](requirements/cart-requirements.md), [process diagrams](process-analysis/future-state-diagrams.md), [wireframes](wireframes/cart-wireframes.md) and a [traceability matrix](requirements/cart-traceability-matrix.md). A key distinction emerged: retrieval failure does not prove that a cart is empty. Retry must retrieve saved data without adding, updating or removing selections.
+I connected the missing customer capability through a [gap register](process-analysis/gap-register.md), [requirements](requirements/cart-requirements.md), [process diagrams](process-analysis/future-state-diagrams.md), [wireframes](wireframes/cart-wireframes.md) and a [traceability matrix](requirements/cart-traceability-matrix.md). I clarified that retrieval failure does not prove a cart is empty: Retry must retrieve saved data without adding, updating or removing selections.
 
-The [scope handoff](requirements/cart-readiness-change-and-handoff.md) selected a dedicated mobile-readable cart page, backend-authoritative integer-cent amounts, and separate ordinary-empty, cart-expired and login-expired states. Mutation work was deferred behind explicit gates rather than presenting an unfinished quantity/removal workflow as complete.
+I documented a dedicated mobile-readable cart page, backend-authoritative integer-cent amounts and separate ordinary-empty, cart-expired and login-expired states in the [scope handoff](requirements/cart-readiness-change-and-handoff.md). I bounded the first slice to cart viewing and recorded the open gates affecting mutation work.
 
 ## Delivered and verified
 
@@ -28,4 +28,4 @@ The executed fixture contained two mugs at CAD 12.50 and one mouse at CAD 24.99.
 
 This is agent-executed local/CI acceptance evidence, not independent business approval or production validation. The existing cloud workflow failed at AWS credential configuration. Quantity changes, removal, logout revocation, safe mutation recovery and checkout are not delivered; exact retention boundaries and full accessibility remain unverified. Legacy cart-age migration is an explicit tradeoff.
 
-The principal lesson was to stop at a testable scope: one traced business need, working UI/API/data integration, and reproducible failure/recovery evidence demonstrated more than additional unexecuted documents. Next work should extend that verified path without erasing its boundaries or overstating business results.
+I learned to define a testable scope and connect the business need to working UI/API/data integration and reproducible recovery evidence. I can explain my decisions, the contribution of AI agents and the limits of the results.

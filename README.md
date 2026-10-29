@@ -1,81 +1,105 @@
-# ShopStack Business Analyst Portfolio
+# ShopStack: Business Analysis Case Study
 
-*This project follows a simulated business analysis process.*
+**How I took a missing cart-review journey from discovery to requirements, delivery decisions and executed acceptance evidence.**
 
-**Customer Purchase Journey Improvement**  
-**Author:** Kailas Krishnan  
-**Status:** Read-only cart slice verified locally and in CI on PostgreSQL 17; wider release incomplete
+I acted as the **Business Analyst** in this independent e-commerce portfolio project. I used AI agents to simulate the sponsor, product owner, developer/technical lead, tester, UX and customer-reviewer roles. I asked questions, challenged assumptions, documented decisions and connected business needs to testable requirements.
 
-An independent Business Analyst case study using an existing e-commerce learning application to practise an end-to-end business analysis workflow. This repository will grow as discovery, process analysis, requirements, validation, and evaluation work is completed and reviewed.
+> Stakeholder discussions, assignments, estimates and approvals were simulated. AI agents also assisted with analysis, documentation, implementation and automated testing. The linked application evidence comes from actual local and CI runs. This was not a real client engagement, and independent customer validation and business sign-off have not occurred.
 
-**Start here:** [One-page case study](docs/case-study.md) -> [executed acceptance results](docs/testing/cart-view-executed-2026-10-28.md) -> [failure screenshot](docs/testing/evidence/cart-view-2026-10-28/01-cart-load-failure.png) / [recovered cart](docs/testing/evidence/cart-view-2026-10-28/03-cart-recovered.png).
+**Start here:** [My one-page case study](docs/case-study.md) · [Actual execution evidence](docs/testing/cart-review-2026-10-28.md) · [Requirements](docs/requirements/cart-requirements.md)
 
-**Actual outcome:** 9 planned cart-view test families and 6 supplemental checks passed locally and in CI on embedded PostgreSQL and PostgreSQL 17; 28 families remain Not run. [Review findings and durable evidence](docs/testing/cart-review-2026-10-28.md). The owner merged [initial PR #1](https://github.com/kkrishnan937/shopstack/pull/1); [follow-up PR #2](https://github.com/kkrishnan937/shopstack/pull/2) remains a draft with passing checks. The existing AWS workflow failed before deployment. No production release or independent sign-off is claimed.
+## The business problem
 
-## Business context
+ShopStack supported catalog browsing, login and add-to-cart requests, but customers had no cart page to verify saved selections or totals. I investigated how customers could review and manage their cart without being misled by failed requests, expired carts or unconfirmed updates.
 
-[ShopStack](https://github.com/kkrishnan937/shopstack) originally supported catalog browsing, login and add-to-cart requests without cart review. The local implemented slice adds a dedicated cart page with real authentication, server-calculated totals, empty/expired states and safe Retry. Cart/order writes are disabled while mutation gates remain open; checkout is not implemented.
+I defined the broader cart-management journey, then narrowed the implemented increment to cart viewing, clear empty/error states and safe retrieval retry. I did not measure conversion, abandonment or financial benefits.
 
-This case study investigates how customers could review their selections and submit a demo order. Customer abandonment, conversion impact, and financial benefits have not been measured.
+```mermaid
+flowchart LR
+    A["I investigated the journey"] --> B["I identified gaps and risks"]
+    B --> C["I refined rules and acceptance criteria"]
+    C --> D["I defined a small delivery slice"]
+    D --> E["AI-assisted implementation and testing"]
+    E --> F["I connected results to requirements"]
+```
 
-## Proposed outcome and scope
+## My role and the simulated team
 
-Enable customers to register or log in, add products, review cart items and totals, update quantities, remove items, and submit a demo order with confirmation. Display prices explicitly in CAD.
+| Role | How I used it in the project |
+|---|---|
+| **Business Analyst: me** | I asked discovery and refinement questions, documented requirements and decisions, examined dependencies and linked acceptance scenarios to evidence. |
+| Sponsor and product owner: AI agents | I explored objectives, scope, priorities, business rules and acceptance decisions through simulated discussions. |
+| Developer and technical lead: AI agents | I asked about feasibility, request status, retention, authentication and delivery impact. |
+| Tester: AI agents | I refined expected outcomes, boundaries, failure scenarios, evidence needs and defect handling. Agents later executed automated checks. |
+| UX and customer reviewer: AI agents | I explored labels, mobile use, messages and recovery actions. These were exercises, not real usability research. |
 
-The simulated sponsor retained authentication before adding items. Guest cart and guest checkout are future proposals, not agreed release scope.
+## At a glance
 
-Real payments and physical shipping/fulfilment remain excluded. Cart shows item-price subtotal only; CR-CART-01 now includes tax/shipping calculation at later demo checkout, with detailed inputs and rounding sequence still to define. No payment is taken or shipping arranged. Stock checks/reservation remain excluded. Logout invalidation is required; its design, session reconciliation and prolonged recovery remain open.
+| What I produced or supported | Evidence |
+|---|---|
+| Discovery and stakeholder analysis | [Discovery notes](docs/discovery/meeting-notes-2026-10-23.md), [stakeholder plan](docs/discovery/stakeholder-analysis-and-engagement.md) |
+| Current and future process analysis | [Current-state map](docs/process-analysis/ShopStack-Current-State-Improved.png), [future-state diagrams](docs/process-analysis/future-state-diagrams.md) |
+| Gap analysis and prioritization | [Gap register](docs/process-analysis/gap-register.md), [decision record](docs/process-analysis/prioritization-and-decisions.md) |
+| Cart stories, business rules and acceptance criteria | [Requirements](docs/requirements/cart-requirements.md) |
+| Solution clarification and change impact | [Cart-read contract](docs/requirements/cart-read-contract.md), [change handoff](docs/requirements/cart-readiness-change-and-handoff.md) |
+| Wireframes and customer communication | [Seven illustrative cart states](docs/wireframes/cart-wireframes.md) |
+| Requirements-to-test traceability | [37 mapped test families](docs/requirements/cart-traceability-matrix.md) |
+| Test planning and evidence | [UAT pack](docs/testing/cart-uat-pack.md), [execution review](docs/testing/cart-review-2026-10-28.md) |
+| Defect analysis practice | [Hypothetical defect exercise](docs/testing/hypothetical-quantity-defect-exercise.md) |
 
-## Portfolio artifacts
+## A guided tour of my work
 
-| Artifact | Status | Link |
-|---|---|---|
-| Discovery meeting notes | Draft for simulated sponsor confirmation | [Read meeting notes](docs/discovery/meeting-notes-2026-10-23.md) |
-| Current-state process map | Reviewed draft v0.1 | [View diagram](docs/process-analysis/ShopStack-Current-State-Improved.png) · [Open in diagrams.net](https://app.diagrams.net/#Uhttps%3A%2F%2Fraw.githubusercontent.com%2Fkkrishnan937%2Fshopstack-ba-portfolio%2Fmain%2Fdocs%2Fprocess-analysis%2FShopStack-Current-State-Improved.drawio) · [Download source](https://raw.githubusercontent.com/kkrishnan937/shopstack-ba-portfolio/main/docs/process-analysis/ShopStack-Current-State-Improved.drawio) |
-| Gap register | Draft v0.1 | [Read gap register](docs/process-analysis/gap-register.md) |
-| Prioritization and decision record | Working priorities; first increment recorded | [Read decision record](docs/process-analysis/prioritization-and-decisions.md) |
-| Future-state cart process | Draft v0.3 reconciled with requirements and diagram v0.4 | [Read future-state process](docs/process-analysis/future-state-cart-process.md) |
-| Future-state cart diagrams | Draft v0.4; five pages; editor review pending | [View diagrams](docs/process-analysis/future-state-diagrams.md) · [Open in diagrams.net](https://app.diagrams.net/#Uhttps%3A%2F%2Fraw.githubusercontent.com%2Fkkrishnan937%2Fshopstack-ba-portfolio%2Fmain%2Fdocs%2Fprocess-analysis%2FShopStack-Future-State-Cart-Reviewed.drawio) |
-| Future-state walkthrough | Review record v0.1 | [Read walkthrough](docs/process-analysis/future-state-walkthrough.md) |
-| Cart recovery workshop | Simulated findings; open recovery questions | [Read workshop notes](docs/discovery/cart-recovery-workshop-2026-10-25.md) |
-| Stakeholder analysis and engagement plan | Draft v0.2; simulated review and change control recorded; customer validation pending | [Read stakeholder plan](docs/discovery/stakeholder-analysis-and-engagement.md) |
-| Cart requirements, business rules, and acceptance criteria | Draft v0.4; 37 existing criteria; new readiness constraints require expansion | [Read requirements](docs/requirements/cart-requirements.md) |
-| Readiness changes and implementation handoff | CR-CART-01; direct author decisions, scope impact and simulated targets | [Read change and handoff](docs/requirements/cart-readiness-change-and-handoff.md) |
-| Cart-read information contract | Draft v0.1; five response situations; exact schema/version semantics open | [Read contract](docs/requirements/cart-read-contract.md) |
-| Cart wireframes | Draft v0.3; seven illustrative states including expiry and price changes; customer/UX review pending | [Review wireframes](docs/wireframes/cart-wireframes.md) |
-| Cart requirements traceability | 37 families mapped; 9 local Pass, 28 Not run | [Read traceability matrix](docs/requirements/cart-traceability-matrix.md) |
-| Cart-loading test readiness | Actual frontend inspection; application scenario blocked before execution | [Read readiness record](docs/testing/cart-loading-readiness-2026-10-28.md) |
-| Cart delivery-readiness actions | Actual blocker linked; ownership and dates remain simulated/unconfirmed | [Read handoff action log](docs/testing/cart-delivery-readiness-actions.md) |
-| Cart-viewing delivery workshop | Simulated slice planning; expiry-message persistence and API design proposed | [Read workshop findings](docs/discovery/cart-viewing-delivery-workshop.md) |
-| Defect-lifecycle training example | Hypothetical quantity mismatch; no observed defect or retest | [Read training example](docs/testing/hypothetical-quantity-defect-exercise.md) |
-| Detailed quantity-update UAT case | Draft v0.2; partial-result/access rules included; execution Not run | [Read UAT case](docs/testing/quantity-update-uat-case.md) |
-| Cart UAT test pack | 37 families; 9 executed locally with results | [Read UAT pack](docs/testing/cart-uat-pack.md) |
-| Executed cart-viewing slice | Actual results, screenshots, snapshots and build fingerprint; no independent sign-off | [Read execution record](docs/testing/cart-view-executed-2026-10-28.md) |
-| One-page case study | Delivered slice, observed results, limitations and supporting links | [Read case study](docs/case-study.md) |
+1. **[Discovery](docs/discovery/meeting-notes-2026-10-23.md):** How I framed the customer journey, assumptions and scope.
+2. **[Gap analysis](docs/process-analysis/gap-register.md):** How I connected missing capabilities to priorities.
+3. **[Requirements](docs/requirements/cart-requirements.md):** How I specified quantity limits, calculations, retention and uncertain outcomes.
+4. **[Diagrams](docs/process-analysis/future-state-diagrams.md) and [wireframes](docs/wireframes/cart-wireframes.md):** How I made states, messages and recovery actions reviewable.
+5. **[Delivery handoff](docs/requirements/cart-readiness-change-and-handoff.md):** How I recorded scope changes, dependencies and unresolved questions.
+6. **[Traceability](docs/requirements/cart-traceability-matrix.md) and [actual evidence](docs/testing/cart-review-2026-10-28.md):** How I distinguished tested behavior from planned coverage.
 
-## Approach
+## Decisions I can explain in an interview
 
-1. Clarify the business request and confirm discovery findings.
-2. Map the existing journey and distinguish observed gaps from hypotheses.
-3. Evaluate options and define the proposed future process.
-4. Document and prioritize requirements with measurable acceptance criteria.
-5. Support solution design and delivery, tracing changes to business needs.
-6. Execute acceptance scenarios and record actual results and defects.
-7. Evaluate outcomes and document lessons and limitations.
+- **A retrieval error does not mean an empty cart.** I specified separate failure and empty states. Retry retrieves saved data without changing selections.
+- **An unknown update is not a confirmed failure.** I explored duplicate-action risks and specified checking the original request instead of blindly resubmitting it. Mutation recovery remains outside the delivered slice.
+- **Session expiry and cart expiry need different explanations.** I distinguished sign-in recovery from the 30-day saved-cart retention rule.
+- **A small increment needs explicit boundaries.** I defined cart viewing as the first implementation slice while mutation and logout issues remained open.
+- **Evidence must support the claim.** I kept simulated findings, hypothetical defects and actual execution records identifiable, including persistence evidence beyond the screen.
 
-## How to review this project
+## What was actually verified
 
-Start with the case study and actual execution record, then follow the linked requirements and analysis. Application source belongs in the ShopStack application repository; this portfolio holds analysis and execution evidence rather than duplicate implementation scripts.
+The real React/Express cart slice displays owned products, quantities, unit prices, line totals and a CAD subtotal. It includes ordinary-empty and expired-cart states, authentication handling and non-mutating Retry. Cart/order writes are disabled in this slice.
 
-## Updating this repository
+**Nine planned test families and six supplemental checks passed locally and in CI on embedded PostgreSQL and PostgreSQL 17.** Repeated executions cover the same scenarios; the remaining **28 planned families are Not run**.
 
-- Add artifacts as the work is completed; keep planned work marked as planned.
-- Use descriptive commits explaining the document or decision changed.
-- Keep artifacts in folders under `docs/`, and update the artifact table when adding a deliverable.
-- Record significant scope changes and their rationale rather than silently rewriting prior decisions.
-- Distinguish observations, assumptions, proposals, simulated decisions, and executed test results.
-- Use synthetic examples and exclude credentials, private customer information, and unsupported outcome claims.
+The recovery fixture contained two mugs at CAD 12.50 and one mouse at CAD 24.99. A controlled read failure showed an error without claiming the cart was empty. Retry recovered to **CAD 49.99**; saved-state snapshots confirmed unchanged items and retention metadata.
 
-## Current next step
+![Actual recovered cart showing products and CAD 49.99 subtotal](docs/testing/evidence/cart-review-postgres-2026-10-28/03-cart-recovered.png)
 
-Review the implemented read-only slice and evidence, seek independent feedback, and verify the normal PostgreSQL deployment before a release claim. Close session-reconciliation/logout/retention-contract gates before shipping mutations. The remaining 28 test families and wider checkout are incomplete. Extend the verified path rather than adding further unexecuted drafts.
+[Failure screenshot](docs/testing/evidence/cart-review-postgres-2026-10-28/01-cart-load-failure.png) · [Machine-readable results](docs/testing/evidence/cart-review-postgres-2026-10-28/run-results.json) · [CI run](https://github.com/kkrishnan937/shopstack/actions/runs/40808158396)
+
+## Repository map
+
+```text
+docs/
+  case-study.md        My problem, approach, results and lessons
+  discovery/           Discovery, stakeholder analysis and simulated workshops
+  process-analysis/    Current/future processes, gaps, priorities and decisions
+  requirements/        Stories, rules, acceptance criteria, traceability and handoff
+  wireframes/          Illustrative cart screens and explanations
+  testing/             Test plans, readiness records, exercises and actual evidence
+```
+
+The [application repository](https://github.com/kkrishnan937/shopstack) holds implementation code. This repository holds my BA analysis and supporting evidence.
+
+## Scope and limitations
+
+I present this as a BA portfolio case study. Independent customer research and stakeholder acceptance remain outstanding. The broader requirements include quantity updates, removal, logout and cart policies; those features are not all implemented or verified. Exact retention boundaries, full accessibility and prolonged mutation recovery remain open.
+
+Real payments, fulfilment and stock reservation are excluded. The cart displays item-price subtotal only; tax and shipping belong to proposed later checkout work.
+
+The owner merged [initial PR #1](https://github.com/kkrishnan937/shopstack/pull/1). [Review PR #2](https://github.com/kkrishnan937/shopstack/pull/2) was recorded as a draft with passing checks at the latest review. The AWS workflow failed during credential setup; I do not claim a production release.
+
+## What I learned
+
+I learned to turn uncertainty into focused BA questions: what is confirmed, who needs to decide, what evidence is missing and which work can proceed independently.
+
+My strongest outcome is a small, evidenced customer journey supported by the analysis that shaped it. I can explain the decisions I made and the limits of what the evidence proves.

@@ -3,7 +3,7 @@
 **Version:** 0.2
 **Date:** 28 October 2026  
 **Status:** Local executed slice: 9 Pass, 28 Not run; independent approval pending
-**Prepared by:** Kailas Krishnan
+**My role:** I acted as the BA, with AI-assisted documentation.
 
 ## Scope and interpretation
 

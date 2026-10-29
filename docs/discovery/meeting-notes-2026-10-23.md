@@ -2,7 +2,7 @@
 
 **Date:** 23 October 2026  
 **Status:** Draft for sponsor confirmation  
-**Author:** Kailas Krishnan
+**My role:** I acted as the BA, with AI-assisted documentation.
 
 ## Purpose
 

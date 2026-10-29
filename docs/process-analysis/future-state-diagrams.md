@@ -1,6 +1,6 @@
 # ShopStack: Future-State Cart Diagrams
 
-**Prepared by:** Kailas Krishnan  
+**My role:** I acted as the BA, with AI-assisted documentation.
 **Date:** 25 October 2026  
 **Version:** 0.4
 **Status:** Proposed process: draft for review

@@ -3,7 +3,7 @@
 **Date:** 25 October 2026  
 **Version:** 0.2
 **Status:** Draft for simulated role review  
-**Prepared by:** Kailas Krishnan, portfolio author practising the BA role
+**My role:** I acted as the BA, with AI-assisted documentation.
 
 ## Purpose and evidence boundary
 

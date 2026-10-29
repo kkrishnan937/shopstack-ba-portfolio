@@ -3,7 +3,7 @@
 **Version:** 0.4
 **Date:** 28 October 2026
 **Status:** Draft consolidated from simulated requirements workshops; review pending  
-**Author:** Kailas Krishnan, portfolio author practising the BA role
+**My role:** I acted as the BA, with AI-assisted documentation.
 
 ## Scope and evidence
 

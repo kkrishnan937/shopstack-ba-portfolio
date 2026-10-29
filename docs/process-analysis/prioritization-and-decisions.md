@@ -1,6 +1,6 @@
 # ShopStack: Prioritization and Decision Record
 
-**Prepared by:** Kailas Krishnan  
+**My role:** I acted as the BA, with AI-assisted documentation.
 **Date:** 23 October 2026  
 **Version:** 0.1  
 **Status:** Working priorities; first-increment direction and subsequent cart/scope decisions recorded. Earlier entries below retain their historical status; DEC-02 through DEC-07 record the 25 October updates.

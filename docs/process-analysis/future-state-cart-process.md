@@ -1,6 +1,6 @@
 # ShopStack: Future-State Cart Process
 
-**Prepared by:** Kailas Krishnan  
+**My role:** I acted as the BA, with AI-assisted documentation.
 **Date:** 25 October 2026  
 **Version:** 0.3
 **Status:** Proposed process: draft for review

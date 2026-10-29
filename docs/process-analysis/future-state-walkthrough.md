@@ -1,6 +1,6 @@
 # ShopStack: Future-State Process Walkthrough
 
-**Prepared by:** Kailas Krishnan  
+**My role:** I acted as the BA, with AI-assisted documentation.
 **Recorded:** 25 October 2026  
 **Version:** 0.1  
 **Status:** Draft review record; open recovery and business rules remain

@@ -1,6 +1,6 @@
 # ShopStack: Gap Register
 
-**Prepared by:** Kailas Krishnan  
+**My role:** I acted as the BA, with AI-assisted documentation.
 **Date:** 23 October 2026  
 **Version:** 0.1  
 **Status:** Draft for review
